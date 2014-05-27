@@ -59,17 +59,7 @@
 
 
 
-    <div id="header">
-
-        <?php if(get_option($shortname.'_custom_logo_url','') != "") { ?>
-
-          <a href="<?php bloginfo('url'); ?>"><img src="<?php echo stripslashes(stripslashes(get_option($shortname.'_custom_logo_url',''))); ?>" class="logo" /></a>
-          
-        <?php } else { ?>
-
-          <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
-
-        <?php } ?>                    
+    <div id="header">                   
 
         <ul id="header-nav">
           <li class="dropdown"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
