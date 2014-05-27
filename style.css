@@ -102,7 +102,7 @@ ul.sub_navigation
 {
 	position: absolute;
 	display: none;
-	background-color: #fff;
+	background-color: #f3fcff;
 	border: 1px #008acc solid;
 	margin-top: 2px;
 	width: 157px;
@@ -142,6 +142,148 @@ a, a:active, a:visited
 	margin-left: 12px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.main-nav-button
+{
+	position: relative;
+}
+
+.mnb-active
+{
+	position: relative;
+}
+
+.main-nav-button a
+{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 101;
+	background-color: #33b8f0;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=1);
+	font-family: RobotoRegular;
+	font-size: 12pt;
+}
+
+.main-nav-button a:hover
+{
+	background-color: #008acc;
+}
+
+.main-nav-button a:active
+{
+	background-color: #008acc;
+}
+
+.main-nav-button a p
+{
+	margin: 24px 0 0 24px;
+}
+
+.mnb-active a
+{
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	top: 0;
+	left: 0;
+	text-decoration: none;
+	z-index: 101;
+	color: #fff;
+	opacity: 1;
+	filter: alpha(opacity=1);
+	font-family: RobotoRegular;
+	font-size: 12pt;
+	background-color: #008acc;
+}
+
+.mnb-active a p
+{
+	margin: 24px 0 0 24px;
+}
+
+#home-nav
+{
+	float: left;
+	width: 91px;
+	height: 68px;
+}
+
+#dest-nav
+{
+	float: left;
+	cursor: pointer;
+	width: 130px;
+	height: 68px;
+}
+
+.bd-container1
+{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 416px;
+	top: 71px;
+	left: 0;
+	background-color: #f3fcff;
+	border-bottom-style: solid;
+	border-bottom-color: #008acc;
+	border-bottom-width: 3px;
+	z-index: 99;
+}
+
+.menu-item-container
+{
+	margin: 10px auto;
+	width: 1200px;
+	display: block;
+}
+
+.menu-item-left
+{
+	float: left;
+	width: 360px;
+	margin-left: 20px;
+}
+
+.menu-item-center
+{
+	float: left;
+	width: 360px;
+	margin-left: 20px;
+}
+
+.menu-item-right
+{
+	float: right;
+	width: 360px;
+	margin-left: 20px;
+}
+
+.menu-item-container ul li
+{
+	clear: both;
+	list-style: url('images/bullet-point-arrow.png');
+	padding: 10px 0 10px 12px;
+	margin-left: 33px;
+}
+
+.menu-item-container ul li a
+{
+	text-decoration: none;
+	font-size: 13px;
+	font-family: RobotoRegular;
+}
+
+.menu-item-container ul li a:hover
+{
+	text-decoration: underline;
 }
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; display: none;}

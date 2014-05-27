@@ -73,8 +73,103 @@
           </li>
         </ul>
         <ul id="home-button">
-          <li><a href=""></a></li>
+          <li>
+            <?php if( is_home() ) { ?>
+              <div class="mnb-active" id="home-nav">
+                <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
+              </div>
+            <?php } else { ?>
+              <div class="main-nav-button" id="home-nav">
+                <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
+              </div>
+            <?php } ?>
+          </li>
         </ul>
+        <ul id="dest-button">
+          <li class="big-dropdown">
+            <div class="main-nav-button" id="dest-nav">
+              <a><p>Destinations</p></a>
+            </div>
+          </li>
+        </ul>
+        <div>
+        <div class="bd-container1">
+          <div class="menu-item-container">
+            <div class="menu-item-left">
+              <ul>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'croatia', 'post_tag' )->term_id ); ?>">
+                    <?php $tag1 = get_term_by( 'slug', 'croatia', 'post_tag' ); echo $tag1->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'cyprus', 'post_tag' )->term_id ); ?>">
+                    <?php $tag2 = get_term_by( 'slug', 'cyprus', 'post_tag' ); echo $tag2->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'egypt', 'post_tag' )->term_id ); ?>">
+                    <?php $tag3 = get_term_by( 'slug', 'egypt', 'post_tag' ); echo $tag3->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'france', 'post_tag' )->term_id ); ?>">
+                    <?php $tag4 = get_term_by( 'slug', 'france', 'post_tag' ); echo $tag4->name; ?>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-center">
+              <ul>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'greece', 'post_tag' )->term_id ); ?>">
+                    <?php $tag5 = get_term_by( 'slug', 'greece', 'post_tag' ); echo $tag5->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'italy', 'post_tag' )->term_id ); ?>">
+                    <?php $tag6 = get_term_by( 'slug', 'italy', 'post_tag' ); echo $tag6->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'malta-gozo', 'post_tag' )->term_id ); ?>">
+                    <?php $tag7 = get_term_by( 'slug', 'malta-gozo', 'post_tag' ); echo $tag7->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'morocco', 'post_tag' )->term_id ); ?>">
+                    <?php $tag8 = get_term_by( 'slug', 'morocco', 'post_tag' ); echo $tag8->name; ?>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-item-right">
+              <ul>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'portugal', 'post_tag' )->term_id ); ?>">
+                    <?php $tag9 = get_term_by( 'slug', 'portugal', 'post_tag' ); echo $tag9->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'spain', 'post_tag' )->term_id ); ?>">
+                    <?php $tag10 = get_term_by( 'slug', 'spain', 'post_tag' ); echo $tag10->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'turkey', 'post_tag' )->term_id ); ?>">
+                    <?php $tag11 = get_term_by( 'slug', 'turkey', 'post_tag' ); echo $tag11->name; ?>
+                  </a>
+                </li>
+                <li>
+                  <a href="<?php echo get_tag_link(get_term_by( 'slug', 'united-states', 'post_tag' )->term_id ); ?>">
+                    <?php $tag12 = get_term_by( 'slug', 'united-states', 'post_tag' ); echo $tag12->name; ?>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
         <div class="right">
 
