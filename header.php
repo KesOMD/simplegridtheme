@@ -60,19 +60,22 @@
 
 
     <div id="header">                   
-
-        <ul id="header-nav">
-          <li class="dropdown"><a href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
+      <div class="header-left">
+        <ul id="logo-nav">
+          <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
             <ul class="sub_navigation">
-              <li><a href="#">Sub Navigation</a></li>
-              <li><a href="#">Sub Navigation</a></li>
-              <li><a href="#">Sub Navigation</a></li>
-              <li><a href="#">Sub Navigation</a></li>
-              <li><a href="#">Sub Navigation</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/" target="_blank">Main Site</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank">About Us</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank">Contact Us</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank">Privacy Policy</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank">Cookie Policy</a></li>
             </ul>
           </li>
         </ul>
-
+        <ul id="home-button">
+          <li><a href=""></a></li>
+        </ul>
+      </div>
         <div class="right">
 
         
