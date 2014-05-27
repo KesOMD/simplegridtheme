@@ -167,6 +167,11 @@
                 </li>
               </ul>
             </div>
+            <div style="width: 422px; margin: 0 auto;">
+              <div class="view-more-cont">
+                <?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/view-more-bg.png" alt="Load more articles"/>') ?> 
+              </div>
+            </div>
           </div>
         </div>
         </div>

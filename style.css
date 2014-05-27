@@ -228,7 +228,7 @@ a, a:active, a:visited
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 416px;
+	height: 280px;
 	top: 71px;
 	left: 0;
 	background-color: #f3fcff;
@@ -240,7 +240,7 @@ a, a:active, a:visited
 
 .menu-item-container
 {
-	margin: 10px auto;
+	margin: 25px auto 0 auto;
 	width: 1200px;
 	display: block;
 }
@@ -284,6 +284,14 @@ a, a:active, a:visited
 .menu-item-container ul li a:hover
 {
 	text-decoration: underline;
+}
+
+.view-more-cont
+{
+	width: 422px;
+	height: 64px;
+	margin: 25px auto 0 auto;
+	display: inline-block;
 }
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; display: none;}
