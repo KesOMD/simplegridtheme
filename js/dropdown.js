@@ -5,7 +5,7 @@ $('body').ready(function()
 				$(this).find('.sub_navigation').slideToggle();
 			}
 		);
-		$('.big-dropdown').click(function()
+		$('#dest-nav').click(function()
 			{
 				$('.bd-container1').slideToggle();
 			}
