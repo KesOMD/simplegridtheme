@@ -92,7 +92,14 @@
             </div>
           </li>
         </ul>
-        <div>
+        <ul id="pop-button">
+          <li class="big-dropdown">
+            <div class="main-nav-button" id="pop-nav">
+              <a><p>Popular</p></a>
+            </div>
+          </li>
+        </ul>
+        
         <div class="bd-container1">
           <div class="menu-item-container">
             <div class="menu-item-left">
@@ -174,6 +181,22 @@
             </div>
           </div>
         </div>
+        
+        <div class="bd-container2">
+          <div class="menu-item-container">
+            <?php 
+            if ( have_posts() ) : while ( have_posts() ) : the_post();
+                
+                $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
+                /*debug_to_console( $popularpost );*/
+                while ( $popularpost->have_posts() ) : $popularpost->the_post();
+                  debug_to_console('what');
+                  debug_to_console( the_title() );
+                endwhile;
+              endwhile;
+            endif;
+            ?>
+          </div>
         </div>
       </div>
         <div class="right">

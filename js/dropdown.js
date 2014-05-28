@@ -11,5 +11,10 @@ $('body').ready(function()
 			}
 
 		)
+		$('#pop-nav').click(function()
+			{
+				$('.bd-container2').slideToggle();
+			}
+		)
 	}
 );

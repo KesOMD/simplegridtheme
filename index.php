@@ -38,7 +38,7 @@
 
         while (have_posts()) : the_post(); ?>                                                                      
 
-        
+            wpb_set_post_views( get_the_ID() );
 
             <?php if($x == 2) { ?>
 
