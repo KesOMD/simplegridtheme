@@ -74,15 +74,9 @@
         </ul>
         <ul id="home-button">
           <li>
-            <?php if( is_home() ) { ?>
-              <div class="mnb-active" id="home-nav">
-                <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
-              </div>
-            <?php } else { ?>
-              <div class="main-nav-button" id="home-nav">
-                <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
-              </div>
-            <?php } ?>
+            <div class="main-nav-button" id="home-nav">
+              <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
+            </div>
           </li>
         </ul>
         <ul id="dest-button">
@@ -96,6 +90,20 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="pop-nav">
               <a><p>Popular</p></a>
+            </div>
+          </li>
+        </ul>
+        <ul id="soc-button">
+          <li class="big-dropdown">
+            <div class="main-nav-button" id="soc-nav">
+              <a><p>Social</p></a>
+            </div>
+          </li>
+        </ul>
+        <ul id="cat-button">
+          <li class="big-dropdown">
+            <div class="main-nav-button" id="cat-nav">
+              <a><p>Categories</p></a>
             </div>
           </li>
         </ul>
@@ -183,17 +191,56 @@
         </div>
         
         <div class="bd-container2">
-          <!-- <div class="menu-item-container"> -->
             <?php
             if (function_exists('wpp_get_mostpopular'))
-              wpp_get_mostpopular("thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end='</div>'&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a></div>'");
+              wpp_get_mostpopular("stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end=''&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a><div class=\"home_post_title_cont\"><h4>{category}</h4><hr><h3>{text_title}</h3></div><div class=\"home_post_desc\"><p>{summary}<a href={url}>read more</a></p></div><div class=\"home_post_author\"><p>{author}</p></div></div>'");
             ?>
-          <!-- </div> -->
+            </div>
+        </div>
+
+        <div class="bd-container3">
+          <div class="menu-item-container">
+            <div class="menu-item-left">
+            </div>
+            <div class="menu-item-center">
+              <p>UNDER CONSTRUCTION</p>
+            </div>
+            <div class="menu-item-right">
+            </div>
+          </div>
+        </div>
+
+        <div class="bd-container4">
+          <div class="menu-item-container" id="cat-container">
+            <ul class="cat-listing">
+              <?php wp_list_categories('exclude=1&number=12&hide_empty=0&orderby=name&title_li='); ?>
+            </ul>
+            <br />
+            <div style="width: 422px; margin: 0 auto;">
+              <div class="view-more-cont" id="pop-load">
+                <?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/view-more-cat-bg.png" alt="Load more articles"/>') ?> 
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-        <div class="right">
+        <div class="header-right">
 
-        
+            <div class="search_cont">
+
+                <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+
+                  <input type="text" name="s" id="s" value="Search" onfocus="if ( this.value == 'Search' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Search' }" />
+
+                  <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-image.png" class="search_icon" BORDER="0" ALT="Submit Form">
+
+                </form>
+
+            </div><!--//search_cont-->
+
+            
+
+            <div class="clear"></div>
 
             <ul class="social_icons">
 
@@ -233,21 +280,7 @@
 
             
 
-            <div class="search_cont">
-
-                <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-
-                  <input type="text" name="s" id="s" />
-
-                  <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-icon.png" class="search_icon" BORDER="0" ALT="Submit Form">
-
-                </form>
-
-            </div><!--//search_cont-->
-
             
-
-            <div class="clear"></div>
 
         </div><!--//right-->
 
