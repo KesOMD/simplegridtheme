@@ -4,9 +4,14 @@
 
     <div id="footer">
 
+        <div class="footer-align">
+
         <div class="footer_widgets_cont">
 
-        
+            <div class="footer_copyright">
+                <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
+                <p>2014 James Villas</p>
+            </div>
 
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?>       
 
@@ -63,8 +68,8 @@
         </div><!--//footer_widgets_cont-->
 
     
-
-        <div class="footer_copyright">© 2014</div>
+    </div>
+        
 
     </div><!--//footer-->
 

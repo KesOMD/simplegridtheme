@@ -61,14 +61,21 @@ a:hover { text-decoration:underline; color:#333; }
 
 
 
-.social_icons { list-style-type: none; float: right; }
+.social_icons
+{
+	list-style-type: none;
+	float: right;
+	margin-top: 24px;
+}
 
 .social_icons li { float: left; margin-left: 10px; }
 
 .search_cont
 {
-	margin-top: 20px;
+	margin-top: 0px;
 	position: relative;
+	float: left;
+	height: 68px;
 }
 
 .search_cont input[type=text]
@@ -82,13 +89,14 @@ a:hover { text-decoration:underline; color:#333; }
 	border-bottom-color: #008acc;
 	border-bottom-width: 1px;
 	text-align: right;
-	margin-right: 10px;
+	margin-right: 7px;
+	margin-top: 20px;
 }
 
 .search_icon
 {
-	/* position: absolute;
-	top: 7px; right: 8px; */
+	position: relative;
+	top: 4px;
 }
 
 
@@ -416,7 +424,14 @@ a, a:active, a:visited
 .header-right
 {
 	float: right;
-	width: 520px;
+	width: 580px;
+}
+
+.social-icon-container
+{
+	float: left;
+	height: 68px;
+	margin-left: 45px;
 }
 
 #menu_container { border-top: 1px dotted #DDDDDD; border-bottom: 5px solid #DDDDDD; padding: 0px 28px; display: none;}
@@ -906,9 +921,20 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 /* Footer */
 
-#footer { margin-top: 25px; padding: 10px 0; border-top: 5px solid #DDDDDD; }
+#footer
+{
+	margin-top: 25px;
+	padding: 10px 0;
+	background-color: #33b8f0;
+	border-top-style: solid;
+	border-top-color: #008acc;
+	border-top-width: 3px; 
+}
 
-.footer_widgets_cont { padding: 0 8px 0 28px; }
+.footer_widgets_cont
+{
+	padding: 0 8px 0 0px;
+}
 
 
 
@@ -928,11 +954,36 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .footer_box ul li, .footer_box ol li { margin-bottom: 3px; }
 
+.footer-align
+{
+	width: 1200px;
+	margin: 0 auto;
+}
 
+.footer_copyright
+{
+	/* padding: 10px 25px; */
+	text-align: right;
+	width: 107px;
+}
 
-.footer_copyright { padding: 10px 25px; text-align: right; border-top: 1px dotted #DDDDDD; border-bottom: 1px dotted #DDDDDD; }
+.footer_copyright p
+{
+	color: #fff;
+	font-family: RobotoRegular;
+	font-size: 7pt;
+}
 
-.footer_copyright a { color: #000; text-decoration: none; }
+.footer_copyright img
+{
+	margin-bottom: 5px;
+}
+
+.footer_copyright a
+{
+	color: #000;
+	text-decoration: none;
+}
 
 .footer_copyright a:hover { text-decoration: underline; }
 
@@ -943,8 +994,13 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 
 
-
-
+@media screen and (min-width: 1599px) {
+	.header-right
+	{
+		float: right;
+		width: 608px;
+	}
+}
 
 /* for mobile */
 

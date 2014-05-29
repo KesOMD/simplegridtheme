@@ -238,43 +238,23 @@
 
             </div><!--//search_cont-->
 
-            
+            <!-- <div class="clear"></div>-->
 
-            <div class="clear"></div>
+            <div class="social-icon-container">
+              <ul class="social_icons">
 
-            <ul class="social_icons">
+                <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
 
-              <?php if(get_option($shortname.'_twitter_link','') != "") { ?>
+                <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
 
-                <li><a href="<?php echo get_option($shortname.'_twitter_link',''); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
+                <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
 
-              <?php } ?>
+                <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
 
-              <?php if(get_option($shortname.'_facebook_link','') != "") { ?>
+                <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /></a></li>
 
-                <li><a href="<?php echo get_option($shortname.'_facebook_link',''); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
-
-              <?php } ?>
-
-              <?php if(get_option($shortname.'_google_plus_link','') != "") { ?>
-
-                <li><a href="<?php echo get_option($shortname.'_google_plus_link',''); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
-
-              <?php } ?>
-
-              <?php if(get_option($shortname.'_dribbble_link','') != "") { ?>
-
-                <li><a href="<?php echo get_option($shortname.'_dribbble_link',''); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/dribbble-icon.png" /></a></li>
-
-              <?php } ?>
-
-              <?php if(get_option($shortname.'_pinterest_link','') != "") { ?>
-
-                <li><a href="<?php echo get_option($shortname.'_pinterest_link',''); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
-
-              <?php } ?>
-
-            </ul>
+              </ul>
+            </div>
 
             <div class="clear"></div>
 
