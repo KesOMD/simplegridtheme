@@ -1,4 +1,10 @@
 <?php get_header(); ?>
+
+<?php
+        if ( is_home() )
+          get_template_part( 'grid' );
+          debug_to_console('where is grid?')
+      ?>
         
         <div id="load_posts_container">
 
@@ -38,7 +44,6 @@
 
         while (have_posts()) : the_post(); ?>                                                                      
 
-            wpb_set_post_views( get_the_ID() );
 
             <?php if($x == 2) { ?>
 

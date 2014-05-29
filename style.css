@@ -251,7 +251,7 @@ a, a:active, a:visited
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	top: 71px;
 	left: 0;
 	background-color: #f3fcff;
@@ -263,9 +263,14 @@ a, a:active, a:visited
 
 .menu-item-container
 {
-	margin: 25px auto 0 auto;
 	width: 1200px;
+	margin: 25px auto 0 auto;
 	display: block;
+}
+
+#pop-container
+{
+	width: 1138px;
 }
 
 .menu-item-left
@@ -348,6 +353,28 @@ a, a:active, a:visited
 
 
 .home_post_box
+{
+	float: left;
+	width: 358px;
+	height: 363px;
+	margin-right: 32px;
+	margin-bottom: 27px;
+	overflow: hidden;
+	position: relative;
+	border-bottom-style: solid;
+	border-bottom-color: #a19e97;
+	border-bottom-width: 2px; 
+
+/*
+
+-moz-box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;
+
+-webkit-box-shadow: 2px 2px 5px 0px #ccc, 0px 1px 0px rgba(204,204,204,.3) inset;
+
+box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
+}
+
+.home_post_box_top
 {
 	float: left;
 	width: 358px;

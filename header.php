@@ -20,7 +20,7 @@
 
 <!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/main.js" type="text/javascript" charset="utf-8"></script>
 
@@ -183,20 +183,12 @@
         </div>
         
         <div class="bd-container2">
-          <div class="menu-item-container">
-            <?php 
-            if ( have_posts() ) : while ( have_posts() ) : the_post();
-                
-                $popularpost = new WP_Query( array( 'posts_per_page' => 3, 'meta_key' => 'wpb_post_views_count', 'orderby' => 'meta_value_num', 'order' => 'DESC'  ) );
-                /*debug_to_console( $popularpost );*/
-                while ( $popularpost->have_posts() ) : $popularpost->the_post();
-                  debug_to_console('what');
-                  debug_to_console( the_title() );
-                endwhile;
-              endwhile;
-            endif;
+          <!-- <div class="menu-item-container"> -->
+            <?php
+            if (function_exists('wpp_get_mostpopular'))
+              wpp_get_mostpopular("thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end='</div>'&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a></div>'");
             ?>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
         <div class="right">
@@ -317,7 +309,4 @@
 
     <div id="content_container">
 
-      <?php
-        if ( is_home() )
-          get_template_part( 'grid' );
-      ?>
+      

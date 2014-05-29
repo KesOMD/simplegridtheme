@@ -152,8 +152,29 @@ if ( function_exists('register_sidebar') ) {
 		'after_widget' => '</div>',
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
-	));                
+	));  
+
+               
 }
+
+
+
+/* Function to remove whitespaces in XMLRPC_REQUEST starts */
+  if ( defined( 'XMLRPC_REQUEST' ) ) {
+
+    function remove_whitespaces( $received_content ) {
+      return trim( $received_content );   /* trim( $content ); is basic php function to remove whitespaces */
+    }
+
+    function removal_whitespaces_start() {
+
+      ob_start( 'remove_whitespaces' );       /* on call of "exit()" by the XML-RPC server, callback is used and output is flushed.*/
+    }
+
+    add_action( 'plugins_loaded', 'removal_whitespaces_start', 1 );
+  }
+
+/* Function to remove whitespaces in XMLRPC_REQUEST ends */
 
 
 
