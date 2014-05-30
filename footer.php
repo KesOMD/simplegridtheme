@@ -13,6 +13,15 @@
                 <p>2014 James Villas</p>
             </div>
 
+            <div class="footer-main-site">
+                <ul><a href="http://www.jamesvillas.co.uk/" target="_blank"><h3>Main Site</h3></a>
+                    <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank">About Us</a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank">Contact Us</a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank">Privacy Policy</a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank">Cookie Policy</a></li>
+                </ul>
+            </div>
+
             <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer') ) : ?>       
 
         
@@ -25,8 +34,22 @@
 
             </div><!--//footer_box-->
 
-            
-
+            <div class="footer-social">
+                <h3>Social</h3>
+                <div class="footer-social-left">
+                    <ul>
+                        <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /><p>Facebook</p></a></li>
+                        <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /><p>Twiiter</p></a></li>
+                        <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /><p>Google +</p></a></li>
+                    </ul>
+                </div>
+                <div class="footer-social-right">
+                    <ul>
+                        <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /><p>Pintrest</p></a></li>
+                        <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /><p>YouTube</p></a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="footer_box">
 
                 <h3>Widget Footer</h3>

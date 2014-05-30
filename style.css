@@ -676,7 +676,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #fff;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 14px;
 	font-family: RobotoRegular;
 }
 
@@ -933,7 +933,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .footer_widgets_cont
 {
-	padding: 0 8px 0 0px;
+	padding: 0;
 }
 
 
@@ -963,6 +963,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer_copyright
 {
 	/* padding: 10px 25px; */
+	float: left;
 	text-align: right;
 	width: 107px;
 }
@@ -987,17 +988,117 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .footer_copyright a:hover { text-decoration: underline; }
 
+.footer-main-site
+{
+	display: block;
+	float: left;
+	margin-left: 110px;
+}
 
+.footer-main-site h3
+{
+	font-size: 14pt;
+}
 
+.footer-main-site ul a
+{
+	color: #fff;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14pt;
+	text-decoration: none;
+}
 
+.footer-main-site ul a:hover
+{
+	text-decoration: underline;
+}
 
+.footer-main-site li
+{
+	list-style: url('images/bullet-point-arrow2.png');
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	margin-left: 14px;
+}
 
+.footer-main-site ul li a
+{
+	font-family: RobotoRegular;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 11pt;
+}
 
+.footer-social
+{
+	display: block;
+	width: 200px;
+	float: left;
+}
+
+.footer-social ul
+{
+	margin-top: -6px;
+}
+
+.footer-social h3
+{
+	color: #fff;
+	font-size: 14pt;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.footer-social a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-social a p
+{
+	margin: 0;
+	padding-top: 5px;
+}
+
+.footer-social img
+{
+	float: left;
+	padding-right: 12px;
+}
+
+.footer-social li
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-social a:hover
+{
+	text-decoration: underline;
+}
+
+.footer-social-left
+{
+	display: block;
+	float: left;
+	width: 100px;
+}
+
+.footer-social-right
+{
+	display: block;
+	float: right;
+	width: 100px;
+}
 
 @media screen and (min-width: 1599px) {
 	.header-right
 	{
-		float: right;
 		width: 608px;
 	}
 }
