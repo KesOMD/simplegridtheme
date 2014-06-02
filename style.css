@@ -59,7 +59,24 @@ a:hover { text-decoration:underline; color:#333; }
 
 .logo { float: left; }
 
+.menu-arrow
+{
+	padding-top: 23px;
+	padding-left: 17px;
+	float: left;
+}
 
+.arrow-cont
+{
+	width: 9px;
+	height: 7px;
+	overflow: hidden;
+}
+
+.arr
+{
+	margin-top: -7px;
+}
 
 .social_icons
 {
@@ -928,7 +945,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	background-color: #33b8f0;
 	border-top-style: solid;
 	border-top-color: #008acc;
-	border-top-width: 3px; 
+	border-top-width: 3px;
+	height: 180px;
 }
 
 .footer_widgets_cont
@@ -1035,7 +1053,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer-social
 {
 	display: block;
-	width: 200px;
+	width: 220px;
 	float: left;
 }
 
@@ -1094,6 +1112,65 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: block;
 	float: right;
 	width: 100px;
+}
+
+.footer-booking
+{
+	display: block;
+	width: 230px;
+	float: left;
+}
+
+.footer-booking h3
+{
+	color: #fff;
+	font-size: 14pt;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.footer-booking
+{
+	color: #fff;
+	font-size: 10pt;
+	font-family: RobotoRegular;
+}
+
+.footer-booking a
+{
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	width: 100px;
+	margin: 0 auto;
+}
+
+.footer-booking p
+{
+	float: left;
+}
+
+.footer-booking img
+{
+	float: left;
+	margin-left: 5px;
+	padding-top: 11px;
+}
+
+.footer-booking a:hover
+{
+	text-decoration: underline;
+}
+
+.footer-atol
+{
+	float: right;
+}
+
+.footer-atol a
+{
+	padding: 10px 0;
 }
 
 @media screen and (min-width: 1599px) {

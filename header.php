@@ -62,13 +62,13 @@
     <div id="header">                   
       <div class="header-left">
         <ul id="logo-nav">
-          <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
+          <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
             <ul class="sub_navigation">
-              <li><a href="http://www.jamesvillas.co.uk/" target="_blank">Main Site</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank">About Us</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank">Contact Us</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank">Privacy Policy</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank">Cookie Policy</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site">Main Site</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us">About Us</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us">Contact Us</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police">Privacy Policy</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy">Cookie Policy</a></li>
             </ul>
           </li>
         </ul>
@@ -193,7 +193,7 @@
         <div class="bd-container2">
             <?php
             if (function_exists('wpp_get_mostpopular'))
-              wpp_get_mostpopular("stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end=''&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a><div class=\"home_post_title_cont\"><h4>{category}</h4><hr><h3>{text_title}</h3></div><div class=\"home_post_desc\"><p>{summary}<a href={url}>read more</a></p></div><div class=\"home_post_author\"><p>{author}</p></div></div>'");
+              wpp_get_mostpopular("limit=3&range='all'&stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end=''&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a><div class=\"home_post_title_cont\"><h4>{category}</h4><hr><h3>{text_title}</h3></div><div class=\"home_post_desc\"><p>{summary}<a href={url}>read more</a></p></div><div class=\"home_post_author\"><p>{author}</p></div></div>'");
             ?>
             </div>
         </div>

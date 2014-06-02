@@ -34,6 +34,8 @@
 
             </div><!--//footer_box-->
 
+            <?php endif; ?>  
+
             <div class="footer-social">
                 <h3>Social</h3>
                 <div class="footer-social-left">
@@ -50,43 +52,18 @@
                     </ul>
                 </div>
             </div>
-            <div class="footer_box">
 
-                <h3>Widget Footer</h3>
+            <div class="footer-booking">
+                <h3>Book a villa</h3>
+                <p>Nulla mattis ultrices urna ac faucibus. Pellentesque bibendum augue in sagittis tristique. Etiam at faucibus est. In non rhoncus felis.</p>
+                <a href="http://www.jamesvillas.co.uk/" alt="View villas"><p>View villas</p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows2.png" /></a>
+            </div>
 
-                <p>Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box.</p>
-
-            </div><!--//footer_box-->
-
-
-
-            
-
-            <?php endif; ?>                
-
-            
-
-            <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Last') ) : ?>       
-
-            
-
-            <div class="footer_box footer_box_last">
-
-                <h3>Widget Footer</h3>
-
-                <p>Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box. Please use widget to setup this text box.</p>
-
-            </div><!--//footer_box-->            
-
-            
-
-            <?php endif; ?>                
-
-            
+            <div class="footer-atol">
+                <a href="http://www.jamesvillas.co.uk/atol-abta" alt="Learn more about our ATOL & ABTA Protection"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/atol-abta.png" /></a>
+            </div>
 
             <div class="clear"></div>
-
-        
 
         </div><!--//footer_widgets_cont-->
 
