@@ -1173,6 +1173,101 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	padding: 10px 0;
 }
 
+/* blog post main */
+
+.post-content
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.post-image-main
+{
+	width: 1200px;
+	height: 555px;
+	overflow: hidden;
+}
+
+.post-image-main img
+{
+	width: 1200px;
+	height: 555px;
+}
+
+.post-image-main h2
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 13pt;
+	font-family: RobotoRegular;
+}
+
+.post-image-main h1
+{
+	color: #fff;
+	font-size: 14pt;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+}
+
+
+.post-image-main a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.post-image-main a:hover
+{
+	text-decoration: underline;
+}
+
+#rou-post
+{
+	bottom: 169px;
+}
+
+#rou-post-text
+{
+	width: 200px;
+}
+
+.post-details
+{
+	width: 220px;
+	margin: 0 auto;
+	color: #707070;
+}
+
+.post-details p
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.post-author
+{
+	text-align: center;
+}
+
+.post-date
+{
+	text-align: center;
+}
+
+.post-date a
+{
+	display: inline;
+	text-decoration: none;
+}
+
+.post-date a:hover
+{
+	text-decoration: underline;
+}
+
 @media screen and (min-width: 1599px) {
 	.header-right
 	{

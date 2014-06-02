@@ -3,7 +3,6 @@
 <?php
 if ( is_home() )
   get_template_part( 'grid' );
-  debug_to_console('where is grid?');
 ?>
         
         <div id="load_posts_container">

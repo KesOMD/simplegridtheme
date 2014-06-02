@@ -14,7 +14,6 @@ function debug_to_console( $data )
   echo $output;
 }
 
-
 if (function_exists('add_theme_support')) {
 
 	add_theme_support('menus');
