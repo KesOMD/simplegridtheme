@@ -46,6 +46,10 @@
                             on <a href="<?php echo get_day_link( $archive_year, $archive_month, $archive_day); ?>"><?php the_date( 'd/m/Y'); ?></a>
                         </p>
                     </div>
+
+                    <div class="post-text">
+                        <?php echo preg_replace("/\< *[img][^\>]*[.]*\>/i","",get_the_content(),1); ?>
+                    </div>
                 </div><!--//post-details-->
 
                 <!-- <?php the_content(); ?> -->

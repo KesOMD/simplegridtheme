@@ -66,13 +66,13 @@ if ( is_home() )
 
                     <hr>
 
-                    <h3><?php the_title(); ?></h3>
+                    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
                 </div><!--//home_post_title_cont-->
 
                 <div class="home_post_desc" id="home_post_desc<?php echo $y; ?>">
                     <p>
-                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content . '...'; ?><a href="<?php the_permalink(); ?>">read more >></a>
+                    <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?><a href="<?php the_permalink(); ?>">Read more >></a>
                     </p>
                 </div><!--//home_post_desc-->
                 <div class="home_post_author">

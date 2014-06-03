@@ -9,8 +9,8 @@
         <div class="footer_widgets_cont">
 
             <div class="footer_copyright">
-                <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
-                <p>2014 James Villas</p>
+                <a href="http://www.jamesvillas.co.uk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
+                <p>&#169; 2014 James Villas</p>
             </div>
 
             <div class="footer-main-site">
@@ -41,7 +41,7 @@
                 <div class="footer-social-left">
                     <ul>
                         <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /><p>Facebook</p></a></li>
-                        <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /><p>Twiiter</p></a></li>
+                        <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /><p>Twitter</p></a></li>
                         <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /><p>Google +</p></a></li>
                     </ul>
                 </div>
@@ -56,7 +56,9 @@
             <div class="footer-booking">
                 <h3>Book a villa</h3>
                 <p>Nulla mattis ultrices urna ac faucibus. Pellentesque bibendum augue in sagittis tristique. Etiam at faucibus est. In non rhoncus felis.</p>
+                <div class="booking-link-cont">
                 <a href="http://www.jamesvillas.co.uk/" alt="View villas"><p>View villas</p><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows2.png" /></a>
+                </div>
             </div>
 
             <div class="footer-atol">

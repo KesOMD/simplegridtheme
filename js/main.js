@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	
+
 $('img.rounded').one('load',function () {
 	var img = $(this);
 	var img_width = img.width();

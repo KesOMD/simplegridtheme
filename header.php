@@ -17,10 +17,15 @@
 <![endif]-->        
 
   <?php wp_head(); ?>
-
-<!--  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>-->
+<!--  
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+    
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/main.js" type="text/javascript" charset="utf-8"></script>
 
@@ -64,48 +69,61 @@
         <ul id="logo-nav">
           <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
             <ul class="sub_navigation">
-              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site">Main Site</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us">About Us</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us">Contact Us</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police">Privacy Policy</a></li>
-              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy">Cookie Policy</a></li>
+              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
             </ul>
           </li>
         </ul>
+        
         <ul id="home-button">
           <li>
             <div class="main-nav-button" id="home-nav">
+              <div class="blue-divide front"></div>
               <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
+              <div class="blue-divide"></div>
             </div>
           </li>
         </ul>
+        
         <ul id="dest-button">
           <li class="big-dropdown">
             <div class="main-nav-button" id="dest-nav">
+              
               <a><p>Destinations</p></a>
+              <div class="blue-divide"></div>
             </div>
           </li>
         </ul>
+        
         <ul id="pop-button">
           <li class="big-dropdown">
             <div class="main-nav-button" id="pop-nav">
               <a><p>Popular</p></a>
+              <div class="blue-divide"></div>
             </div>
           </li>
         </ul>
+        
         <ul id="soc-button">
           <li class="big-dropdown">
             <div class="main-nav-button" id="soc-nav">
               <a><p>Social</p></a>
+              <div class="blue-divide"></div>
             </div>
           </li>
         </ul>
+        
         <ul id="cat-button">
           <li class="big-dropdown">
             <div class="main-nav-button" id="cat-nav">
               <a><p>Categories</p></a>
             </div>
+
           </li>
+
         </ul>
         
         <div class="bd-container1">
@@ -181,11 +199,6 @@
                   </a>
                 </li>
               </ul>
-            </div>
-            <div style="width: 422px; margin: 0 auto;">
-              <div class="view-more-cont">
-                <?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/view-more-bg.png" alt="Load more articles"/>') ?> 
-              </div>
             </div>
           </div>
         </div>
