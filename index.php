@@ -77,7 +77,7 @@ if ( is_home() )
                 </div><!--//home_post_desc-->
                 <div class="home_post_author">
                     <p>
-                      By <?php the_author(); ?>
+                      By <?php the_author_posts_link(); ?>
                     </p>
                 </div>
 

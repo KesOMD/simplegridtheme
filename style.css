@@ -693,6 +693,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .home_post_author p a
 {
 	text-decoration: none;
+	display: inline-block;
 }
 
 .home_post_author p a:hover
@@ -803,6 +804,14 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-weight: bold;
 	font-style: italic;
 	font-size: 12px;
+}
+
+.featured_post_author a
+{
+	display: inline;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
 }
 
 .bottom-bar1
@@ -1360,6 +1369,16 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 		width: 608px;
 	}
 }
+
+/* Author Page */
+
+.author-cont
+{
+	width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
 
 /* for mobile */
 

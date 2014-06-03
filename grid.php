@@ -32,9 +32,7 @@ if( empty( $grid ) || 3 < count( $grid ) )
         </a>
         </div>
         <div class="featured_post_author">
-          <p>
-            By <?php the_author(); ?>
-          </p>
+          <p>By <?php the_author_posts_link(); ?></p>
         </div>
       </div>
       <!--
