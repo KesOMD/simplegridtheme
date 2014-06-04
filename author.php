@@ -10,14 +10,32 @@
 	endif;
 
 	?>
-	<h2><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h2>
-	<dl>
-		<dt>Website</dt>
-		<dd><a href="<?php echo $curauth->user_url; ?>"><?php echo $curauth->user_url; ?></a></dd>
-		<dt>Profile</dt>
-		<dd><?php echo $curauth->user_description; ?></dd>
-	</dl>
-	<h2>Posts by <?php echo $curauth->nickname; ?>:</h2>
+	<div class="author-info">
+		<h2><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h2>
+		<h3><?php echo $curauth->job_title; ?></h3>
+		<hr>
+		<div class="author-av">
+			<?php echo get_wp_user_avatar(get_the_author_meta('ID'), 'thumbnail'); ?>
+		</div>
+		<div class="author-description">
+			<p><?php echo $curauth->user_description; ?></p>
+		</div>
+		<div class="author-social">
+			<ul>
+			<?php if ( get_the_author_meta( 'facebook' ) ) { ?>
+				<li><a href="<?php the_author_meta( 'facebook' ); ?>" title="Become Friends with <?php the_author_meta( 'display_name' ); ?> on Facebook"><img alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-facebook.png" /></a></li>
+			<?php } ?>
+			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
+				<li><a href="<?php the_author_meta( 'twitter' ); ?>" title="Follow <?php the_author_meta( 'display_name' ); ?> on Twitter"><img alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-twitter.png" /></a></li>
+			<?php } ?>
+			<?php if ( get_the_author_meta( 'gplus' ) ) { ?>
+				<li><a href="<?php the_author_meta( 'gplus' ); ?>" title="Connect with <?php the_author_meta( 'display_name' ); ?> on Google Plus"><img alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-gplus.png" /></a></li>
+			<?php } ?>
+			</ul>
+		</div>
+		<hr>
+	</div> <!-- End of Author Info -->
+
 	<ul>
 		<!– The Loop –>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>

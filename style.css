@@ -1374,11 +1374,57 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .author-cont
 {
-	width: 1200px;
+	width: 1138px;
 	margin: 0 auto;
 	text-align: center;
 }
 
+.author-cont hr
+{
+	width: inherit;
+}
+
+.author-info
+{
+	width: 424px;
+	margin: 0 auto;
+}
+
+.author-av
+{
+	margin-top: 15px;
+}
+
+.author-description
+{
+	margin-top: 15px;
+}
+
+.author-social
+{
+	width: 180px;
+	margin: 0 auto;
+}
+
+.author-social ul
+{
+	margin: 0;
+	padding: 5px 0 10px 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.author-social ul li
+{
+	display: inline;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.author-social a
+{
+	display: inline;
+}
 
 /* for mobile */
 
