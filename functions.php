@@ -116,6 +116,8 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_image_size('blog-post',368,203,true);
 
+  add_image_size('related-thumb', 140, 80, true);
+
 }
 
 
@@ -336,6 +338,284 @@ function my_save_extra_profile_fields( $user_id ) {
   update_user_meta( $user_id, 'gplus', $_POST['gplus'] );
   update_user_meta( $user_id, 'job_title', $_POST['job_title'] );
 }
+
+add_action( 'add_meta_boxes', 'additional_credits_meta_box_add' );  
+function additional_credits_meta_box_add() {  
+    add_meta_box( 'ac-meta-box-id', 'Put any additional credit here', 'ac_meta_box_cb', 'post', 'side', 'high' );  
+}  
+function ac_meta_box_cb() {
+    wp_nonce_field( basename( __FILE__ ), 'ac_meta_box_nonce' );
+    $value = get_post_meta(get_the_ID(), 'ac_key', true);
+    $html = '<label>Additional Credit: </label><input type="text" name="addtional_credit" value="'.$value.'"/>';
+    echo $html;
+}
+add_action( 'save_post', 'ac_meta_box_save' );  
+function ac_meta_box_save( $post_id ){   
+    if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return; 
+    if ( !isset( $_POST['ac_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['ac_meta_box_nonce'], basename( __FILE__ ) ) ) return;
+    if( !current_user_can( 'edit_post' ) ) return;  
+    if( isset( $_POST['addtional_credit'] ) )  
+        update_post_meta( $post_id, 'ac_key', esc_attr( $_POST['addtional_credit'], $allowed ) );
+}
+
+add_action( 'add_meta_boxes', 'villa_name_meta_box_add' );
+function villa_name_meta_box_add()
+{
+  add_meta_box( 'vn-meta-box', 'Enter associated villa name here', 'vn_meta_box_cb', 'post', 'normal', 'high' );
+}
+function vn_meta_box_cb()
+{
+  wp_nonce_field( basename(__FILE__), 'vn_meta_box_nonce' );
+  $value = get_post_meta( get_the_ID(), 'vn_key', true);
+  $html = '<label>Associated villa name: </label><input type="text" name="villa_name" value="'.$value.'"/>';
+  echo $html;
+}
+
+add_action( 'save_post', 'vn_meta_box_save' );
+function vn_meta_box_save( $post_id )
+{
+  if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+  if( !isset( $_POST['vn_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['vn_meta_box_nonce'], basename( __FILE__ ) ) ) return;
+  if( !current_user_can( 'edit_post' ) ) return;
+  if( isset( $_POST['villa_name'] ) )
+    update_post_meta( $post_id, 'vn_key', esc_attr( $_POST['villa_name'], $allowed) );
+}
+
+add_action( 'add_meta_boxes', 'villa_desc_meta_box_add' );
+function villa_desc_meta_box_add()
+{
+  add_meta_box( 'vd-meta-box', 'Enter associated villa description here', 'vd_meta_box_cb', 'post', 'normal', 'high' );
+}
+function vd_meta_box_cb()
+{
+  wp_nonce_field( basename(__FILE__), 'vd_meta_box_nonce' );
+  $value = get_post_meta( get_the_ID(), 'vd_key', true);
+  $html = '<label>Associated villa description: </label><input type="text" name="villa_desc" value="'.$value.'"/>';
+  echo $html;
+}
+
+add_action( 'save_post', 'vd_meta_box_save' );
+function vd_meta_box_save( $post_id )
+{
+  if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+  if( !isset( $_POST['vd_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['vd_meta_box_nonce'], basename( __FILE__ ) ) ) return;
+  if( !current_user_can( 'edit_post' ) ) return;
+  if( isset( $_POST['villa_desc'] ) )
+    update_post_meta( $post_id, 'vd_key', esc_attr( $_POST['villa_desc'], $allowed) );
+}
+
+add_action( 'add_meta_boxes', 'villa_link_meta_box_add' );
+function villa_link_meta_box_add()
+{
+  add_meta_box( 'vl-meta-box', 'Enter associated villa link here', 'vl_meta_box_cb', 'post', 'normal', 'high' );
+}
+function vl_meta_box_cb()
+{
+  wp_nonce_field( basename(__FILE__), 'vl_meta_box_nonce' );
+  $value = get_post_meta( get_the_ID(), 'vl_key', true);
+  $html = '<label>Associated villa link: </label><input type="text" name="villa_link" value="'.$value.'"/>';
+  echo $html;
+}
+
+add_action( 'save_post', 'vl_meta_box_save' );
+function vl_meta_box_save( $post_id )
+{
+  if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) return;
+  if( !isset( $_POST['vl_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['vl_meta_box_nonce'], basename( __FILE__ ) ) ) return;
+  if( !current_user_can( 'edit_post' ) ) return;
+  if( isset( $_POST['villa_link'] ) )
+    update_post_meta( $post_id, 'vl_key', esc_attr( $_POST['villa_link'], $allowed) );
+}
+
+/*
+function villa_text_editor()
+{
+  wp_nonce_field( basename( __FILE__ ), 'vt_editor_nonce' );
+  $value = get_pos
+  echo '<div class="wrap"><h2>Enter associated villa content here</h2>';
+  $content = '';
+  $editor_id = 'associatedvillatext';
+  wp_editor( $content, $editor_id );
+
+  echo "</div>";
+}
+add_action( 'edit_form_advanced', 'villa_text_editor' );
+
+function villa_text_editor_save( $post_id )
+{
+
+}
+*/
+/*
+function villa_image_add_edit_form_multipart_encoding()
+{
+  echo ' enctype="multipart/form-data"';
+}
+add_action( 'post_edit_form_tag', 'villa_image_add_edit_form_multipart_encoding' );
+
+function villa_render_image_attachment_box( $post )
+{
+  // See if there's an existing image. (We're associating images with posts by saving the image's 'attachment id' as a post meta value)
+  // Incidentally, this is also how you'd find any uploaded files for display on the frontend.
+  $existing_image_id = get_post_meta($post->ID,'_villa_attached_image', true);
+  if( is_numeric( $existing_image_id ) )
+  {
+    echo '<div>';
+      $arr_existing_image = wp_get_attachment_image_src($existing_image_id, 'large');
+      $existing_image_url = $arr_existing_image[0];
+      echo '<img src="' . $existing_image_url . '" />';
+    echo '</div>';
+  }
+
+    // If there is an existing image, show it
+    if($existing_image) {
+
+        echo '<div>Attached Image ID: ' . $existing_image . '</div>';
+
+    } 
+
+    echo 'Upload an image: <input type="file" name="villa_image" id="villa_image" />';
+
+    // See if there's a status message to display (we're using this to show errors during the upload process, though we should probably be using the WP_error class)
+    $status_message = get_post_meta($post->ID,'_villa_attached_image_upload_feedback', true);
+
+    // Show an error message if there is one
+    if($status_message) {
+
+        echo '<div class="upload_status_message">';
+            echo $status_message;
+        echo '</div>';
+
+    }
+
+    // Put in a hidden flag. This helps differentiate between manual saves and auto-saves (in auto-saves, the file wouldn't be passed).
+    echo '<input type="hidden" name="villa_image_manual_save_flag" value="true" />';
+
+}
+
+
+
+function villa_image_setup_meta_boxes()
+{
+    // Add the box to a particular custom content type page
+    add_meta_box('villa_image_box', 'Upload associated villa image', 'villa_render_image_attachment_box', 'post', 'normal', 'high');
+
+}
+add_action('admin_init','villa_image_setup_meta_boxes');
+
+function villa_image_update_post($post_id, $post) {
+
+    // Get the post type. Since this function will run for ALL post saves (no matter what post type), we need to know this.
+    // It's also important to note that the save_post action can runs multiple times on every post save, so you need to check and make sure the
+    // post type in the passed object isn't "revision"
+    $post_type = $post->post_type;
+
+    // Make sure our flag is in there, otherwise it's an autosave and we should bail.
+    if($post_id && isset($_POST['villa_image_manual_save_flag'])) { 
+
+        // Logic to handle specific post types
+        switch($post_type) {
+
+            // If this is a post. You can change this case to reflect your custom post slug
+            case 'post':
+
+                // HANDLE THE FILE UPLOAD
+
+                // If the upload field has a file in it
+                if(isset($_FILES['villa_image_image']) && ($_FILES['villa_image_image']['size'] > 0)) {
+
+                    // Get the type of the uploaded file. This is returned as "type/extension"
+                    $arr_file_type = wp_check_filetype(basename($_FILES['villa_image_image']['name']));
+                    $uploaded_file_type = $arr_file_type['type'];
+
+                    // Set an array containing a list of acceptable formats
+                    $allowed_file_types = array('image/jpg','image/jpeg','image/gif','image/png');
+
+                    // If the uploaded file is the right format
+                    if(in_array($uploaded_file_type, $allowed_file_types)) {
+
+                        // Options array for the wp_handle_upload function. 'test_upload' => false
+                        $upload_overrides = array( 'test_form' => false ); 
+
+                        // Handle the upload using WP's wp_handle_upload function. Takes the posted file and an options array
+                        $uploaded_file = wp_handle_upload($_FILES['villa_image_image'], $upload_overrides);
+
+                        // If the wp_handle_upload call returned a local path for the image
+                        if(isset($uploaded_file['file'])) {
+
+                            // The wp_insert_attachment function needs the literal system path, which was passed back from wp_handle_upload
+                            $file_name_and_location = $uploaded_file['file'];
+
+                            // Generate a title for the image that'll be used in the media library
+                            $file_title_for_media_library = 'your title here';
+
+                            // Set up options array to add this file as an attachment
+                            $attachment = array(
+                                'post_mime_type' => $uploaded_file_type,
+                                'post_title' => 'Uploaded image ' . addslashes($file_title_for_media_library),
+                                'post_content' => '',
+                                'post_status' => 'inherit'
+                            );
+
+                            // Run the wp_insert_attachment function. This adds the file to the media library and generates the thumbnails. If you wanted to attch this image to a post, you could pass the post id as a third param and it'd magically happen.
+                            $attach_id = wp_insert_attachment( $attachment, $file_name_and_location );
+                            require_once(ABSPATH . "wp-admin" . '/includes/image.php');
+                            $attach_data = wp_generate_attachment_metadata( $attach_id, $file_name_and_location );
+                            wp_update_attachment_metadata($attach_id,  $attach_data);
+
+                            // Before we update the post meta, trash any previously uploaded image for this post.
+                            // You might not want this behavior, depending on how you're using the uploaded images.
+                            $existing_uploaded_image = (int) get_post_meta($post_id,'_villa_image_attached_image', true);
+                            if(is_numeric($existing_uploaded_image)) {
+                                wp_delete_attachment($existing_uploaded_image);
+                            }
+
+                            // Now, update the post meta to associate the new image with the post
+                            update_post_meta($post_id,'_villa_image_attached_image',$attach_id);
+
+                            // Set the feedback flag to false, since the upload was successful
+                            $upload_feedback = false;
+
+
+                        } else { // wp_handle_upload returned some kind of error. the return does contain error details, so you can use it here if you want.
+
+                            $upload_feedback = 'There was a problem with your upload.';
+                            update_post_meta($post_id,'_villa_image_attached_image',$attach_id);
+
+                        }
+
+                    } else { // wrong file type
+
+                        $upload_feedback = 'Please upload only image files (jpg, gif or png).';
+                        update_post_meta($post_id,'_villa_image_attached_image',$attach_id);
+
+                    }
+
+                } else { // No file was passed
+
+                    $upload_feedback = false;
+
+                }
+
+                // Update the post meta with any feedback
+                update_post_meta($post_id,'_villa_image_attached_image_upload_feedback',$upload_feedback);
+
+            break;
+
+            default:
+
+        } // End switch
+
+    return;
+
+} // End if manual save flag
+
+    return;
+
+}
+add_action('save_post','villa_image_update_post',1,2);
+*/
+/*
 
 /*
 
