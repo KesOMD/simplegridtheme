@@ -1573,6 +1573,13 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	padding-bottom: 15px;
 }
 
+.related-post-cont h2
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+}
+
 .related-post
 {
 	width: 140px;
@@ -1691,6 +1698,18 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin: 0 auto;
 	width: 480px;
 	border-bottom: 2px #707070 solid; 
+}
+
+.error-text p
+{
+	line-height: 23px;
+	font-family: RobotoRegular;
+	margin-bottom: 20px;
+}
+
+#error-related
+{
+	border-bottom: none;
 }
 
 /* ----- Author Page ----- */
