@@ -61,10 +61,8 @@
 
 
 <div id="main_container">
-
-
-
-    <div id="header">                   
+  <div id="header">
+    <div class="header-wrapper">
       <div class="header-left">
         <ul id="logo-nav">
           <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
@@ -237,99 +235,30 @@
           </div>
         </div>
       </div>
-        <div class="header-right">
-
-            <div class="search_cont">
-
-                <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
-
-                  <input type="text" name="s" id="s" value="Search" onfocus="if ( this.value == 'Search' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Search' }" />
-
-                  <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-image.png" class="search_icon" BORDER="0" ALT="Submit Form">
-
-                </form>
-
-            </div><!--//search_cont-->
-
-            <!-- <div class="clear"></div>-->
-
-            <div class="social-icon-container">
-              <ul class="social_icons">
-
-                <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
-
-                <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
-
-                <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
-
-                <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
-
-                <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /></a></li>
-
-              </ul>
-            </div>
-
-            <div class="clear"></div>
-
-            
-
-            
-
-        </div><!--//right-->
-
-        
+      <div class="header-right">
+        <div class="search_cont">
+          <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+            <input type="text" name="s" id="s" value="Search" onfocus="if ( this.value == 'Search' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Search' }" />
+            <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-image.png" class="search_icon" BORDER="0" ALT="Submit Form">
+          </form>
+        </div><!--//search_cont-->
+        <!-- <div class="clear"></div>-->
+        <div class="social-icon-container">
+          <ul class="social_icons">
+            <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
+            <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
+            <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
+            <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
+            <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /></a></li>
+          </ul>
+        </div>
 
         <div class="clear"></div>
+      </div><!--//right-->
 
-    </div><!--//header-->
-
-    
-
-    <div id="menu_container">
-
-    
-
-    <!--
-
-        <ul class="pages_menu">
-
-          <li><a href="#">Home</a></li>
-
-          <li><a href="#">About</a></li>
-
-          <li><a href="#">Blog</a></li>
-
-          <li><a href="#">Contact</a></li>
-
-        </ul>-->
-        <!--
-        <?php wp_nav_menu('menu=header_menu&container=false&menu_class=pages_menu'); ?>
-        -->
-        
-
-        <!--
-
-        <ul class="cat_menu">
-
-          <li><a href="#">WebDesign</a></li>
-
-          <li><a href="#">Graphics</a></li>
-
-          <li><a href="#">Print</a></li>
-
-          <li><a href="#">Posters</a></li>
-
-        </ul>-->
-
-        <!-- <?php wp_nav_menu('menu=category_menu&container=false&menu_class=cat_menu'); ?> -->                
-
-        
-
-        <div class="clear"></div>
-
-
-
-    </div><!--//menu_container-->
+      <div class="clear"></div>
+    </div><!-- header-wrapper -->
+  </div><!--//header-->
 
     
 

@@ -55,8 +55,29 @@
                     </div>
 
                 </div><!--//post-details-->
-
+                
                 <div class="post-text">
+                    <div class="post-sharing-cont">
+                        <?php
+                        if ( function_exists( 'sharing_display' ) )
+                        {
+                            sharing_display( '', true );
+                        }
+                        ?>
+                        <div class="comment-button">
+                            <a><img src="<?php bloginfo('stylesheet_directory'); ?>/images/body-comment.png" /></a>
+                            <p class="com-text">Comment</p>
+                        </div>
+                        <div class="print-button-wrapper">
+                            <?php
+                            if ( function_exists( 'pf_show_link' ) )
+                            {
+                                echo pf_show_link();
+                            }
+                            ?>
+                            <p class="com-text">Print</p>
+                        </div>
+                    </div>
                     <!--<?php echo preg_replace("/\< *[img][^\>]*[.]*\>/i","",get_the_content(),1); ?>-->
                     <?php the_content(); ?>
                 </div>
