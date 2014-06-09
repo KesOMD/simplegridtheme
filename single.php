@@ -1,6 +1,13 @@
 <?php get_header(); ?>
 
-        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=518698344902427&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <div class="post-content">
 
@@ -150,6 +157,10 @@
 
 
                 </div>
+                <br /><br />
+                <!--
+                <div class="fb-comments" data-href="http://example.com/comments" data-mobile="false" data-width="480" data-numposts="5" data-colorscheme="light"></div>
+                -->
                 <br /><br />
 
                 
