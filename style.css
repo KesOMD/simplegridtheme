@@ -1643,6 +1643,56 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	width: 480px;
 }
 
+/* ----- 404 error page ----- */
+
+.error-content
+{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.error-image-main
+{
+	width: 1200px;
+	height: 484px;
+	overflow: hidden;
+}
+
+.error-image-main img
+{
+	width: 1200px;
+	height: 397px;
+}
+
+.error-image-main h1
+{
+	color: #fff;
+	font-size: 16pt;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	line-height: 35px;
+}
+
+#rou-error
+{
+	bottom: 170px;
+}
+
+#rou-error-text
+{
+	text-align: center;
+	width: 200px;
+	padding-top: 70px;
+}
+
+.error-text
+{
+	margin: 0 auto;
+	width: 480px;
+	border-bottom: 2px #707070 solid; 
+}
+
 /* ----- Author Page ----- */
 
 .author-cont
