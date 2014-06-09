@@ -1392,6 +1392,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	width: 80px;
 	float: left;
+	margin-top: 13px;
 	margin-left: -80px;
 }
 

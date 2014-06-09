@@ -20,6 +20,17 @@
         
 
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+        $query_args = explode("&", $query_string);
+        $search_query = array('posts_per_page' => 6, 'paged' => $paged);
+
+        foreach ($query_args as $key => $string)
+        {
+            $query_split = explode("=", $string);
+            $search_query[$query_split[0]] = urldecode($query_split[1]);
+        }
+
+        $search = new WP_Query($search_query);
+        $total_results = $search->found_posts;
 
         if($paged > 1) 
 
@@ -29,7 +40,7 @@
 
           $y = 0;
 
-        while (have_posts()) : the_post(); ?>                                                                      
+        while ($search->have_posts()) : $search->the_post(); ?>                                                                      
 
 
             <?php if($x == 2) { ?>

@@ -10,6 +10,9 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
+  <meta property="fb:admins" content="100008386361789"/>
+  <meta property="fb:app_id" content="518698344902427"/>
+
 <!--[if lt IE 9]>
 
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>

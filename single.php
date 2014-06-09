@@ -179,9 +179,7 @@
 
                 </div>
                 <br /><br />
-                <!--
-                <div class="fb-comments" data-href="http://example.com/comments" data-mobile="false" data-width="480" data-numposts="5" data-colorscheme="light"></div>
-                -->
+                <div class="fb-comments" data-href="<?php echo get_permalink(); ?>" data-mobile="false" data-width="480" data-numposts="5" data-colorscheme="light"></div>
                 <br /><br />
 
                 
