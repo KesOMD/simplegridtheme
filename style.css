@@ -55,11 +55,20 @@ a:hover { text-decoration:underline; color:#333; }
 
 #header
 {
-	/* padding: 10px 28px; */
 	background-color: #33b8f0;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
 	border-bottom-width: 3px; 
+}
+
+.logo-mobile
+{
+	display: none;
+}
+
+.mob-menu-cont
+{
+	display: none;
 }
 
 .logo { float: left; }
@@ -2152,7 +2161,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	}
 }
 
-/* for mobile */
+/* FOR MOBILE PORTRAIT */
 
 @media screen and (max-width: 480px) {
 
@@ -2160,32 +2169,128 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 /*#main_container { width: 320px; }*/
 
-#header { padding: 10px 0px; }
+/* ----- Mobile header ----- */
+
+#header
+{
+	padding: 0;
+}
 
 .logo { float: none; max-width: 300px; margin: 0 auto; }
 
-.search_cont { display: none; }
+.header-wrapper
+{
+	width: 100%;
+}
+
+.header-left
+{
+	display: none;
+}
+
+.header-right
+{
+	display: none;
+}
+
+.logo-mobile
+{
+	display: block;
+	width: 107px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.mob-menu-cont
+{
+	display: block;
+	width: 380px;
+	margin: 0 auto;
+	padding-top: 15px;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+
+.mob-menu-button
+{
+	width: inherit;
+	height: 72px;
+	background-color: #008acc;
+}
+
+.button-text
+{
+	width: 100px;
+	margin: 0 auto;
+	padding-top: 8px;
+	overflow: hidden;
+}
+
+.mob-menu-button p
+{
+	font-family: RobotoRegular;
+	font-size: 18pt;
+	float: left;
+}
+
+.mob-menu-button img
+{
+	float: left;
+	margin: 14px 0;
+	padding-left: 16px;
+}
+
+ul.sub_navigation
+{
+	margin-top: 0;
+	width: 378px;
+}
+
+ul.sub_navigation li
+{
+	list-style: none;
+}
+
+.whi
+{
+	width: inherit;
+}
+
+.whi p
+{
+	margin: 0;
+}
+
+.bl
+{
+	width: inherit;
+}
+
+.bl p
+{
+	margin: 0;
+}
 
 
+/* ----- Featured Post Mobile ----- */
 
-#menu_container { padding: 0px 0px; width: 320px; margin: 0 auto; }
+.grid
+{
+	display: none;
+}
 
-#menu_container ul { list-style-type: none; width: 150px }
+/* ----- Body Mobile ----- */
 
-#menu_container ul li { float: none; }
+#content_container
+{
+	width: inherit;
+}
 
-#menu_container ul li a { padding: 5px 10px; margin: 0 0px 5px; }
-
-#menu_container .cat_menu { border-left: none; float: right; }
-
-
-
-#content_container { width: 320px; }
-
-.featured_banner { display: none; }
-
-.featured_banner img { width: 320px; height: 32px; }
-
+#load_posts_container
+{
+	width: 480px;
+}
 
 
 .blog_box_cont { width: 300px; float: none; margin: 0 auto; }

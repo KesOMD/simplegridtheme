@@ -66,6 +66,9 @@
 <div id="main_container">
   <div id="header">
     <div class="header-wrapper">
+      <div class="logo-mobile">
+        <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" />
+      </div>
       <div class="header-left">
         <ul id="logo-nav">
           <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
@@ -263,8 +266,22 @@
     </div><!-- header-wrapper -->
   </div><!--//header-->
 
-    
+  <div class="mob-menu-cont">
+    <div class="mob-menu-button" id="mob-nav">
+      <div class="button-text">
+        <p>Menu</p>
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mob-menu-arrow.png">
+      </div>
+    </div>
+      <ul class="sub_navigation" id="mob-drop">
+        <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
+        <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
+        <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
+        <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
+        <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
+      </ul>
+  </div>
 
-    <div id="content_container">
+  <div id="content_container">
 
       

@@ -81,6 +81,12 @@ $('body').ready(function()
 			}
 		)
 
+		$('#mob-nav').click(function()
+			{
+				$('#mob-drop').slideToggle();
+			}
+		)
+
 		var idCount = 1;
 		$('.home_post_box_top').each(function()
 			{
