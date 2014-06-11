@@ -58,8 +58,18 @@ if ( is_home() )
 
                 <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
 
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
-
+                <a class="home-post-img-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
+                <div class="home-post-mobile-image">
+                  <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
+                  <div class="home-post-roundel">
+                    <div class="mob-roundel-text">
+                      <h3><?php the_category(', '); ?></h3>
+                      <hr class="mob-roundel-line">
+                      <!-- <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> -->
+                      <h2><a href="<?php the_permalink(); ?>"><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,50)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...'; ?></a></h2>
+                    </div>
+                  </div>
+                </div>
                 <div class="home_post_title_cont">
 
                     <h4><?php the_category(', '); ?></h4>
@@ -75,6 +85,16 @@ if ( is_home() )
                     <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,100)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?><a href="<?php the_permalink(); ?>">Read more >></a>
                     </p>
                 </div><!--//home_post_desc-->
+
+
+                <div class="mob_post_desc" id="home_post_desc<?php echo $y; ?>">
+                    <a href="<?php the_permalink(); ?>">
+                      <p>
+                        <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,50)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?><img id="bar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows.png" />
+                      </p>
+                    </a>
+                </div><!--//mob_post_desc-->
+
                 <div class="home_post_author">
                     <p>
                       By <?php the_author_posts_link(); ?>
@@ -143,8 +163,24 @@ $('.load_more_cont a').live('click', function(e) {
                         //alert(nextlink);
 
 			//$('#boxes').append(result).masonry('appended', result);
+      $('#load_posts_container').append(result);
+      //CHANGE THE COLOURS OF THE MOBILE POST LIST !IMPORTANT!
+      $('.home-post-roundel').each(function(i)
+        {
+          var num = ( i%6 ) +1;
 
-                    $('#load_posts_container').append(result);
+          $(this).addClass('roundel-' + num)
+        }
+      )
+      $('.mob_post_desc').each(function(j)
+        {
+          var num = ( j%6 ) +1;
+
+          $(this).addClass('mob-post-desc-' + num)
+        }
+      )
+
+      
 
 			//$('.fetch a').removeClass('loading').text('Load more posts');
 
@@ -195,6 +231,9 @@ $('.load_more_cont a').live('click', function(e) {
 		}
 
 	});
+
+  
+
 
 });
 

@@ -108,7 +108,7 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_image_size('home-post',321,209,true);
 
-  add_image_size('home-post-iphone',300,331,true);
+  add_image_size('home-post-phone',480,222,true);
 
   add_image_size('home-medium',299,165,true);
 

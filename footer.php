@@ -1,12 +1,39 @@
     </div><!--//content_container-->
 
-    
+    <div class="mob-social-cont">
+        <div class="mob-social-title">
+            <h2>James Villas Social</h2>
+        </div>
+        <div class="mob-social-buttons">
+            <a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-facebook.png" /></a>
+            <a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-twitter.png" /></a>
+            <a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-gplus.png" /></a>
+            <a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-pinterest.png" /></a>
+            <a id="mob-social-button-last" href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-youtube.png" /></a>
+        </div>
+    </div>
 
     <div id="footer">
 
         <div class="footer-align">
 
         <div class="footer_widgets_cont">
+            <div class="mob-menu-cont" id="footer-nav-cont">
+                
+                <div class="mob-menu-button" id="foot-nav">
+                    <div class="button-text" id="foot-button-text">
+                        <p>Useful Links</p>
+                        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mob-menu-arrow.png">
+                    </div>
+                </div>
+                <ul class="sub_navigation" id="foot-drop">
+                    <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
+                </ul>
+            </div>
 
             <div class="footer_copyright">
                 <a href="http://www.jamesvillas.co.uk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
