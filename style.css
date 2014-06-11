@@ -1245,6 +1245,9 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: block;
 	width: 230px;
 	float: left;
+	color: #fff;
+	font-size: 10pt;
+	font-family: RobotoRegular;
 }
 
 .footer-booking h3
@@ -1257,18 +1260,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin-bottom: 6px;
 }
 
-.footer-booking
-{
-	color: #fff;
-	font-size: 10pt;
-	font-family: RobotoRegular;
-}
-
 .booking-link-cont
 {
 	width: inherit;
 	height: 37px;
-	margin: 14px auto 0 auto;
+	margin: 0 auto;
 	text-align: center;
 	border: 1px solid #fff;
 	display: inline-block;
@@ -1284,8 +1280,9 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	margin: 0 auto;
+	margin: 14px auto 0;
 	display: inline-block;
+	width: inherit;
 	
 }
 
@@ -1304,6 +1301,12 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer-booking a:hover
 {
 	text-decoration: underline;
+}
+
+.booking-spacer
+{
+	width: 80px;
+	margin: 0 auto;
 }
 
 .footer-atol
