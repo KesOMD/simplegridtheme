@@ -4,6 +4,16 @@ $(document).ready(function()
 		{
 			parallaxScroll();
 		});
+
+		$(window).scroll(function()
+		{
+			if ($(this).scrollTop() > 700)
+			{
+				$('#ps-cont').addClass('sharing-fixed');
+			} else {
+				$('#ps-cont').removeClass('sharing-fixed');
+			}
+		})
 	}
 );
 

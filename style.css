@@ -1331,6 +1331,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	overflow: hidden;
 }
 
+.post-image-phone
+{
+	display: none;
+}
+
 .post-image-main img
 {
 	width: 1200px;
@@ -1424,10 +1429,16 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .post-sharing-cont
 {
-	width: 80px;
+	width: 100px;
 	float: left;
 	margin-top: 13px;
-	margin-left: -80px;
+	margin-left: -100px;
+}
+
+.sharing-fixed
+{
+	position: fixed;
+	top: 20px;
 }
 
 .comment-button
@@ -1435,7 +1446,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	height: 50px;
 	overflow: hidden;
 	text-align: center;
-	margin-left: -11px;
+	margin-left: -26px;
 }
 
 .comment-button a
@@ -1457,7 +1468,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	height: 50px;
 	overflow: hidden;
 	text-align: center;
-	margin-left: -11px;
+	margin-left: -26px;
 	padding-top: 13px;
 }
 
@@ -1619,6 +1630,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	overflow: hidden;
 	border-bottom: 2px #707070 solid;
 	padding-bottom: 15px;
+}
+
+.assoc-villa-cont a
+{
+	text-decoration: none;
 }
 
 .assoc-villa-cont h2
@@ -2603,6 +2619,18 @@ ul.sub_navigation li
 #footer-nav-cont
 {
 	height: 100%;
+}
+
+/* ----- Article Page Body Mobile Portrait ----- */
+
+.post-image-main
+{
+	display: none;
+}
+
+.post-image-phone
+{
+	display: block;
 }
 
 }

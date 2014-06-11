@@ -37,6 +37,22 @@
                 
                 </div><!--//post-image-main-->
 
+                <div class="post-image-phone">
+
+                    <?php the_post_thumbnail( 'home-post-phone' ); ?>
+
+                    <div class="roundel1" id="rou-post">
+                        <div class="roundel-text" id="rou-post-text">
+                            <h2><?php the_category(', '); ?></h2>
+                            <hr class="roundel-line">
+                            <h1><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,60)); /*$temp_arr_content[count($temp_arr_content)-1] = "";*/ $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content; ?>
+                            </h1>
+                            <hr class="roundel-line">
+                        </div>
+                    </div>
+                
+                </div><!--//post-image-main-->
+
                 <div class="post-details">
                     <div class="post-author">
                         <p>
@@ -57,7 +73,7 @@
                 </div><!--//post-details-->
                 
                 <div class="post-text">
-                    <div class="post-sharing-cont">
+                    <div class="post-sharing-cont" id="ps-cont">
                         <?php
                         if ( function_exists( 'sharing_display' ) )
                         {
@@ -108,17 +124,19 @@
                 $image = wp_get_attachment_image_src($id, 'full-size');
                 if ( $vil_name != "" || $vil_desc != "" || $vil_link != "" || $image != "" ) { ?>
                     <div class="assoc-villa-cont">
-                        <h2>Associated villa</h2>
-                        <div class="villa-details">
-                            <div class="villa-image">
-                                <img src="<?php echo $image[0]; ?>">
+                        <a href="<?php echo $vil_link; ?>">
+                            <h2>Associated villa</h2>
+                            <div class="villa-details">
+                                <div class="villa-image">
+                                    <img src="<?php echo $image[0]; ?>">
+                                </div>
+                                <div class="villa-text">
+                                    <h4><?php echo $vil_name; ?></h4>
+                                    <p><?php echo $vil_desc; ?></p>
+                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/view-villa-btn.png" />
+                                </div>
                             </div>
-                            <div class="villa-text">
-                                <h4><?php echo $vil_name; ?></h4>
-                                <p><?php echo $vil_desc; ?></p>
-                                <a href="<?php echo $vil_link; ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/view-villa-btn.png" /></a>
-                            </div>
-                        </div>
+                        </a>
                     </div>
                 <?php } ?>
                 <div class="related-post-cont">
