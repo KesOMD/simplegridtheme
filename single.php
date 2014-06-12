@@ -109,8 +109,34 @@
                 
                 <div class="post-end-details">
                     <div class="post-details-author">
-                        <p><?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?> is a <?php echo get_the_author_meta( 'job_title' ); ?> at James Villa Holidays. <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">See all articles by <?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?></a></p>
+                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?>'s page">
+                            <div class="author-av" id="post-author-av-cont">
+                                <?php echo get_wp_user_avatar(get_the_author_meta('ID'), 120); ?>
+                            </div>
+                        </a>
+                        <div class="author-text">
+                            <p><?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?> is a <?php echo get_the_author_meta( 'job_title' ); ?> at James Villa Holidays.
+                            </p>
+                            <p id="post-author-text">
+                                <?php
+                                $author_desc = get_the_author_meta( 'description' );
+                                $char_count = mb_strlen($author_desc);
+                                //Count the amount of characters in the author's description and trim if too long
+                                if ($char_count < 100)
+                                {
+                                    echo $author_desc;
+                                }
+                                else
+                                {
+                                    $temp_arr_content = explode(" ",substr(strip_tags($author_desc),0,90)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                                }
+                                ?>
+                            </p>
+                            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?>'s page"><p>See all articles by <?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?></P></a>
+                            
+                        </div>
                     </div>
+                    <hr>
                     <div class="post-tags-cont">
                         <p>This story is tagged under:</p>
                         <div class="post-tags"><?php the_tags('<div class="post-tag"><div class="tag-left"></div><div class="tag-right">','</div></div><div class="post-tag"><div class="tag-left"></div><div class="tag-right">','</div></div>'); ?></div>

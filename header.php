@@ -232,12 +232,14 @@
             <ul class="cat-listing">
               <?php wp_list_categories('exclude=1&number=12&hide_empty=0&orderby=name&title_li='); ?>
             </ul>
+            <!--
             <br />
             <div style="width: 422px; margin: 0 auto;">
               <div class="view-more-cont" id="pop-load">
                 <?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/view-more-cat-bg.png" alt="Load more articles"/>') ?> 
               </div>
             </div>
+            -->
           </div>
         </div>
       </div>

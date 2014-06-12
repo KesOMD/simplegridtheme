@@ -1539,9 +1539,19 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	padding-bottom: 15px;
 }
 
+.post-end-details hr
+{
+	color: #707070;
+	width: inherit;
+	margin-top: 18px;
+}
+
 .post-details-author
 {
-	margin-top: 25px;
+	margin-top: 10px;
+	width: inherit;
+	overflow: hidden;
+	position: relative;
 }
 
 .post-details-author p
@@ -1555,6 +1565,33 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	color: #008acc;
 	display: inline;
 	text-decoration: none;
+}
+
+.post-details-author a p
+{
+	margin-bottom: 0;
+}
+
+#post-author-av-cont
+{
+	width: 120px;
+	float: left;
+	margin-top: 14px;
+	padding-right: 10px;
+}
+
+.author-text
+{
+	width: 350px;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	left: 130px;
+}
+
+#post-author-text
+{
+	font-family: RobotoRegular;
 }
 
 .post-details-author a:hover
