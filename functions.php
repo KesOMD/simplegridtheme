@@ -110,6 +110,8 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_image_size('home-post-phone',480,222,true);
 
+  add_image_size('home-post-tablet', 768, 355, true);
+
   add_image_size('home-medium',299,165,true);
 
   add_image_size('home-small',224,124,true);

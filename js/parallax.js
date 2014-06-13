@@ -7,12 +7,18 @@ $(document).ready(function()
 
 		$(window).scroll(function()
 		{
-			if ($(this).scrollTop() > 700)
+			if ( $(window).width() > 799)
 			{
-				$('#ps-cont').addClass('sharing-fixed');
-			} else {
-				$('#ps-cont').removeClass('sharing-fixed');
+				if ($(this).scrollTop() > 700)
+				{
+					$('#ps-cont').addClass('sharing-fixed');
+				}
+				else
+				{
+					$('#ps-cont').removeClass('sharing-fixed');
+				}
 			}
+			
 		})
 	}
 );

@@ -15,21 +15,19 @@ if( empty( $grid ) || 3 < count( $grid ) )
       <?php the_post_thumbnail(); ?>
       <div class="roundel<?php echo $a ?>" id="rou<?php echo $a ?>">
         <div class="roundel-text">
-        <h4><?php the_category(', '); ?></h4>
-
-        <hr class="roundel-line">
-
-        <!-- <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> -->
-        <h3><a href="<?php the_permalink(); ?>"><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,50)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...'; ?></a></h3>
-        <hr class="roundel-line">
+          <h2><?php the_category(', '); ?></h2>
+          <hr class="roundel-line">
+          <!-- <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3> -->
+          <h1><a href="<?php the_permalink(); ?>"><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,50)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...'; ?></a></h1>
+          <hr class="roundel-line">
         </div>
       </div>
       <div class="bottom-bar<?php echo $a ?>">
         <div class="link-container">
-        <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
-          <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,80)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...   '; ?> 
-          <img id="bar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows.png" />
-        </a>
+          <a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark">
+            <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,80)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...   '; ?> 
+            <img id="bar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows.png" />
+          </a>
         </div>
         <div class="featured_post_author">
           <p>By <?php the_author_posts_link(); ?></p>

@@ -60,7 +60,12 @@ if ( is_home() )
 
                 <a class="home-post-img-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
                 <div class="home-post-mobile-image">
-                  <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
+                  <div class="mob-im-cont">
+                    <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
+                  </div>
+                  <div class="tab-im-cont">
+                    <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
+                  </div>
                   <div class="home-post-roundel">
                     <div class="mob-roundel-text">
                       <h3><?php the_category(', '); ?></h3>
@@ -70,13 +75,14 @@ if ( is_home() )
                     </div>
                   </div>
                 </div>
+
                 <div class="home_post_title_cont">
 
-                    <h4><?php the_category(', '); ?></h4>
+                    <h2><?php the_category(', '); ?></h2>
 
                     <hr>
 
-                    <h3><a href="<?php the_permalink(); ?>">
+                    <h1><a href="<?php the_permalink(); ?>">
                       <?php
                       $post_title = get_the_title();
                       $char_count = mb_strlen($post_title);
@@ -90,7 +96,7 @@ if ( is_home() )
                         $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                       }
                       ?>
-                    </a></h3>
+                    </a></h1>
 
                 </div><!--//home_post_title_cont-->
 
@@ -104,7 +110,7 @@ if ( is_home() )
                 <div class="mob_post_desc" id="home_post_desc<?php echo $y; ?>">
                     <a href="<?php the_permalink(); ?>">
                       <p>
-                        <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,50)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?><img id="bar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows.png" />
+                        <?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_content()),0,40)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...  '; ?><img id="bar" src="<?php bloginfo('stylesheet_directory'); ?>/images/bottom-bar-arrows.png" />
                       </p>
                     </a>
                 </div><!--//mob_post_desc-->

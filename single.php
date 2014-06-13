@@ -38,9 +38,12 @@
                 </div><!--//post-image-main-->
 
                 <div class="post-image-phone">
-
-                    <?php the_post_thumbnail( 'home-post-phone' ); ?>
-
+                    <div class="mob-im-cont">
+                        <?php the_post_thumbnail( 'home-post-phone' ); ?>
+                    </div>
+                    <div class="tab-im-cont">
+                        <?php the_post_thumbnail( 'home-post-tablet'); ?>
+                    </div>
                     <div class="roundel1" id="rou-post">
                         <div class="roundel-text" id="rou-post-text">
                             <h2><?php the_category(', '); ?></h2>
@@ -48,6 +51,7 @@
                             <h1><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,60)); /*$temp_arr_content[count($temp_arr_content)-1] = "";*/ $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content; ?>
                             </h1>
                             <hr class="roundel-line">
+                            <p>By <?php the_author_posts_link(); ?></p>
                         </div>
                     </div>
                 
