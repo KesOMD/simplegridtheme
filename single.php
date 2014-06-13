@@ -136,9 +136,12 @@
                                 }
                                 ?>
                             </p>
-                            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?>'s page"><p>See all articles by <?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?></P></a>
+                            <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?>'s page"><p>See all articles by <?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?></p></a>
                             
                         </div>
+                    </div>
+                    <div class="mob-post-details-author">
+                        <a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>" title="<?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?>'s page"><p>See all articles by <?php echo get_the_author_meta( 'first_name' ); ?> <?php echo get_the_author_meta( 'last_name' ); ?></p></a>
                     </div>
                     <hr>
                     <div class="post-tags-cont">
@@ -200,23 +203,22 @@
                         <div class="related-text">
                             <h4><?php the_category(', '); ?></h4>
                             <h3><a href="<?php the_permalink() ?>" rel="bookmark">
-                                <?php
-                                $post_title = get_the_title();
-                                $char_count = mb_strlen($post_title);
-
-                                //Count the amount of characters in the title and trim if too long
-                                if ($char_count < 40)
-                                {
-                                    echo get_the_title();
-                                    
-                                }
-                                else
-                                {
-                                    $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
-                                }
-                                
-                                
-                                ?>
+                                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-related-arrow.png" />
+                                <span>
+                                    <?php
+                                    $post_title = get_the_title();
+                                    $char_count = mb_strlen($post_title);
+                                    //Count the amount of characters in the title and trim if too long
+                                    if ($char_count < 40)
+                                    {
+                                        echo get_the_title();
+                                    }
+                                    else
+                                    {
+                                        $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                                    }
+                                    ?>
+                                </span>
                             </a></h3>
                             <p class="rel-auth">By <?php the_author_posts_link(); ?></p>
                         </div>
