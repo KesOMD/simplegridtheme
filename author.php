@@ -23,13 +23,13 @@
 		<div class="author-social">
 			<ul>
 			<?php if ( get_the_author_meta( 'facebook' ) ) { ?>
-				<li><a href="<?php the_author_meta( 'facebook' ); ?>" title="Become Friends with <?php the_author_meta( 'display_name' ); ?> on Facebook"><img alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-facebook.png" /></a></li>
+				<li><a href="<?php the_author_meta( 'facebook' ); ?>" title="Become Friends with <?php the_author_meta( 'display_name' ); ?> on Facebook"><img class="desktop-social" alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-facebook.png" /><img class="mobile-social" alt="Facebook" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-body-facebook.png" /></a></li>
 			<?php } ?>
 			<?php if ( get_the_author_meta( 'twitter' ) ) { ?>
-				<li><a href="<?php the_author_meta( 'twitter' ); ?>" title="Follow <?php the_author_meta( 'display_name' ); ?> on Twitter"><img alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-twitter.png" /></a></li>
+				<li><a href="<?php the_author_meta( 'twitter' ); ?>" title="Follow <?php the_author_meta( 'display_name' ); ?> on Twitter"><img class="desktop-social" alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-twitter.png" /><img class="mobile-social" alt="Twitter" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-body-twitter.png" /></a></li>
 			<?php } ?>
 			<?php if ( get_the_author_meta( 'gplus' ) ) { ?>
-				<li><a href="<?php the_author_meta( 'gplus' ); ?>" title="Connect with <?php the_author_meta( 'display_name' ); ?> on Google Plus"><img alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-gplus.png" /></a></li>
+				<li><a href="<?php the_author_meta( 'gplus' ); ?>" title="Connect with <?php the_author_meta( 'display_name' ); ?> on Google Plus"><img class="desktop-social" alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/body-gplus.png" /><img class="mobile-social" alt="Google Plus" src="<?php bloginfo('stylesheet_directory'); ?>/images/mobile-body-gplus.png" /></a></li>
 			<?php } ?>
 			</ul>
 		</div>

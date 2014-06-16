@@ -1920,7 +1920,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	border-bottom: 1px #707070 solid;
 }
 
-.cat-name h2
+.cat-name h1
 {
 	font-size: 16pt;
 	font-family: Georgia;
@@ -2016,6 +2016,16 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 }
 
 /* ----- Author Page ----- */
+
+.desktop-social
+{
+	display: inline;
+}
+
+.mobile-social
+{
+	display: none;
+}
 
 .author-cont
 {
@@ -2998,6 +3008,27 @@ li.share-email a.sd-button > span {
 
 /* ----- Author Page Mobile Portrait ----- */
 
+.author-social
+{
+	width: 382px;
+}
+
+.author-social ul li
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.desktop-social
+{
+	display: none;
+}
+
+.mobile-social
+{
+	display: inline;
+}
+
 .author-cont
 {
 	width: 480px;
@@ -3007,6 +3038,55 @@ li.share-email a.sd-button > span {
 {
 	font-size: 14pt;
 	line-height: 25px;
+}
+
+/* ----- Categories Page Mobile Portrait ----- */
+
+.cat-name h1
+{
+	font-size: 18pt;
+}
+
+.cat-desc p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+/* ----- Categories Listing Page Mobile Portrait ----- */
+.listing-cont
+{
+	width: 480px;
+	margin: 0 auto;
+}
+
+#listing-page
+{
+	border-bottom: none;
+}
+
+.listing
+{
+	text-align: center;
+}
+
+.cat-item
+{
+	height: 60px;
+}
+
+.cat-item:nth-child(odd)
+{
+	background-color: #f3fcff;
+}
+
+.cat-item a
+{
+	font-family: RobotoBold;
+	font-size: 16pt;
+	text-decoration: none;
+	height: inherit;
+	padding-top: 19px;
 }
 
 }
@@ -3714,6 +3794,89 @@ li.share-email a.sd-button > span {
 .rel-auth
 {
 	display: none;
+}
+
+/* ----- Author Page Tablet Portrait ----- */
+
+.author-social
+{
+	width: 382px;
+}
+
+.author-social ul li
+{
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.desktop-social
+{
+	display: none;
+}
+
+.mobile-social
+{
+	display: inline;
+}
+
+.author-cont
+{
+	width: 768px;
+}
+
+.author-info p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+/* ----- Categories Page Tablet Portrait ----- */
+
+.cat-name h1
+{
+	font-size: 18pt;
+}
+
+.cat-desc p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+/* ----- Categories Listing Page Mobile Portrait ----- */
+.listing-cont
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+#listing-page
+{
+	border-bottom: none;
+}
+
+.listing
+{
+	text-align: center;
+}
+
+.cat-item
+{
+	height: 60px;
+}
+
+.cat-item:nth-child(odd)
+{
+	background-color: #f3fcff;
+}
+
+.cat-item a
+{
+	font-family: RobotoBold;
+	font-size: 16pt;
+	text-decoration: none;
+	height: inherit;
+	padding-top: 19px;
 }
 
 }
