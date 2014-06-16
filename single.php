@@ -49,9 +49,6 @@
                             <h2><?php the_category(', '); ?></h2>
                             <hr class="roundel-line">
                             <h1><?php $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,60)); /*$temp_arr_content[count($temp_arr_content)-1] = "";*/ $display_arr_content = implode(" ",$temp_arr_content); echo $display_arr_content; ?>
-                            </h1>
-                            <hr class="roundel-line">
-                            <p>By <?php the_author_posts_link(); ?></p>
                         </div>
                     </div>
                 

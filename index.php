@@ -6,6 +6,14 @@ if ( is_home() )
 ?>
         
         <div id="load_posts_container">
+          <div class="blog-intro-cont">
+            <h1>
+              Welcome to the James Villas blog
+              <hr>
+              <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+              <hr>
+            </h1>
+          </div>
 
 
 

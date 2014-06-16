@@ -8,7 +8,7 @@
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
   <meta property="fb:admins" content="100008386361789"/>
   <meta property="fb:app_id" content="518698344902427"/>
@@ -271,7 +271,7 @@
   <div class="mob-menu-cont">
     <div class="mob-menu-button" id="mob-nav">
       <div class="button-text">
-        <p>Menu</p>
+        <p>Blog Menu</p>
         <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mob-menu-arrow.png">
       </div>
     </div>
