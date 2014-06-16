@@ -523,6 +523,7 @@ a, a:active, a:visited
 
 .menu-item-container ul li a
 {
+	color: #000;
 	text-decoration: none;
 	font-size: 15px;
 	font-family: RobotoRegular;
@@ -850,7 +851,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #fff;
 	text-decoration: none;
-	font-size: 14px;
+	font-size: 13px;
 	font-family: RobotoRegular;
 }
 
@@ -890,7 +891,13 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .grid-thumb h1 a
 {
 	font-family: Georgia;
-	font-size: 18px;
+	font-size: 22px;
+}
+
+.link-container a
+{
+	font-size: 15px;
+	letter-spacing: 0px;
 }
 
 #bar
@@ -907,7 +914,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
-	font-size: 12px;
+	font-size: 14px;
+	margin: 5px 0;
 }
 
 .featured_post_author a
@@ -947,7 +955,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	color: #fff;
 	background-color: #fff;
 	border: none;
-    height: 2px;
+    height: 1px;
     width: 140px;
     margin: 0 auto;
 }
@@ -955,7 +963,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .roundel-text
 {
 	padding-top: 38px;
-	width: 160px;
+	width: 220px;
 	margin: 0 auto;
 }
 
@@ -1132,7 +1140,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	float: left;
 	width: 180px;
-	margin-right: 92px;
+	margin-right: 80px;
 	margin-bottom: 20px;
 }
 
@@ -1144,7 +1152,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
-	font-size: 19px;
+	font-size: 13pt;
 }
 
 .footer_box a { color: #000; text-decoration: none; }
@@ -1243,7 +1251,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: block;
 	width: 220px;
 	float: left;
-	margin-right: 62px;
+	margin-right: 56px;
 }
 
 .footer-social ul
@@ -1254,7 +1262,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer-social h3
 {
 	color: #fff;
-	font-size: 14pt;
+	font-size: 13pt;
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
@@ -1306,7 +1314,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer-booking
 {
 	display: block;
-	width: 205px;
+	width: 204px;
 	float: left;
 	color: #fff;
 	font-size: 10pt;
@@ -1316,7 +1324,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer-booking h3
 {
 	color: #fff;
-	font-size: 14pt;
+	font-size: 13pt;
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
@@ -1368,7 +1376,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .booking-spacer
 {
-	width: 80px;
+	width: 91px;
 	margin: 0 auto;
 }
 
