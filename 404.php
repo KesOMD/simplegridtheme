@@ -3,9 +3,15 @@
         <div class="error-content">
 
             <div class="error-image-main">
-
-                <!-- <?php the_post_thumbnail(); ?> -->
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image.jpg" />
+                <div class="err-desk">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image.jpg" />
+                </div>
+                <div class="err-phone">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image-phone.jpg" />
+                </div>
+                <div class="err-devices">
+                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/404-image-devices.jpg" />
+                </div>
 
                 <div class="roundel1" id="rou-error">
                     <div class="roundel-text" id="rou-error-text">
