@@ -1516,6 +1516,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .post-author p a
 {
+	color: #000;
 	display: inline;
 	text-decoration: none;
 }
@@ -1532,6 +1533,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .post-date a
 {
+	color: #000;
 	display: inline;
 	text-decoration: none;
 }
@@ -1795,6 +1797,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .assoc-villa-cont h2
 {
+	color: #000;
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
@@ -1822,6 +1825,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .villa-text p
 {
 	margin: 5px 0 9px 0;
+	color: #000;
 }
 
 .related-post-cont
@@ -1883,6 +1887,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .related-text h3
 {
+	color: #000;
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
@@ -1893,10 +1898,21 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-overflow: ellipsis;*/
 }
 
+.related-text h3 a
+{
+	color: #000;
+}
+
 .related-text p.rel-auth
 {
 	font-family: RobotoBold;
 	font-size: 8pt;
+	color: #000;
+}
+
+.related-text p.rel-auth a
+{
+	color: #000;
 }
 
 .related-text img
@@ -3102,7 +3118,7 @@ li.share-email a.sd-button > span {
 
 .related-text a
 {
-
+	color: #000;
 }
 
 .related-text img
@@ -3211,6 +3227,7 @@ li.share-email a.sd-button > span {
 
 .cat-item a
 {
+	color: #000;
 	font-family: RobotoBold;
 	font-size: 16pt;
 	text-decoration: none;
@@ -3953,7 +3970,7 @@ li.share-email a.sd-button > span {
 
 .related-text a
 {
-
+	color: #000;
 }
 
 .related-text img
@@ -3970,6 +3987,7 @@ li.share-email a.sd-button > span {
 
 .related-text h3
 {
+	color: #000;
 	font-size: 16pt;
 	position: relative;
 }
