@@ -20,6 +20,16 @@ $(document).ready(function()
 			}
 			
 		})
+
+		//FIX PADDING ON PINTEREST WIDGET
+		var rowChildren = $('.row').children();
+		var firstRowLastChild = rowChildren.eq(3);
+		var secondRowLastChild = rowChildren.eq(7);
+		var thirdRowLastChild = rowChildren.eq(11);
+
+		firstRowLastChild.css("margin-right", "0");
+		secondRowLastChild.css("margin-right", "0");
+		thirdRowLastChild.css("margin-right", "0");
 	}
 );
 

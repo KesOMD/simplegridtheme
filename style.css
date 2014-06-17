@@ -246,7 +246,7 @@ ul.sub_navigation li a
 {
 	text-decoration: none;
 	color: #1c1c1c;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 }
 
 ul.sub_navigation li a:hover
@@ -296,7 +296,7 @@ a, a:active, a:visited
 	color: #fff;
 	opacity: 1;
 	filter: alpha(opacity=1);
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 12pt;
 }
 
@@ -327,7 +327,7 @@ a, a:active, a:visited
 	color: #fff;
 	opacity: 1;
 	filter: alpha(opacity=1);
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 12pt;
 	background-color: #008acc;
 }
@@ -411,7 +411,7 @@ a, a:active, a:visited
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 285px;
+	height: 320px;
 	top: 71px;
 	left: 0;
 	background-color: #f3fcff;
@@ -441,6 +441,16 @@ a, a:active, a:visited
 	width: 1200px;
 	margin: 25px auto 0 auto;
 	display: block;
+	overflow: hidden;
+}
+
+.social-divider
+{
+	background-color: #008acc;
+	width: 1px;
+	height: 250px;
+	float: left;
+	margin: 0 20px;
 }
 
 #pop-container
@@ -496,21 +506,18 @@ a, a:active, a:visited
 {
 	float: left;
 	width: 360px;
-	margin-left: 20px;
 }
 
 .menu-item-center
 {
 	float: left;
 	width: 360px;
-	margin-left: 20px;
 }
 
 .menu-item-right
 {
 	float: right;
 	width: 360px;
-	margin-left: 20px;
 }
 
 .menu-item-container ul li
@@ -526,12 +533,25 @@ a, a:active, a:visited
 	color: #000;
 	text-decoration: none;
 	font-size: 15px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .menu-item-container ul li a:hover
 {
 	text-decoration: underline;
+}
+
+.menu-item-container h2
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	padding-bottom: 20px;
+}
+
+#social-menu
+{
+	text-align: center;
 }
 
 .view-more-cont
@@ -619,7 +639,8 @@ a, a:active, a:visited
 	float: left;
 	width: 358px;
 	height: 363px;
-	margin-right: 32px;
+	/*margin-right: 32px;*/
+	margin-right: 63px;
 	margin-bottom: 27px;
 	overflow: hidden;
 	position: relative;
@@ -717,7 +738,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 }
 
 .home_post_title_cont h2 a
@@ -762,14 +783,14 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #000;
 	font-size: 12px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	margin: 8px auto;
 }
 
 .home_post_desc p a
 {
 	color: #1c70b8;
-	font-family: RobotoMediumItalic;
+	font-family: RobotoMediumItalic, Arial;
 	text-decoration: none;
 	display: inline-block;
 }
@@ -820,7 +841,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 #load_posts_container
 {
-	width: 1138px;
+	width: 1200px;
 	margin: 23px auto 0 auto;
 }
 
@@ -852,7 +873,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	color: #fff;
 	text-decoration: none;
 	font-size: 13px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .grid a:hover
@@ -1182,7 +1203,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer_copyright p
 {
 	color: #fff;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 7pt;
 	margin: 0 auto;
 }
@@ -1240,7 +1261,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .footer-main-site ul li a
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 9pt;
@@ -1318,7 +1339,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	float: left;
 	color: #fff;
 	font-size: 10pt;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .footer-booking h3
@@ -1376,7 +1397,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .booking-spacer
 {
-	width: 91px;
+	width: 100px;
 	margin: 0 auto;
 }
 
@@ -1421,7 +1442,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 13pt;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .post-image-main h1
@@ -1450,7 +1471,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 13pt;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .post-image-phone h1
@@ -1605,7 +1626,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .post-text p
 {
 	line-height: 20px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 11pt;
 	padding: 10px 0;
 }
@@ -1628,19 +1649,20 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	width: 480px;
 	margin: 20px auto 0 auto;
 	border-bottom: 1px #707070 solid;
-	padding-bottom: 12px;
+	padding-bottom: 15px;
 }
 
 .ac-cont h4
 {
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 }
 
 .ac-cont p
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 10pt;
 	color: #707070;
+	margin: 0;
 }
 
 .post-end-details
@@ -1674,7 +1696,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .post-details-author p
 {
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 10pt;
 }
 
@@ -1709,7 +1731,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 #post-author-text
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 }
 
 .post-details-author a:hover
@@ -1725,7 +1747,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .post-tags-cont p
 {
 	font-size: 8pt;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 }
 
 .post-tags a
@@ -1831,7 +1853,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .related-post-cont
 {
 	width: 480px;
-	margin: 10px auto 0 auto;
+	margin: 15px auto 0;
 	overflow: hidden;
 	border-bottom: 2px #707070 solid;
 	padding-bottom: 15px;
@@ -1842,6 +1864,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
+	margin: 0;
 }
 
 .related-post
@@ -1875,7 +1898,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .related-text h4
 {
 	
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	text-transform: uppercase;
 }
 
@@ -1905,7 +1928,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .related-text p.rel-auth
 {
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 8pt;
 	color: #000;
 }
@@ -1999,7 +2022,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .error-text p
 {
 	line-height: 23px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	margin-bottom: 20px;
 }
 
@@ -2040,7 +2063,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .cat-desc p
 {
 	line-height: 23px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	margin-bottom: 20px;
 }
 
@@ -2063,7 +2086,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #707070;
 	letter-spacing: 1px;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 }
 
 .search-query
@@ -2113,7 +2136,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .blank-text p
 {
 	line-height: 23px;
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	margin-bottom: 20px;
 }
 
@@ -2156,7 +2179,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .author-info h2
 {
-	font-family:RobotoBold;
+	font-family:RobotoBold, "Arial Black";
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #707070;
@@ -2164,7 +2187,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .author-info p
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 13px;
 	line-height: 21px;
 }
@@ -2254,7 +2277,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display:block;
 	width:100%;
 	color:#fff;
-	font-family:RobotoBold;
+	font-family:RobotoBold, "Arial Black";
 	font-size: 10pt;
 	letter-spacing: 2px;
 }
@@ -2273,7 +2296,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	top:0;
 	cursor:pointer;
 	font-size:7px;
-	font-family:RobotoBold;
+	font-family:RobotoBold, "Arial Black";
 }
 
 .calendar-archives .cal-nav .year-nav .arrow-down:hover
@@ -2338,7 +2361,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	background: #33b8f0;
 	position:relative;
 	text-align: center;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -2384,7 +2407,56 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .calendar-archives .day.weekday.last{border-right:0}
 .arcw.preview.zone{background-color:#fff;padding:30px 0 0;height:230px}
 
+/* PINTEREST WIDGET */
+
+#pinterest-pinboard-container
+{
+	width: 289px;
+	margin: 0 auto;
+}
+
+#pinterest-pinboard-container .row
+{
+	height: 61px !important;
+	width: inherit;
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+#pinterest-pinboard-container .row a
+{
+	float: left;
+	margin-right: 15px;
+}
+
+#pinterest-pinboard-container .pinboard img
+{
+	padding: 0 !important;
+}
+
+.pin_link
+{
+	display: none;
+}
+
+
+
 @media screen and (max-width: 1220px) {
+	#load_posts_container
+	{
+		width: 1138px;
+	}
+
+	.home_post_box
+	{
+		margin-right: 32px;
+	}
+
+	.home_post_box_last
+	{
+		margin-right: 0px;
+	}
+
 	.header-wrapper
 	{
 		width: 100%;
@@ -2406,9 +2478,912 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	}
 }
 
+/* IPHONE 5 PORTRAIT */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+
+	/* ----- iPhone5 header portrait ----- */
+
+#header
+{
+	padding: 0;
+}
+
+.logo { float: none; max-width: 300px; margin: 0 auto; }
+
+.header-wrapper
+{
+	width: 100%;
+}
+
+.header-left
+{
+	display: none;
+}
+
+.header-right
+{
+	display: none;
+}
+
+.logo-mobile
+{
+	display: block;
+	width: 107px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.mob-menu-cont
+{
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	padding-top: 15px;
+	overflow: hidden;
+	text-align: center;
+	color: #fff;
+}
+
+.mob-menu-button
+{
+	width: inherit;
+	height: 72px;
+	background-color: #008acc;
+	cursor: pointer;
+}
+
+.button-text
+{
+	width: 155px;
+	margin: 0 auto;
+	padding-top: 8px;
+	overflow: hidden;
+}
+
+.mob-menu-button p
+{
+	font-family: RobotoRegular, Arial;
+	font-size: 18pt;
+	float: left;
+}
+
+.mob-menu-button img
+{
+	float: left;
+	margin: 14px 0;
+	padding-left: 16px;
+}
+
+ul.sub_navigation
+{
+	margin-top: 0;
+	width: 298px;
+}
+
+ul.sub_navigation li
+{
+	list-style: none;
+}
+
+ul.sub_navigation li a
+{
+	height: 50px;
+}
+
+ul.sub_navigation li a p
+{
+	font-size: 14pt;
+}
+
+.whi
+{
+	width: inherit;
+	height: 50px;
+}
+
+.whi p
+{
+	margin: 0;
+}
+
+.bl
+{
+	width: inherit;
+}
+
+.bl p
+{
+	margin: 0;
+}
+
+
+/* ----- Featured Post iPhone5 portrait ----- */
+
+.grid
+{
+	display: none;
+}
+
+/* ----- Body iPhone5 portrait ----- */
+
+#content_container
+{
+	width: inherit;
+}
+
+#load_posts_container
+{
+	width: 100%;
+}
+
+.blog-intro-cont
+{
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.blog-intro-cont h1
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+}
+
+.blog-intro-cont hr
+{
+	margin-top: 10px;
+	padding-bottom: 10px;
+	border-left: none;
+	border-right: none;
+	border-bottom: none;
+}
+
+.blog-intro-cont h1 span
+{
+	font-family: RobotoRegular, Arial;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14pt;
+}
+
+.home_post_box
+{
+	width: inherit;
+	float: none;
+	margin: 0 auto;
+	height: 294px;
+	border-bottom: none;
+}
+
+.home-post-img-link
+{
+	display: none !important;
+}
+
+.home-post-mobile-image
+{
+	display: block;
+	width: inherit;
+	height: 222px;
+	overflow: hidden;
+}
+
+.mob-im-cont
+{
+	width: 480px;
+	display: block;
+}
+
+.tab-im-cont
+{
+	display: none;
+}
+
+.home_post_box img
+{
+	width: 480px;
+	height: 223px;
+}
+
+.home-post-roundel
+{
+	position: relative;
+	width: 244px;
+	height: 244px;
+	bottom: 190px;
+	margin: 0 auto;
+}
+
+.roundel-1
+{
+	background-image: url(images/orange-roundel.png);
+}
+
+.roundel-2
+{
+	background-image: url(images/green-roundel.png);
+}
+
+.roundel-3
+{
+	background-image: url(images/blue-roundel.png);
+}
+
+.roundel-4
+{
+	background-image: url(images/purple-roundel.png);
+}
+
+.roundel-5
+{
+	background-image: url(images/yellow-roundel.png);
+}
+
+.roundel-6
+{
+	background-image: url(images/pink-roundel.png);
+}
+
+.mob-roundel-text
+{
+	padding-top: 45px;
+	width: 210px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.mob-roundel-text a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.mob-roundel-text h3
+{
+	font-size: 15pt;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 6px 0;
+}
+
+.mob-roundel-text h2
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 19pt;
+	margin: 8px 0;
+}
+
+.mob-roundel-line
+{
+	background-color: #fff;
+	border: none;
+	height: 2px;
+	width: 140px;
+	margin: 0 auto;
+}
+
+.home_post_title_cont
+{
+	display: none;
+}
+
+.home_post_desc
+{
+	display: none;
+}
+
+.mob_post_desc
+{
+	display: block;
+	text-align: center;
+	height: 72px;
+}
+
+.mob_post_desc p
+{
+	margin: 0;
+	padding: 13px;
+	font-size: 14pt;
+}
+
+.mob_post_desc a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.mob-post-desc-1
+{
+	background-color: #e57759;
+}
+
+.mob-post-desc-2
+{
+	background-color: #66d382;
+}
+
+.mob-post-desc-3
+{
+	background-color: #66bfd6;
+}
+
+.mob-post-desc-4
+{
+	background-color: #6a77e8;
+}
+
+.mob-post-desc-5
+{
+	background-color: #c7dc85;
+}
+
+.mob-post-desc-6
+{
+	background-color: #dc85da;
+}
+
+.home_post_author
+{
+	display: none;
+}
+
+.load_more_cont
+{
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+.load_more_text a
+{
+	width: 300px;
+	overflow: hidden;
+}
+
+.load_more_text img
+{
+	margin-left: -50px;
+}
+
+.blog_box_cont { width: 300px; float: none; margin: 0 auto; }
+
+.blog_content { float: none; width: 300px; margin-left: auto; margin-right: auto; }
+
+.blog_left { float: none; width: 300px; margin: 0 auto; }
+
+.blog_left .left_content img { width: 300px; height:inherit; }
+
+#commentform textarea { width: 300px; }
+
+#sidebar { display: none; }
+
+
+/* ----- Footer iPhone5 portrait ----- */
+
+#footer
+{
+	display: block;
+	height: 350px;
+}
+
+.mob-social-cont
+{
+	display: block;
+	width: inherit;
+	overflow: hidden;
+}
+
+.mob-social-title
+{
+	text-align: center;
+	
+}
+
+.mob-social-title h2
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 19pt;
+}
+
+.mob-social-buttons
+{
+	width: 300px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.mob-social-buttons a
+{
+	float: left;
+	padding-right: 6px;
+}
+
+#mob-social-button-last
+{
+	padding: 0;
+}
+
+.footer_copyright
+{
+	float: none;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+.footer-main-site
+{
+	display: none;
+}
+
+.footer_box
+{
+	display: none;
+}
+
+.footer-social
+{
+	display: none;
+}
+
+.footer-booking
+{
+	display: none;
+}
+
+.footer-atol
+{
+	display: none;
+}
+
+#foot-button-text
+{
+	width: 172px;
+}
+
+#footer-nav-cont
+{
+	height: 100%;
+}
+
+/* ----- Article Page Body iPhone5 Portrait ----- */
+
+.post-content
+{
+	width: 100%;
+}
+
+.post-text
+{
+	width: 300px;
+	border-top: none;
+}
+
+.post-text p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+.post-image-main
+{
+	display: none;
+}
+
+.post-image-phone
+{
+	display: block;
+	height: 222px;
+	padding-top: 15px;
+	overflow: hidden;
+}
+
+.post-details
+{
+	display: block;
+	width: 276px;
+	padding-bottom: 8px;
+}
+
+.post-details p
+{
+	font-size: 14pt;
+}
+
+.post-sharing-cont
+{
+	width: 300px;
+	height: 90px;
+	margin: 0 auto 20px;
+	border-bottom: 1px #707070 solid;
+}
+
+.sharedaddy
+{
+	float: none;
+	height: inherit;
+	margin: 0 auto;
+}
+
+.sd-social-icon a.sd-button > span
+{
+	width: 64px !important;
+	height: 64px !important;
+}
+
+div.sharedaddy div.sd-block
+{
+	padding: 0 !important;
+}
+
+div.sharedaddy .sd-content
+{
+	width: inherit !important;
+}
+
+div.sharedaddy .sd-content li .share-facebook
+{
+	margin: 0 35px 5px 0 !important;
+}
+
+div.sharedaddy .sd-content li .share-twitter
+{
+	margin: 0 35px 5px 0 !important;
+}
+
+div.sharedaddy .sd-content li .share-google-plus-1
+{
+	margin: 0 35px 5px 0 !important;
+}
+
+div.sharedaddy .sd-content li .share-email
+{
+	margin: 0 0 5px 0 !important;
+}
+
+li.share-facebook a.sd-button > span
+{
+	background-image: url('images/mobile-body-facebook.png') !important;
+	/* background-size: 16px 16px; */
+}
+
+li.share-twitter a.sd-button > span {
+	background-image: url('images/mobile-body-twitter.png?1') !important;
+	/* background-size: 16px 16px; */
+}
+
+li.share-google-plus-1 a.sd-button > span {
+	background-image: url('images/mobile-body-gplus.png?1') !important;
+	/* background-size: 16px 16px; */
+}
+
+li.share-email a.sd-button > span {
+	background-image: url('images/mobile-body-email.png') !important;
+	/* background-size: 16px 16px; */
+}
+
+.comment-button
+{
+	display: none;
+}
+
+.print-button-wrapper
+{
+	display: none;
+}
+
+.wp-caption
+{
+	width: 300px !important;
+}
+
+.wp-caption img
+{
+	width: 300px;
+	height: 164px;
+}
+
+.ac-cont
+{
+	width: 300px;
+}
+
+.ac-cont h4
+{
+	font-size: 14pt;
+}
+
+.ac-cont p
+{
+	font-size: 14pt;
+}
+
+.post-end-details
+{
+	width: 300px;
+}
+
+.post-end-details hr
+{
+	display: none;
+}
+
+.post-details-author
+{
+	display: none;
+}
+
+.mob-post-details-author
+{
+	display: block;
+}
+
+.mob-post-details-author p
+{
+	font-family: RobotoBold, "Arial Black";
+	font-size: 14pt;
+}
+
+.mob-post-details-author a
+{
+	color: #008acc;
+	display: inline;
+	text-decoration: none;
+}
+
+.mob-post-details-author a p
+{
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.post-tags-cont
+{
+	margin-top: 15px;
+}
+
+.post-tags-cont p
+{
+	margin: 0;
+	font-size: 12pt;
+}
+
+.post-tag
+{
+	margin-top: 15px;
+}
+
+.tag-right a
+{
+	font-size: 14pt;
+}
+
+.assoc-villa-cont
+{
+	display: none;
+}
+
+.related-post-cont
+{
+	width: 300px;
+}
+
+.related-post-cont h2
+{
+	font-size: 18pt;
+}
+
+.related-post
+{
+	float: none;
+	width: inherit;
+	padding-top: 12px;
+}
+
+.related-image
+{
+	display: none;
+}
+
+.related-text a
+{
+	color: #000;
+}
+
+.related-text img
+{
+	display: inline;
+	width: 40px;
+	height: 40px;
+}
+
+.related-text h4
+{
+	display: none;
+}
+
+.related-text h3
+{
+	font-size: 16pt;
+	position: relative;
+}
+
+.related-text h3 span
+{
+	position: absolute;
+	top: 8px;
+	left: 53px;
+}
+
+.rel-auth
+{
+	display: none;
+}
+
+/* ----- Author Page iPhone5 Portrait ----- */
+
+.author-social
+{
+	width: 300px;
+}
+
+.author-social ul li
+{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.desktop-social
+{
+	display: none;
+}
+
+.mobile-social
+{
+	display: inline;
+}
+
+.author-cont
+{
+	width: 100%;
+}
+
+.author-info
+{
+	width: 300px;
+}
+
+.author-info p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+/* ----- Categories Page iPhone5 Portrait ----- */
+
+.cat-name h1
+{
+	font-size: 18pt;
+}
+
+.cat-desc p
+{
+	font-size: 14pt;
+	line-height: 25px;
+}
+
+/* ----- Categories Listing Page iPhone5 Portrait ----- */
+.listing-cont
+{
+	width: 100%;
+	margin: 0 auto;
+}
+
+#listing-page
+{
+	border-bottom: none;
+}
+
+.listing
+{
+	text-align: center;
+}
+
+.cat-header
+{
+	width: 300px;
+}
+
+.cat-item
+{
+	height: 60px;
+}
+
+.cat-item:nth-child(odd)
+{
+	background-color: #f3fcff;
+}
+
+.cat-item a
+{
+	color: #000;
+	font-family: RobotoBold, "Arial Black";
+	font-size: 16pt;
+	text-decoration: none;
+	height: inherit;
+	padding-top: 19px;
+}
+
+/* ----- 404 Page iPhone5 Portrait ----- */
+
+.error-content
+{
+	width: 100%;
+	padding-top: 15px;
+}
+
+.error-image-main
+{
+	width: 100%;
+	height: 261px;
+}
+
+.error-image-main img
+{
+	width: 320px;
+	height: 167px;
+}
+
+#rou-error
+{
+	bottom: 150px;
+}
+
+.err-desk
+{
+	display: none;
+}
+
+.err-phone
+{
+	display: block;
+}
+
+.err-devices
+{
+	display: none;
+}
+
+.error-text
+{
+	width: 300px;
+	border-bottom: none;
+}
+
+.error-text p
+{
+	font-size: 14pt;
+	line-height: 28px;
+}
+
+#error-related
+{
+	display: none;
+}
+}
+
+
 /* FOR MOBILE PORTRAIT */
 
-@media screen and (min-width: 480px) and (max-width: 767px){
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
 
 
@@ -2475,7 +3450,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .mob-menu-button p
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 18pt;
 	float: left;
 }
@@ -2511,6 +3486,7 @@ ul.sub_navigation li a p
 .whi
 {
 	width: inherit;
+	height: 50px;
 }
 
 .whi p
@@ -2575,7 +3551,7 @@ ul.sub_navigation li a p
 
 .blog-intro-cont h1 span
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-weight: normal;
 	font-style: normal;
 	font-size: 14pt;
@@ -2617,7 +3593,7 @@ ul.sub_navigation li a p
 .home_post_box img
 {
 	width: 480px;
-	height: 222px;
+	height: 223px;
 }
 
 .home-post-roundel
@@ -3053,7 +4029,7 @@ li.share-email a.sd-button > span {
 
 .mob-post-details-author p
 {
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 14pt;
 }
 
@@ -3201,7 +4177,7 @@ li.share-email a.sd-button > span {
 /* ----- Categories Listing Page Mobile Portrait ----- */
 .listing-cont
 {
-	width: 480px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -3228,7 +4204,7 @@ li.share-email a.sd-button > span {
 .cat-item a
 {
 	color: #000;
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 16pt;
 	text-decoration: none;
 	height: inherit;
@@ -3349,7 +4325,7 @@ li.share-email a.sd-button > span {
 
 .button-text
 {
-	width: 100px;
+	width: 155px;
 	margin: 0 auto;
 	padding-top: 8px;
 	overflow: hidden;
@@ -3357,7 +4333,7 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button p
 {
-	font-family: RobotoRegular;
+	font-family: RobotoRegular, Arial;
 	font-size: 18pt;
 	float: left;
 }
@@ -3393,6 +4369,7 @@ ul.sub_navigation li a p
 .whi
 {
 	width: inherit;
+	height: 50px;
 }
 
 .whi p
@@ -3454,7 +4431,7 @@ ul.sub_navigation li a p
 .home_post_box img
 {
 	width: 768px;
-	height: 355px;
+	height: 356px;
 }
 
 .home-post-roundel
@@ -3905,7 +4882,7 @@ li.share-email a.sd-button > span {
 
 .mob-post-details-author p
 {
-	font-family: RobotoBold;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 14pt;
 }
 
@@ -4054,7 +5031,7 @@ li.share-email a.sd-button > span {
 /* ----- Categories Listing Page Mobile Portrait ----- */
 .listing-cont
 {
-	width: 768px;
+	width: 100%;
 	margin: 0 auto;
 }
 
@@ -4080,7 +5057,8 @@ li.share-email a.sd-button > span {
 
 .cat-item a
 {
-	font-family: RobotoBold;
+	color: #000;
+	font-family: RobotoBold, "Arial Black";
 	font-size: 16pt;
 	text-decoration: none;
 	height: inherit;
