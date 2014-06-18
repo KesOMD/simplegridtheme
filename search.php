@@ -61,11 +61,11 @@
 
                 <div class="home_post_title_cont">
 
-                    <h4><?php the_category(', '); ?></h4>
+                    <h2><?php the_category(', '); ?></h2>
 
                     <hr>
 
-                    <h3><a href="<?php the_permalink(); ?>">
+                    <h1><a href="<?php the_permalink(); ?>">
                         <?php
                         $post_title = get_the_title();
                         $char_count = mb_strlen($post_title);
@@ -79,7 +79,7 @@
                             $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                         }
                         ?>
-                    </a></h3>
+                    </a></h1>
 
                 </div><!--//home_post_title_cont-->
 
@@ -106,7 +106,7 @@
 
         <?php endwhile; ?>            
 
-            
+        <?php wp_reset_query(); ?>  
 
             <div class="clear"></div>
 

@@ -1054,6 +1054,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	bottom: 161px;
 	margin: 0 auto;
 	background-image: url(images/green-roundel.png);
+	background-repeat:no-repeat;
+	background-size:contain;
 }
 
 .roundel2 .roundel-text
@@ -1090,6 +1092,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	bottom: 161px;
 	margin: 0 auto;
 	background-image: url(images/blue-roundel.png);
+	background-repeat:no-repeat;
+	background-size:contain;
 }
 
 .roundel3 .roundel-text
@@ -2067,6 +2071,12 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin-bottom: 20px;
 }
 
+.no-posts-here
+{
+	text-align: center;
+	height: 300px;
+}
+
 /* ----- Search Results Page ----- */
 
 .search-header
@@ -2439,23 +2449,9 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: none;
 }
 
-
-
-@media screen and (max-width: 1220px) {
-	#load_posts_container
-	{
-		width: 1138px;
-	}
-
-	.home_post_box
-	{
-		margin-right: 32px;
-	}
-
-	.home_post_box_last
-	{
-		margin-right: 0px;
-	}
+@media screen and (min-width: 1025px) and (max-width: 1220px) {
+	
+	/* small window!!! header */
 
 	.header-wrapper
 	{
@@ -2469,17 +2465,224 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 	.header-left
 	{
-		width: 60%;
+		width: 63%;
 	}
 
 	.header-right
 	{
-		width: 40%;
+		width: 37%;
+	}
+
+	#header-logo
+	{
+		width: 145px;
+	}
+
+	#home-nav
+	{
+		width: 74px;
+	}
+
+	#dest-nav
+	{
+		width: 120px;
+	}
+
+	#pop-nav
+	{
+		width: 88px;
+	}
+
+	#soc-nav
+	{
+		width: 80px;
+	}
+
+	#cat-nav
+	{
+		width: 110px;
+	}
+
+	.search_cont
+	{
+		width: 45%;
+	}
+
+	.social-icon-container
+	{
+		width: 55%;
+	}
+
+	/* small window!!! featured posts */
+
+	.grid
+	{
+		width: 1008px;
+	}
+
+	.grid-thumb
+	{
+		width: 1008px;
+		height: 467px;
+	}
+
+	.grid-thumb img
+	{
+		width: 1008px;
+		height: 467px;
+	}
+
+	.bottom-bar1
+	{
+		width: inherit;
+	}
+
+	.bottom-bar2
+	{
+		width: inherit;
+	}
+
+	.bottom-bar3
+	{
+		width: inherit;
+	}
+
+	#pos1
+	{
+		width: 504px;
+		height: 234px;
+	}
+
+	#pos2
+	{
+		width: 504px;
+		height: 234px;
+	}
+
+	.roundel2
+	{
+		width: 180px;
+		height: 180px;
+	}
+
+	.roundel2 .roundel-text
+	{
+		padding-top: 16px;
+	}
+
+	.roundel2 .roundel-text h2 a
+	{
+		font-size: 10pt;
+	}
+
+	.roundel2 .roundel-text h1 a
+	{
+		font-size: 11pt;
+	}
+
+	.roundel3
+	{
+		width: 180px;
+		height: 180px;
+	}
+
+	.roundel3 .roundel-text
+	{
+		padding-top: 16px;
+	}
+
+	.roundel3 .roundel-text h2 a
+	{
+		font-size: 10pt;
+	}
+
+	.roundel3 .roundel-text h1 a
+	{
+		font-size: 11pt;
+	}
+
+	.link-container a
+	{
+		font-size: 13px;
+	}
+
+	/* small window!!! body */
+
+	#load_posts_container
+	{
+		width: 984px;
+	}
+
+	.home_post_box
+	{
+		width: 306px;
+		margin-right: 32px;
+	}
+
+	.home_post_box img
+	{
+		width: 306px;
+		height: 176px;
+	}
+
+	.home_post_title_cont
+	{
+		width: inherit;
+	}
+
+	.home_post_box_last
+	{
+		margin-right: 0px;
+	}
+
+	/* small window!!! footer */
+	.footer-main-site
+	{
+		margin-left: 30px;
+		padding-right: 35px;
+	}
+
+	.footer_box
+	{
+		margin-right: 40px;
+	}
+
+	.footer-social
+	{
+		margin-right: 30px;
+	}
+
+	.footer-booking
+	{
+		width: 190px;
+	}
+
+	/* small window!!! Article page */
+	.post-content
+	{
+		width: 1008px;
+	}
+	.post-image-main
+	{
+		width: 1008px;
+		height: 467px;
+	}
+
+	.post-image-main img
+	{
+		width: 1008px;
+		height: 467px;
+	}
+
+	/* small window!!! Author page */
+	.author-cont
+	{
+		width: 1008px;
 	}
 }
 
 /* IPHONE 5 PORTRAIT */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-device-pixel-ratio: 3), and (max-device-width: 320px) {
 
 	/* ----- iPhone5 header portrait ----- */
 
@@ -2870,6 +3073,12 @@ ul.sub_navigation li a p
 {
 	display: block;
 	height: 350px;
+	width: 100%;
+}
+
+.footer-align
+{
+	width: inherit;
 }
 
 .mob-social-cont
@@ -4619,6 +4828,11 @@ ul.sub_navigation li a p
 {
 	display: block;
 	height: 350px;
+}
+
+.footer-align
+{
+	width: 100%;
 }
 
 .mob-social-cont

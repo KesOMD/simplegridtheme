@@ -59,7 +59,7 @@ $args = array_merge( $wp_query->query, array( 'posts_per_page' => 9 ) );
 
 query_posts( $args );
 
-        while (have_posts()) : the_post(); ?>                                                                      
+        if ( have_posts() ) : while (have_posts()) : the_post(); ?>                                                                      
 
 
 
@@ -187,8 +187,9 @@ query_posts( $args );
 
 
 
-        <?php endwhile; ?>        
-
+        <?php endwhile; else: ?>
+        <p class="no-posts-here">No posts in this category</p>
+        <?php endif; ?>
 
 
         <?php wp_reset_query(); ?>        
