@@ -2682,7 +2682,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 }
 
 /* IPHONE 5 PORTRAIT */
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-device-pixel-ratio: 3), and (max-device-width: 320px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2), only screen and (-webkit-device-pixel-ratio: 3), only screen and (max-device-width: 320px), only screen and (max-width: 480px) {
 
 	/* ----- iPhone5 header portrait ----- */
 
