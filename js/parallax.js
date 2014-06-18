@@ -7,7 +7,12 @@ $(document).ready(function()
 
 		$(window).scroll(function()
 		{
-			if ( $(window).width() > 799)
+			/*if ( $(window).width() > 799)*/
+			if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+			{
+				
+			}
+			else
 			{
 				if ($(this).scrollTop() > 700)
 				{
