@@ -25,7 +25,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec aliquam tortor et mollis ullamcorper. Aenean tempus, nisl vel vehicula tempus, sapien nisi faucibus massa, in sollicitudin eros lorem et tellus. </p>
             </div>
             <div class="related-post-cont" id="error-related">
-                <h2>More from James</h2>
+                <h2>Popular Articles</h2>
                 <?php
                 $counter = 3;
                 $recentPosts = new WP_Query();
