@@ -1546,7 +1546,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 13pt;
+	font-size: 11pt;
 	font-family: RobotoRegular, Arial;
 }
 
@@ -3265,8 +3265,18 @@ ul.sub_navigation li a p
 
 .mob-im-cont
 {
-	width: 480px;
+	width: 360px;
 	display: block;
+}
+
+.mob-im-cont img
+{
+	width: 360px
+}
+
+.com-header
+{
+	width: 300px;
 }
 
 .tab-im-cont
@@ -3335,7 +3345,7 @@ ul.sub_navigation li a p
 
 .mob-roundel-text h3
 {
-	font-size: 15pt;
+	font-size: 11pt;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin: 6px 0;
