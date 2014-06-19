@@ -39,8 +39,7 @@
         else
 
           $y = 0;
-
-        while ($search->have_posts()) : $search->the_post(); ?>                                                                      
+      if ( $search->have_posts() ) : while ($search->have_posts()) : $search->the_post(); ?>                                                                      
 
 
             <?php if($x == 2) { ?>
@@ -104,11 +103,52 @@
 
         <?php $x++; $y++; ?>
 
-        <?php endwhile; ?>            
+        <?php endwhile; else: ?>
+        <p class="no-posts-here">No posts matched, sorry</p>
+        
 
-        <?php wp_reset_query(); ?>  
+        <?php wp_reset_query(); ?>
+        <div class="related-post-cont" id="error-related">
+                <h2>Popular Articles</h2>
+                <?php
+                $counter = 3;
+                $recentPosts = new WP_Query();
+                $recentPosts->query('showposts=3');
+                ?>
+                <?php while ( $recentPosts->have_posts() ) : $recentPosts->the_post(); ?>
+                <div id="rp-pos<?php echo $a++ ?>" class="related-post">
+                        
+                        <div class="related-image">
+                            <a href="<?php the_permalink() ?>" rel="bookmark"><?php the_post_thumbnail( 'related-thumb' ); ?></a>
+                        </div>
+                        <div class="related-text">
+                            <h4><?php the_category(', '); ?></h4>
+                            <h3><a href="<?php the_permalink() ?>" rel="bookmark">
+                                <?php
+                                $post_title = get_the_title();
+                                $char_count = mb_strlen($post_title);
 
-            <div class="clear"></div>
+                                //Count the amount of characters in the title and trim if too long
+                                if ($char_count < 40)
+                                {
+                                    echo get_the_title();
+                                    
+                                }
+                                else
+                                {
+                                    $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                                }
+                                
+                                
+                                ?>
+                            </a></h3>
+                            <p class="rel-auth">By <?php the_author_posts_link(); ?></p>
+                        </div>
+                    </div>
+                <?php endwhile ?>
+            </div>
+        <?php endif; ?>
+        <div class="clear"></div>
 
             
 

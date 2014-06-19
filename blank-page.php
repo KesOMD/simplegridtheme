@@ -15,7 +15,7 @@ Template Name: Blank Page
                 <?php the_content(); ?>
             </div>
             <div class="related-post-cont" id="error-related">
-                <h2>More from James</h2>
+                <h2>Popular Articles</h2>
                 <?php
                 $counter = 3;
                 $recentPosts = new WP_Query();

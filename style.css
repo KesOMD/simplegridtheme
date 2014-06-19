@@ -1940,7 +1940,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
-	margin: 0;
+	margin: 0 0 15px;
 }
 
 .related-post
@@ -2028,6 +2028,21 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .fb-comments span
 {
 	width: 480px;
+}
+
+.com-header
+{
+	width: 480px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.com-header h1
+{
+	color: #000;
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
 }
 
 /* ----- 404 error page ----- */
@@ -2146,7 +2161,9 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .no-posts-here
 {
 	text-align: center;
-	height: 300px;
+	font-family: RobotoRegular;
+	font-size: 14pt;
+	margin-bottom: 30px;
 }
 
 /* ----- Search Results Page ----- */

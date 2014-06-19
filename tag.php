@@ -9,11 +9,8 @@
         <div id="load_posts_container">
 
             <div class="cat-header">
-                <div class="cat-name">
+                <div class="cat-name cat-desc">
                     <h1><?php single_tag_title(); ?></h1>
-                </div>
-                <div class="cat-desc">
-                    <p><?php echo tag_description(); ?></p>
                 </div>
             </div>
 
