@@ -36,7 +36,8 @@
             </div>
 
             <div class="footer_copyright">
-                <a href="http://www.jamesvillas.co.uk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /></a>
+                <a href="http://www.jamesvillas.co.uk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /></a>
+                <a href="http://www.jamesvillas.co.uk/atol-abta" alt="Learn more about our ATOL & ABTA Protection"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/atol-abta.png" /></a>
                 <p>&#169; 2014 James Villas</p>
             </div>
 
@@ -67,15 +68,15 @@
                 <h3>Social</h3>
                 <div class="footer-social-left">
                     <ul>
-                        <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /><p>Facebook</p></a></li>
-                        <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /><p>Twitter</p></a></li>
-                        <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /><p>Google +</p></a></li>
+                        <li><a href="https://www.facebook.com/JamesVillaHolidays" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /><p>Facebook</p></a></li>
+                        <li><a href="https://twitter.com/jamesvillasuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /><p>Twitter</p></a></li>
+                        <li><a href="https://plus.google.com/+jamesvillas/posts" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /><p>Google +</p></a></li>
                     </ul>
                 </div>
                 <div class="footer-social-right">
                     <ul>
-                        <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /><p>Pintrest</p></a></li>
-                        <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /><p>YouTube</p></a></li>
+                        <li><a href="http://www.pinterest.com/jamesvillasuk/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /><p>Pintrest</p></a></li>
+                        <li><a href="https://www.youtube.com/user/jamesvillasuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /><p>YouTube</p></a></li>
                     </ul>
                 </div>
             </div>
@@ -92,10 +93,6 @@
                         
                     </div>
                 </a>
-            </div>
-
-            <div class="footer-atol">
-                <a href="http://www.jamesvillas.co.uk/atol-abta" alt="Learn more about our ATOL & ABTA Protection"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/atol-abta.png" /></a>
             </div>
 
             <div class="clear"></div>

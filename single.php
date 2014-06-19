@@ -67,7 +67,7 @@
                             $archive_month = get_the_time('m'); 
                             $archive_day   = get_the_time('d'); 
                             ?>
-                            on <a href="<?php echo get_day_link( $archive_year, $archive_month, $archive_day); ?>"><?php the_date( 'd/m/Y'); ?></a>
+                            on <a href="<?php echo get_month_link( $archive_year, $archive_month); ?>"><?php the_date( 'd/m/Y'); ?></a>
                         </p>
                     </div>
 
