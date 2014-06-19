@@ -302,6 +302,10 @@
         $gallistpage = get_page_by_title( "Gallery", "ARRAY_N" );
         $gallistpageID = $gallistpage[0];
         $gallistpageURL = get_page_link( $gallistpageID );
+
+        $soclistpage = get_page_by_title( "Social", "ARRAY_N" );
+        $soclistpageID = $soclistpage[0];
+        $soclistpageURL = get_page_link( $soclistpageID );
         ?>
         <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><div class="bl"><p>Destinations</p></div></a></li>
         <!--
@@ -309,6 +313,7 @@
         -->
         <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><div class="whi"><p>Categories</p></div></a></li>
         <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><div class="bl"><p>Gallery</p></div></a></li>
+        <li><a href="<?php echo $soclistpageURL; ?>" target="_self" alt="Social Page"><div class="whi"><p>Social</p></div></a></li>
       </ul>
   </div>
 

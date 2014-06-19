@@ -2261,6 +2261,21 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin-right: 5px;
 }
 
+/* ----- Social Page ----- */
+
+.social-yt-cont
+{
+	width: 290px;
+	margin: 15px auto;
+}
+
+.social-tw-cont
+{
+	width: 354px;
+	margin: 15px auto;
+}
+
+
 /* ----- Author Page ----- */
 
 .desktop-social
@@ -2985,6 +3000,26 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	{
 		width: 1008px;
 		margin: 0 auto;
+	}
+
+	/* ----- small window!!! Social Page ----- */
+
+	.social-tw-cont
+	{
+		width: 290px;
+		margin: 15px auto;
+	}
+
+	#soc-page>.social-tw-cont>.aiwidgetscss
+	{
+		height: 300px;
+		overflow: hidden;
+	}
+
+	.imgdisplay
+	{
+		width: 278px;
+		padding: 0;
 	}
 
 	/* small window!!! Author page */
@@ -3821,6 +3856,26 @@ li.share-email a.sd-button > span {
 #gal-page>#pinterest-pinboard-container
 {
 	width: 284px;
+}
+
+/* ----- Social Page iPhone Portrait ----- */
+
+.social-tw-cont
+{
+	width: 290px;
+	margin: 15px auto;
+}
+
+#soc-page>.social-tw-cont>.aiwidgetscss
+{
+	height: 300px;
+	overflow: hidden;
+}
+
+.imgdisplay
+{
+	width: 278px;
+	padding: 0;
 }
 
 /* ----- Author Page iPhone5 Portrait ----- */
