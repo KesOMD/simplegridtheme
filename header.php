@@ -228,6 +228,8 @@
             </div>
             <div class="social-divider"></div>
             <div class="menu-item-right">
+              <h2>Twitter</h2>
+              <?php echo do_shortcode("[AIGetTwitterFeeds ai_username='jamesvillasuk' ai_numberoftweets='20' ai_tweet_title='']"); ?>
             </div>
           </div>
         </div>

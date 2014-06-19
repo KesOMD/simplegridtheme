@@ -39,6 +39,58 @@ body
 	src: url(fonts/roboto-black.tff);
 }
 
+::-webkit-scrollbar
+{
+	/* 1 */
+}
+::-webkit-scrollbar-button
+{
+	/* 2 */
+	display: none;
+}
+::-webkit-scrollbar-button:start {
+    display: none;
+}
+::-webkit-scrollbar-button:end {
+    display: none;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:start:increment,
+::-webkit-scrollbar-button:vertical:end:decrement {
+    display: none;
+}
+
+::-webkit-scrollbar-button:vertical:start:single-button
+{
+	display: none;
+}
+
+::-webkit-scrollbar-track
+{
+	/* 3 */
+}
+::-webkit-scrollbar-track-piece
+{
+	/* 4 */
+}
+::-webkit-scrollbar-thumb
+{
+	/* 5 */
+}
+::-webkit-scrollbar-corner
+{
+	/* 6 */
+}
+::-webkit-resizer
+{
+	/* 7 */
+}
+
 h1,h2,h3,h4,h5,p { margin: 10px 0; }
 
 .left { float: left; }
@@ -2449,6 +2501,139 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: none;
 }
 
+/* Twitter WIDGET */
+
+.aiwidgetscss
+{
+	width: inherit;
+	text-align: left;
+	background-color: #fff;
+	height: 213px;
+	overflow-y: auto; 
+}
+
+.imgdisplay
+{
+	width: 320px;
+	padding: 10px 0 0 10px;
+	margin-bottom: 10px !important;
+}
+
+.widget-title
+{
+	display: none;
+}
+
+.aiwidget-title
+{
+	display: none;
+}
+
+.imgalign
+{
+	width: 30px;
+	height: 30px;
+}
+
+.tweettxts, .widget .tweettxts
+{
+	width: inherit;
+	padding-bottom: 15px;
+}
+
+.tweet_author_name
+{
+	float: left;
+	margin-right: 4px;
+	padding-top: 6px;
+}
+
+.tweet_author
+{
+	float: left;
+	margin-right: 3px;
+	padding-top: 6px;
+}
+
+.tweet_date
+{
+	float: left;
+	margin-right: 0px;
+	padding-top: 6px;
+}
+
+.aiwidgetscss .tweet_author_name a, .widget .tweet_author_name a
+{
+	text-decoration: none !important;
+	font-family: RobotoBold;
+	font-weight: normal !important;
+	font-size: 10pt !important;
+}
+
+.aiwidgetscss .tweet_author_name a:hover, .widget .tweet_author_name a:hover
+{
+	
+	text-decoration: underline !important;
+}
+
+.aiwidgetscss .tweet_author_name .ta-name, .widget .tweet_author_name .ta-name
+{
+	color: #000 !important;
+
+}
+
+.aiwidgetscss .tweet_author a, .widget .tweet_author a
+{
+	text-decoration: none !important;
+	font-family: RobotoRegular;
+	color: #707070 !important;
+	font-size: 8pt !important;
+}
+
+.aiwidgetscss .tweet_author a:hover, .widget .tweet_author a:hover
+{
+	
+	text-decoration: underline !important;
+}
+
+.aiwidgetscss .tweet_date a, .widget .tweet_date a
+{
+	text-decoration: none !important;
+	font-family: RobotoRegular;
+	color: #707070 !important;
+	font-size: 8pt !important;
+}
+
+.aiwidgetscss .tweet_date a:hover, .widget .tweet_date a:hover
+{
+	
+	text-decoration: underline !important;
+}
+
+.tweettext a, .widget .tweettext a
+{
+	color: #707070;
+	display: inline;
+}
+
+.tweet-content
+{
+	overflow: hidden;
+	display: block;
+	float: left;
+	margin-top: 10px;
+}
+
+.tweet-content a
+{
+	color: #008acc !important;
+}
+
+.tweetlink
+{
+	display: none;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1220px) {
 	
 	/* small window!!! header */
@@ -2511,6 +2696,57 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	.social-icon-container
 	{
 		width: 55%;
+	}
+
+	.menu-item-container
+	{
+		width: 1024px;
+	}
+
+	.social-divider
+	{
+		margin: 0;
+	}
+
+	.menu-item-left
+	{
+		width: 33%;
+	}
+
+	.menu-item-center
+	{
+		width: 33%;
+	}
+
+	.menu-item-right
+	{
+		float: left;
+		width: 33%;
+	}
+
+	/* small window!!! Pinterest widget */
+
+	#pinterest-pinboard-container
+	{
+		width: 274px;
+	}
+
+	#pinterest-pinboard-container .row a
+	{
+		margin-right: 10px;
+	}
+
+	/* small window!!! Twitter widget */
+
+	.aiwidgetscss
+	{
+		width: 289px;
+		margin: 0 auto;
+	}
+
+	.imgdisplay
+	{
+		width: 260px;
 	}
 
 	/* small window!!! featured posts */
