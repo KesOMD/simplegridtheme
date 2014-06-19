@@ -67,11 +67,18 @@
   <div id="header">
     <div class="header-wrapper">
       <div class="logo-mobile">
-        <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" />
+        <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /></a>
       </div>
+      <!--
+      <div class="search_cont_mob">
+          <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
+            <input type="text" name="s" id="s" value="Search" onfocus="if ( this.value == 'Search' ) { this.value = '' }" onblur="if (this.value == '') { this.value = 'Search' }" />
+            <INPUT TYPE="image" src="<?php bloginfo('stylesheet_directory'); ?>/images/search-image.png" class="search_icon" BORDER="0" ALT="Submit Form">
+          </form>
+        </div>//search_cont-->
       <div class="header-left">
         <ul id="logo-nav">
-          <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/logo2.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
+          <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
             <ul class="sub_navigation">
               <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
               <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
@@ -260,11 +267,11 @@
         <!-- <div class="clear"></div>-->
         <div class="social-icon-container">
           <ul class="social_icons">
-            <li><a href="https://www.facebook.com/JamesVillaHolidays"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
-            <li><a href="https://twitter.com/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
-            <li><a href="https://plus.google.com/+jamesvillas/posts"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
-            <li><a href="http://www.pinterest.com/jamesvillasuk/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
-            <li><a href="https://www.youtube.com/user/jamesvillasuk"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /></a></li>
+            <li><a href="https://www.facebook.com/JamesVillaHolidays" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/facebook-icon.png" /></a></li>
+            <li><a href="https://twitter.com/jamesvillasuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/twitter-icon.png" /></a></li>
+            <li><a href="https://plus.google.com/+jamesvillas/posts" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/gplus-icon.png" /></a></li>
+            <li><a href="http://www.pinterest.com/jamesvillasuk/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /></a></li>
+            <li><a href="https://www.youtube.com/user/jamesvillasuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /></a></li>
           </ul>
         </div>
 
