@@ -2693,7 +2693,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: none;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1220px) {
+@media only screen and (min-width: 1025px) and (max-width: 1220px), only screen and (device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
 	
 	/* small window!!! header */
 
@@ -4897,7 +4897,7 @@ li.share-email a.sd-button > span {
 
 /* for tablet */
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
 /* ----- Tablet header portrait ----- */
 
