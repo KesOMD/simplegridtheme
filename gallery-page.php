@@ -15,7 +15,9 @@ Template Name: Gallery Page
                 <?php the_content(); ?>
             </div>
             <div class="blank-text">
-                <?php echo do_shortcode('[pinterest_pinboard username="jamesvillasuk" rows=3 cols=4 new_window=1]') ?>
+                <div class="gallery-cont" id="gal-page">
+                    <?php echo do_shortcode('[pinterest_pinboard username="jamesvillasuk" rows=3 cols=4 new_window=1]') ?>
+                </div>
             </div>
             <div class="related-post-cont" id="error-related">
                 <h2>Popular Articles</h2>

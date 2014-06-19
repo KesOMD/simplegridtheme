@@ -2241,6 +2241,26 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-size: 11pt;
 }
 
+/* ----- Gallery Page ----- */
+.gallery-cont
+{
+	width: inherit;
+	margin: 0 auto;
+	background-color: #f3fcff;
+	padding: 15px 0;
+}
+
+#gal-page>#pinterest-pinboard-container
+{
+	width: 304px;
+}
+
+#gal-page>#pinterest-pinboard-container .row a
+{
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 /* ----- Author Page ----- */
 
 .desktop-social
@@ -3782,6 +3802,7 @@ li.share-email a.sd-button > span {
 .blank-header
 {
 	width: 300px;
+	margin: 20px auto 20px;
 }
 
 .blank-text
@@ -3795,6 +3816,12 @@ li.share-email a.sd-button > span {
 	font-size: 14pt;
 }
 
+/* ----- Gallery Page iPhone Portrait ----- */
+
+#gal-page>#pinterest-pinboard-container
+{
+	width: 284px;
+}
 
 /* ----- Author Page iPhone5 Portrait ----- */
 
@@ -5620,6 +5647,12 @@ li.share-email a.sd-button > span {
 }
 
 /* ----- Blank Page Tablet Portrait ----- */
+
+.blank-header
+{
+	width: 300px;
+	margin: 20px auto 20px;
+}
 
 .blank-content
 {

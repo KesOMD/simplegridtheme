@@ -298,12 +298,17 @@
         $destlistpage = get_page_by_title( "Browse Destinations", "ARRAY_N" );
         $destlistpageID = $destlistpage[0];
         $destlistpageURL = get_page_link( $destlistpageID );
+
+        $gallistpage = get_page_by_title( "Gallery", "ARRAY_N" );
+        $gallistpageID = $gallistpage[0];
+        $gallistpageURL = get_page_link( $gallistpageID );
         ?>
         <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><div class="bl"><p>Destinations</p></div></a></li>
         <!--
         <li><a href="http://www.jamesvillas.co.uk/information/about" target="_self" alt="About Us"><div class="bl"><p>Social</p></div></a></li>
         -->
         <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><div class="whi"><p>Categories</p></div></a></li>
+        <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><div class="bl"><p>Gallery</p></div></a></li>
       </ul>
   </div>
 
