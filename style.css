@@ -2238,6 +2238,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	line-height: 23px;
 	font-family: RobotoRegular, Arial;
 	margin-bottom: 20px;
+	font-size: 11pt;
 }
 
 /* ----- Author Page ----- */
@@ -2956,6 +2957,14 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	{
 		width: 1008px;
 		height: 467px;
+	}
+
+	/* ----- small window!!! Blank Page ----- */
+
+	.blank-content
+	{
+		width: 1008px;
+		margin: 0 auto;
 	}
 
 	/* small window!!! Author page */
@@ -3761,6 +3770,31 @@ li.share-email a.sd-button > span {
 {
 	display: none;
 }
+
+/* ----- Blank Page iPhone5 Portrait ----- */
+
+.blank-content
+{
+	width: 300px;
+	margin: 0 auto;
+}
+
+.blank-header
+{
+	width: 300px;
+}
+
+.blank-text
+{
+	width: 300px;
+}
+
+.blank-text p
+{
+	line-height: 26px;
+	font-size: 14pt;
+}
+
 
 /* ----- Author Page iPhone5 Portrait ----- */
 
@@ -4668,6 +4702,31 @@ li.share-email a.sd-button > span {
 	display: none;
 }
 
+/* ----- Blank Page Mobile Portrait ----- */
+
+.blank-content
+{
+	width: 460px;
+	margin: 0 auto;
+}
+
+.blank-header
+{
+	width: 460px;
+}
+
+.blank-text
+{
+	width: 460px;
+}
+
+.blank-text p
+{
+	line-height: 26px;
+	font-size: 14pt;
+}
+
+
 /* ----- Author Page Mobile Portrait ----- */
 
 .author-social
@@ -5558,6 +5617,20 @@ li.share-email a.sd-button > span {
 .rel-auth
 {
 	display: none;
+}
+
+/* ----- Blank Page Tablet Portrait ----- */
+
+.blank-content
+{
+	width: 768px;
+	margin: 0 auto;
+}
+
+.blank-text p
+{
+	line-height: 26px;
+	font-size: 14pt;
 }
 
 /* ----- Author Page Tablet Portrait ----- */
