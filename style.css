@@ -3149,6 +3149,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-size: 18pt;
 	float: left;
 	width: 75px;
+	margin-left: 10px;
 }
 
 .mob-menu-button img
@@ -3580,12 +3581,29 @@ ul.sub_navigation li a p
 
 #foot-button-text
 {
-	width: 172px;
+	width: 174px;
+	height: 72px;
+	margin: 0 auto;
+}
+
+#foot-button-text p
+{
+	width: 134px;
+	margin: 23px 0 0 0;
 }
 
 #footer-nav-cont
 {
+	width: 292px;
 	height: 100%;
+	float: none;
+	text-align: center;
+}
+
+#foot-nav
+{
+	background-color: #008acc;
+	height: 72px;
 }
 
 /* ----- Article Page Body iPhone5 Portrait ----- */
@@ -5038,7 +5056,8 @@ li.share-email a.sd-button > span {
 
 .logo-mobile a
 {
-	width: 200px
+	width: 200px;
+	margin-left: 100px;
 }
 
 .mob-menu-cont
@@ -5057,6 +5076,7 @@ li.share-email a.sd-button > span {
 	width: 185px;
 	height: 72px;
 	margin-top: 20px;
+	margin-right: 100px;
 	cursor: pointer;
 	float: right;
 }
@@ -5095,6 +5115,11 @@ ul.sub_navigation
 {
 	margin-top: 0;
 	width: inherit;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px #008acc solid;
+	text-align: center;
 }
 
 ul.sub_navigation li
