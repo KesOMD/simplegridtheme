@@ -69,6 +69,43 @@
       <div class="logo-mobile">
         <a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /></a>
       </div>
+
+      <div class="mob-menu-cont">
+        <div class="mob-menu-button" id="mob-nav">
+          <div class="button-text">
+            <p>Blog Menu</p>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/burger.png">
+          </div>
+        </div>
+      </div>
+      <div class="mob-drop-cont">
+        <ul class="sub_navigation" id="mob-drop">
+          <?php
+          $catlistpage = get_page_by_title( "Browse Categories", "ARRAY_N" );
+          $catlistpageID = $catlistpage[0];
+          $catlistpageURL = get_page_link( $catlistpageID );
+
+          $destlistpage = get_page_by_title( "Browse Destinations", "ARRAY_N" );
+          $destlistpageID = $destlistpage[0];
+          $destlistpageURL = get_page_link( $destlistpageID );
+
+          $gallistpage = get_page_by_title( "Gallery", "ARRAY_N" );
+          $gallistpageID = $gallistpage[0];
+          $gallistpageURL = get_page_link( $gallistpageID );
+
+          $soclistpage = get_page_by_title( "Social", "ARRAY_N" );
+          $soclistpageID = $soclistpage[0];
+          $soclistpageURL = get_page_link( $soclistpageID );
+          ?>
+        
+          <li><a href="<?php bloginfo('url'); ?>" target="_self" alt="Return Home"><div class="whi"><p>Home</p></div></a></li>
+          <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><div class="bl"><p>Destinations</p></div></a></li>
+          <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><div class="whi"><p>Categories</p></div></a></li>
+          <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><div class="bl"><p>Gallery</p></div></a></li>
+          <li><a href="<?php echo $soclistpageURL; ?>" target="_self" alt="Social Page"><div class="whi"><p>Social</p></div></a></li>
+        </ul>
+      </div>
+      
       <!--
       <div class="search_cont_mob">
           <form role="search" method="get" id="searchform" action="<?php echo home_url( '/' ); ?>">
@@ -282,40 +319,7 @@
     </div><!-- header-wrapper -->
   </div><!--//header-->
 
-  <div class="mob-menu-cont">
-    <div class="mob-menu-button" id="mob-nav">
-      <div class="button-text">
-        <p>Blog Menu</p>
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/mob-menu-arrow.png">
-      </div>
-    </div>
-      <ul class="sub_navigation" id="mob-drop">
-        <?php
-        $catlistpage = get_page_by_title( "Browse Categories", "ARRAY_N" );
-        $catlistpageID = $catlistpage[0];
-        $catlistpageURL = get_page_link( $catlistpageID );
-
-        $destlistpage = get_page_by_title( "Browse Destinations", "ARRAY_N" );
-        $destlistpageID = $destlistpage[0];
-        $destlistpageURL = get_page_link( $destlistpageID );
-
-        $gallistpage = get_page_by_title( "Gallery", "ARRAY_N" );
-        $gallistpageID = $gallistpage[0];
-        $gallistpageURL = get_page_link( $gallistpageID );
-
-        $soclistpage = get_page_by_title( "Social", "ARRAY_N" );
-        $soclistpageID = $soclistpage[0];
-        $soclistpageURL = get_page_link( $soclistpageID );
-        ?>
-        <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><div class="bl"><p>Destinations</p></div></a></li>
-        <!--
-        <li><a href="http://www.jamesvillas.co.uk/information/about" target="_self" alt="About Us"><div class="bl"><p>Social</p></div></a></li>
-        -->
-        <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><div class="whi"><p>Categories</p></div></a></li>
-        <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><div class="bl"><p>Gallery</p></div></a></li>
-        <li><a href="<?php echo $soclistpageURL; ?>" target="_self" alt="Social Page"><div class="whi"><p>Social</p></div></a></li>
-      </ul>
-  </div>
+  
 
   <div id="content_container">
 

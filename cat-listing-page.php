@@ -13,7 +13,14 @@ get_header(); ?>
 
     <div class="listing">
         <ul class="bycategories">
-            <?php wp_list_categories('title_li='); ?>
+            <?php /* wp_list_categories('title_li='); */?>
+            <?php
+            $categories = get_categories();
+            foreach ( $categories as $category )
+            {
+                echo '<li class="cat-item"><a href="' . get_category_link( $category->term_id ) . '">' . $category->name . ' ' . '>>' . '</a></li>';
+            }
+            ?>
         </ul>
         <div class="clear"></div>
     </div>

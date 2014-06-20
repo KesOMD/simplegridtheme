@@ -1654,6 +1654,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	top: 20px;
 }
 
+#sharing_email
+{
+	left: 583px;
+}
+
 .comment-button
 {
 	height: 50px;
@@ -2977,7 +2982,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 		width: 190px;
 	}
 
-	/* small window!!! Article page */
+	/* ----- small window!!! Article page ----- */
 	.post-content
 	{
 		width: 1008px;
@@ -2992,6 +2997,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	{
 		width: 1008px;
 		height: 467px;
+	}
+
+	#sharing_email
+	{
+		left: 308px;
 	}
 
 	/* ----- small window!!! Blank Page ----- */
@@ -3095,9 +3105,10 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .logo-mobile
 {
 	display: block;
-	width: 200px;
-	padding: 15px;
-	margin: 0 auto;
+	width: 154px;
+	padding: 15px 0 15px 10px;
+	margin: 0;
+	float: left;
 }
 
 .search_cont_mob
@@ -3108,28 +3119,28 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .mob-menu-cont
 {
 	display: block;
-	width: 300px;
-	margin: 0 auto;
-	padding-top: 15px;
+	width: 130px;
+	margin: 12px 0 0 15px;
+	padding-top: 0;
 	overflow: hidden;
-	text-align: center;
+	text-align: left;
 	color: #fff;
+	float: left;
 }
 
 .mob-menu-button
 {
 	width: inherit;
-	height: 72px;
-	background-color: #008acc;
+	height: 91px;
 	cursor: pointer;
 }
 
 .button-text
 {
-	width: 155px;
-	margin: 0 auto;
-	padding-top: 8px;
+	width: 130px;
+	margin: 0;
 	overflow: hidden;
+	height: 91px;
 }
 
 .mob-menu-button p
@@ -3137,19 +3148,34 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: RobotoRegular, Arial;
 	font-size: 18pt;
 	float: left;
+	width: 75px;
 }
 
 .mob-menu-button img
 {
 	float: left;
-	margin: 14px 0;
-	padding-left: 16px;
+	margin: 25px 0 0 10px;
+	width: 30px;
+	height: 27px;
+}
+
+.mob-drop-cont
+{
+	margin-top: 103px;
+	position: absolute;
+	left: 0;
+	width: inherit;
 }
 
 ul.sub_navigation
 {
 	margin-top: 0;
-	width: 298px;
+	width: inherit;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px #008acc solid;
+	text-align: center;
 }
 
 ul.sub_navigation li
@@ -3614,6 +3640,12 @@ ul.sub_navigation li a p
 	border-bottom: 1px #707070 solid;
 }
 
+#sharing_email
+{
+	left: 128px;
+	width: 266px !important; 
+}
+
 .sharedaddy
 {
 	float: none;
@@ -3955,6 +3987,7 @@ li.share-email a.sd-button > span {
 .listing
 {
 	text-align: center;
+	margin-bottom: 25px;
 }
 
 .cat-header
@@ -4971,11 +5004,17 @@ li.share-email a.sd-button > span {
 	padding: 0;
 }
 
-.logo { float: none; max-width: 300px; margin: 0 auto; }
+.logo
+{
+	float: none;
+	width: 200px;
+	height: 92px;
+	margin: 0 auto;
+}
 
 .header-wrapper
 {
-	width: 100%;
+	width: inherit;
 }
 
 .header-left
@@ -4991,17 +5030,23 @@ li.share-email a.sd-button > span {
 .logo-mobile
 {
 	display: block;
-	width: 107px;
-	padding: 15px;
-	margin: 0 auto;
+	width: 50%;
+	padding: 0;
+	margin: 15px 0;
+	float: left;
+}
+
+.logo-mobile a
+{
+	width: 200px
 }
 
 .mob-menu-cont
 {
 	display: block;
-	width: 380px;
-	margin: 0 auto;
-	padding-top: 15px;
+	width: 50%;
+	height: 122px;
+	margin: 0;
 	overflow: hidden;
 	text-align: center;
 	color: #fff;
@@ -5009,15 +5054,16 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button
 {
-	width: inherit;
+	width: 185px;
 	height: 72px;
-	background-color: #008acc;
+	margin-top: 20px;
 	cursor: pointer;
+	float: right;
 }
 
 .button-text
 {
-	width: 155px;
+	width: 200px;
 	margin: 0 auto;
 	padding-top: 8px;
 	overflow: hidden;
@@ -5025,9 +5071,12 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button p
 {
-	font-family: RobotoRegular, Arial;
+	font-family: RobotoBold, Arial;
 	font-size: 18pt;
 	float: left;
+	padding-top: 17px;
+	letter-spacing: 1px;
+	margin: 0;
 }
 
 .mob-menu-button img
@@ -5037,10 +5086,15 @@ li.share-email a.sd-button > span {
 	padding-left: 16px;
 }
 
+.mob-drop-cont
+{
+	width: 100%;
+}
+
 ul.sub_navigation
 {
 	margin-top: 0;
-	width: 378px;
+	width: inherit;
 }
 
 ul.sub_navigation li
