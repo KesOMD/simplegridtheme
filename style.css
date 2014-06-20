@@ -2713,7 +2713,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: none;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1220px), only screen and (device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1) {
+@media only screen and (min-width: 1025px) and (max-width: 1220px), only screen and (device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (device-width : 1280px) and (orientation : landscape) {
 	
 	/* small window!!! header */
 
@@ -3552,6 +3552,12 @@ ul.sub_navigation li a p
 	float: none;
 	margin: 0 auto;
 	padding-top: 30px;
+	text-align: center;
+}
+
+.footer_copyright p
+{
+	float: none;
 }
 
 .footer-main-site
@@ -5481,6 +5487,13 @@ ul.sub_navigation li a p
 	float: none;
 	margin: 0 auto;
 	padding-top: 30px;
+	width: 200px;
+	text-align: center;
+}
+
+.footer_copyright p
+{
+	float: none;
 }
 
 .footer-main-site
@@ -5510,12 +5523,40 @@ ul.sub_navigation li a p
 
 #foot-button-text
 {
-	width: 172px;
+	width: 184px;
+	height: 72px;
+	margin: 0 auto;
+}
+
+#foot-button-text p
+{
+	width: 146px;
+	margin: 0;
+	padding-top: 10px;
 }
 
 #footer-nav-cont
 {
+	width: 292px;
 	height: 100%;
+	float: none;
+	text-align: center;
+	margin: 10px auto 0;
+}
+
+#foot-nav
+{
+	background-color: #008acc;
+	height: 72px;
+	width: inherit;
+	float: none;
+	margin: 0;
+}
+
+#foot-drop
+{
+	width: 290px;
+	border: 1px #008acc solid;
 }
 
 /* ----- Article Page Body Mobile Portrait ----- */
