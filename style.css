@@ -3606,6 +3606,12 @@ ul.sub_navigation li a p
 	height: 72px;
 }
 
+#foot-drop
+{
+	width: 290px;
+	border: 1px #008acc solid;
+}
+
 /* ----- Article Page Body iPhone5 Portrait ----- */
 
 .post-content
