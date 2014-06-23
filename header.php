@@ -10,7 +10,7 @@
 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
-  <meta property="fb:admins" content="100008386361789"/>
+  <meta property="fb:admins" content="100008386361789,192753802856"/>
   <meta property="fb:app_id" content="518698344902427"/>
 
 <!--[if lt IE 9]>
