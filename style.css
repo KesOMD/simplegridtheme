@@ -3136,27 +3136,32 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .logo-mobile
 {
 	display: block;
-	width: 154px;
-	padding: 15px 0 15px 10px;
+	width: 50%;
+	/*padding: 15px 0 15px 10px;*/
 	margin: 0;
 	float: left;
+}
+
+.logo-mobile a
+{
+	padding-top: 15px;
+	padding-left: 10px;
 }
 
 .mob-menu-cont
 {
 	display: block;
-	width: 130px;
-	margin: 12px 0 0 15px;
+	width: 50%;
+	/* margin: 15px auto; */
 	padding-top: 0;
 	overflow: hidden;
 	text-align: left;
 	color: #fff;
-	float: left;
+	float: right;
 }
 
 .mob-menu-button
 {
-	width: inherit;
 	height: 91px;
 	cursor: pointer;
 }
@@ -3167,11 +3172,14 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin: 0;
 	overflow: hidden;
 	height: 91px;
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
 }
 
 .mob-menu-button p
 {
-	font-family: RobotoRegular, Arial;
+	font-family: RobotoBold, Arial;
 	font-size: 18pt;
 	float: left;
 	width: 75px;
@@ -3318,13 +3326,14 @@ ul.sub_navigation li a p
 
 .mob-im-cont
 {
-	width: 360px;
+	width: 480px;
 	display: block;
+	margin: 0 auto;
 }
 
 .mob-im-cont img
 {
-	width: 360px
+	width: 480px
 }
 
 .com-header
@@ -3616,6 +3625,8 @@ ul.sub_navigation li a p
 	width: 174px;
 	height: 72px;
 	margin: 0 auto;
+	padding: 0;
+	float: none;
 }
 
 #foot-button-text p
@@ -3628,6 +3639,7 @@ ul.sub_navigation li a p
 {
 	width: 292px;
 	height: 100%;
+	margin: 15px auto;
 	float: none;
 	text-align: center;
 }
@@ -4153,34 +4165,35 @@ li.share-email a.sd-button > span {
 .logo-mobile
 {
 	display: block;
-	width: 154px;
-	padding: 15px 0 15px 10px;
+	width: 50%;
+	/*padding: 15px 0 15px 10px;*/
 	margin: 0;
 	float: left;
 }
 
-.search_cont_mob
+.logo-mobile a
 {
-
+	padding-top: 10px;
+	padding-left: 10px;
 }
 
 .mob-menu-cont
 {
 	display: block;
-	width: 130px;
-	margin: 12px 0 0 15px;
+	width: 50%;
+	/*margin: 12px 0 0 15px;*/
 	padding-top: 0;
 	overflow: hidden;
 	text-align: left;
 	color: #fff;
-	float: left;
+	float: right;
 }
 
 .mob-menu-button
 {
-	width: inherit;
 	height: 91px;
 	cursor: pointer;
+	float: right;
 }
 
 .button-text
@@ -4193,7 +4206,7 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button p
 {
-	font-family: RobotoRegular, Arial;
+	font-family: RobotoBold, Arial;
 	font-size: 18pt;
 	float: left;
 	width: 75px;
@@ -4216,17 +4229,6 @@ li.share-email a.sd-button > span {
 	width: inherit;
 }
 
-ul.sub_navigation
-{
-	margin-top: 0;
-	width: inherit;
-	border-top: none;
-	border-left: none;
-	border-right: none;
-	border-bottom: 3px #008acc solid;
-	text-align: center;
-}
-
 .header-wrapper
 {
 	width: 100%;
@@ -4242,33 +4244,6 @@ ul.sub_navigation
 	display: none;
 }
 
-.logo-mobile
-{
-	display: block;
-	width: 107px;
-	padding: 15px;
-	margin: 0 auto;
-}
-
-.mob-menu-cont
-{
-	display: block;
-	width: 380px;
-	margin: 0 auto;
-	padding-top: 15px;
-	overflow: hidden;
-	text-align: center;
-	color: #fff;
-}
-
-.mob-menu-button
-{
-	width: inherit;
-	height: 72px;
-	background-color: #008acc;
-	cursor: pointer;
-}
-
 .button-text
 {
 	width: 155px;
@@ -4277,24 +4252,15 @@ ul.sub_navigation
 	overflow: hidden;
 }
 
-.mob-menu-button p
-{
-	font-family: RobotoRegular, Arial;
-	font-size: 18pt;
-	float: left;
-}
-
-.mob-menu-button img
-{
-	float: left;
-	margin: 14px 0;
-	padding-left: 16px;
-}
-
 ul.sub_navigation
 {
 	margin-top: 0;
-	width: 378px;
+	width: inherit;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px #008acc solid;
+	text-align: center;
 }
 
 ul.sub_navigation li
@@ -4681,12 +4647,40 @@ ul.sub_navigation li a p
 
 #foot-button-text
 {
-	width: 172px;
+	width: 174px;
+	height: 72px;
+	margin: 0 auto;
+	padding: 0;
+	float: none;
+}
+
+#foot-button-text p
+{
+	width: 134px;
+	margin: 23px 0 0 0;
 }
 
 #footer-nav-cont
 {
+	width: 292px;
 	height: 100%;
+	margin: 15px auto;
+	float: none;
+	text-align: center;
+}
+
+#foot-nav
+{
+	background-color: #008acc;
+	width: inherit;
+	height: 72px;
+	float: none;
+}
+
+#foot-drop
+{
+	width: 290px;
+	border: 1px #008acc solid;
 }
 
 /* ----- Article Page Body Mobile Portrait ----- */
