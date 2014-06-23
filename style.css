@@ -438,7 +438,7 @@ a, a:active, a:visited
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 206px;
+	height: 150px;
 	top: 91px;
 	left: 0;
 	background-color: #f3fcff;
@@ -483,7 +483,7 @@ a, a:active, a:visited
 	display: none;
 	position: absolute;
 	width: 100%;
-	height: 280px;
+	height: 150px;
 	top: 91px;
 	left: 0;
 	background-color: #f3fcff;
@@ -496,8 +496,14 @@ a, a:active, a:visited
 .menu-item-container
 {
 	width: 1200px;
-	margin: 25px auto 0 auto;
+	margin: 15px auto 0 auto;
 	display: block;
+	overflow: hidden;
+}
+
+.dest-row
+{
+	width: inherit;
 	overflow: hidden;
 }
 
@@ -582,7 +588,16 @@ a, a:active, a:visited
 	/* clear: both; */
 	list-style: url('images/bullet-point-arrow.png');
 	padding: 10px 0 10px 12px;
+	width: 120px;
 	margin-left: 33px;
+	margin-right: 75px;
+	float: left;
+}
+
+#last-item
+{
+	width: auto;
+	margin-right: 0;
 }
 
 .menu-item-container ul li a
@@ -4108,7 +4123,7 @@ li.share-email a.sd-button > span {
 
 /* FOR MOBILE PORTRAIT */
 
-@media only screen and (min-width: 480px) and (max-width: 767px), only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 767px), only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px), only screen and (device-width : 480px ) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio : 1.5) and (min--moz-device-pixel-ratio : 1.5) {
 
 
 
@@ -4121,7 +4136,82 @@ li.share-email a.sd-button > span {
 	padding: 0;
 }
 
-.logo { float: none; max-width: 300px; margin: 0 auto; }
+.logo-mobile
+{
+	display: block;
+	width: 154px;
+	padding: 15px 0 15px 10px;
+	margin: 0;
+	float: left;
+}
+
+.search_cont_mob
+{
+
+}
+
+.mob-menu-cont
+{
+	display: block;
+	width: 130px;
+	margin: 12px 0 0 15px;
+	padding-top: 0;
+	overflow: hidden;
+	text-align: left;
+	color: #fff;
+	float: left;
+}
+
+.mob-menu-button
+{
+	width: inherit;
+	height: 91px;
+	cursor: pointer;
+}
+
+.button-text
+{
+	width: 130px;
+	margin: 0;
+	overflow: hidden;
+	height: 91px;
+}
+
+.mob-menu-button p
+{
+	font-family: RobotoRegular, Arial;
+	font-size: 18pt;
+	float: left;
+	width: 75px;
+	margin-left: 10px;
+}
+
+.mob-menu-button img
+{
+	float: left;
+	margin: 25px 0 0 10px;
+	width: 30px;
+	height: 27px;
+}
+
+.mob-drop-cont
+{
+	margin-top: 103px;
+	position: absolute;
+	left: 0;
+	width: inherit;
+}
+
+ul.sub_navigation
+{
+	margin-top: 0;
+	width: inherit;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px #008acc solid;
+	text-align: center;
+}
 
 .header-wrapper
 {
@@ -5523,16 +5613,16 @@ ul.sub_navigation li a p
 
 #foot-button-text
 {
-	width: 184px;
+	width: 200px;
 	height: 72px;
 	margin: 0 auto;
 }
 
 #foot-button-text p
 {
-	width: 146px;
+	width: 160px;
 	margin: 0;
-	padding-top: 10px;
+	padding-top: 12px;
 }
 
 #footer-nav-cont

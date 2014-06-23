@@ -176,7 +176,7 @@
         
         <div class="bd-container1">
           <div class="menu-item-container">
-            <div class="menu-item-left">
+            <div class="dest-row">
               <ul>
                 <li>
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'croatia', 'post_tag' )->term_id ); ?>">
@@ -198,15 +198,16 @@
                     <?php $tag4 = get_term_by( 'slug', 'france', 'post_tag' ); echo $tag4->name; ?>
                   </a>
                 </li>
-              </ul>
-            </div>
-            <div class="menu-item-center">
-              <ul>
-                <li>
+                <li id="last-item">
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'greece', 'post_tag' )->term_id ); ?>">
                     <?php $tag5 = get_term_by( 'slug', 'greece', 'post_tag' ); echo $tag5->name; ?>
                   </a>
                 </li>
+              </ul>
+            </div>
+             
+            <div class="dest-row">
+              <ul>
                 <li>
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'italy', 'post_tag' )->term_id ); ?>">
                     <?php $tag6 = get_term_by( 'slug', 'italy', 'post_tag' ); echo $tag6->name; ?>
@@ -222,20 +223,21 @@
                     <?php $tag8 = get_term_by( 'slug', 'morocco', 'post_tag' ); echo $tag8->name; ?>
                   </a>
                 </li>
-              </ul>
-            </div>
-            <div class="menu-item-right">
-              <ul>
                 <li>
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'portugal', 'post_tag' )->term_id ); ?>">
                     <?php $tag9 = get_term_by( 'slug', 'portugal', 'post_tag' ); echo $tag9->name; ?>
                   </a>
                 </li>
-                <li>
+                <li id="last-item">
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'spain', 'post_tag' )->term_id ); ?>">
                     <?php $tag10 = get_term_by( 'slug', 'spain', 'post_tag' ); echo $tag10->name; ?>
                   </a>
                 </li>
+              </ul>
+            </div>
+              
+            <div class="dest-row">
+              <ul>
                 <li>
                   <a href="<?php echo get_tag_link(get_term_by( 'slug', 'turkey', 'post_tag' )->term_id ); ?>">
                     <?php $tag11 = get_term_by( 'slug', 'turkey', 'post_tag' ); echo $tag11->name; ?>
@@ -248,6 +250,7 @@
                 </li>
               </ul>
             </div>
+              
           </div>
         </div>
         
@@ -283,14 +286,6 @@
             <ul class="cat-listing">
               <?php wp_list_categories('exclude=1&number=12&hide_empty=0&orderby=name&title_li='); ?>
             </ul>
-            <!--
-            <br />
-            <div style="width: 422px; margin: 0 auto;">
-              <div class="view-more-cont" id="pop-load">
-                <?php next_posts_link('<img src="' . get_bloginfo('stylesheet_directory') . '/images/view-more-cat-bg.png" alt="Load more articles"/>') ?> 
-              </div>
-            </div>
-            -->
           </div>
         </div>
       </div>
