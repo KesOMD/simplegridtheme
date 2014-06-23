@@ -2728,7 +2728,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display: none;
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1220px), only screen and (device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (device-width : 1280px) and (orientation : landscape) {
+@media only screen and (min-width: 1024px) and (max-width: 1220px), only screen and (device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 1), only screen and (device-width : 1280px) and (orientation : landscape), only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1300px), only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1024px), only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1024px), only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1024px), only screen and (                min-resolution: 192dpi) and (min-width: 1024px), only screen and (                min-resolution: 2dppx)  and (min-width: 1024px)) {
 	
 	/* small window!!! header */
 
@@ -2807,6 +2807,17 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 		width: 1024px;
 	}
 
+	.menu-item-container ul li
+	{
+	/* clear: both; */
+	list-style: url('images/bullet-point-arrow.png');
+	padding: 10px 0 10px 12px;
+	width: 120px;
+	margin-left: 33px;
+	margin-right: 50px;
+	float: left;
+	}
+
 	.social-divider
 	{
 		margin: 0;
@@ -2826,6 +2837,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	{
 		float: left;
 		width: 33%;
+	}
+
+	.cat-listing
+	{
+		margin-left: 0px; 
 	}
 
 	/* small window!!! Pinterest widget */
@@ -3124,11 +3140,6 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	padding: 15px 0 15px 10px;
 	margin: 0;
 	float: left;
-}
-
-.search_cont_mob
-{
-
 }
 
 .mob-menu-cont
@@ -4121,9 +4132,12 @@ li.share-email a.sd-button > span {
 }
 
 
-/* FOR MOBILE PORTRAIT */
+/* FOR MOBILE PORTRAIT
 
-@media only screen and (min-width: 481px) and (max-width: 767px), only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px), only screen and (device-width : 480px ) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio : 1.5) and (min--moz-device-pixel-ratio : 1.5) {
+, only screen and (-webkit-device-pixel-ratio: 1) and (max-device-width: 768px)
+*/
+
+@media only screen and (min-width: 481px) and (max-width: 767px), only screen and (device-width : 480px ) and (orientation : portrait) and (-webkit-min-device-pixel-ratio: 1.5) and (min-device-pixel-ratio : 1.5) and (min--moz-device-pixel-ratio : 1.5) {
 
 
 
@@ -5649,7 +5663,7 @@ ul.sub_navigation li a p
 	border: 1px #008acc solid;
 }
 
-/* ----- Article Page Body Mobile Portrait ----- */
+/* ----- Article Page Body Tablet Portrait ----- */
 
 .post-content
 {
