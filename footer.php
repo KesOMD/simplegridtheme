@@ -75,7 +75,7 @@
                 </div>
                 <div class="footer-social-right">
                     <ul>
-                        <li><a href="http://www.pinterest.com/jamesvillasuk/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /><p>Pintrest</p></a></li>
+                        <li><a href="http://www.pinterest.com/jamesvillasuk/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/pinterest-icon.png" /><p>Pinterest</p></a></li>
                         <li><a href="https://www.youtube.com/user/jamesvillasuk" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/yt-icon.png" /><p>YouTube</p></a></li>
                     </ul>
                 </div>
