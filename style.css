@@ -995,6 +995,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	font-family: Georgia;
 	font-size: 22px;
+	font-weight: bold;
 }
 
 .link-container a
