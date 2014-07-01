@@ -313,7 +313,7 @@ ul.sub_navigation li a:hover
 
 a, a:active, a:visited
 {
-	display: block;
+	display: inline-block;
 	text-decoration: none;
 	color: #008acc;
 	letter-spacing: 1px;
@@ -346,7 +346,7 @@ a, a:active, a:visited
 {
 	position: absolute;
 	width: inherit;
-	height: 91px;
+	height: 94px;
 	top: 0;
 	left: 0;
 	text-decoration: none;
@@ -591,7 +591,7 @@ a, a:active, a:visited
 	/* clear: both; */
 	list-style: url('images/bullet-point-arrow.png');
 	padding: 10px 0 10px 12px;
-	width: 120px;
+	width: 150px;
 	margin-left: 33px;
 	margin-right: 75px;
 	float: left;
@@ -642,7 +642,7 @@ a, a:active, a:visited
 {
 	width: 1200px;
 	margin-bottom: 20px;
-	margin-left: 100px;
+	margin-left: 0;
 	overflow: hidden;
 }
 
@@ -1002,6 +1002,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	font-size: 15px;
 	letter-spacing: 0px;
+	width: 440px;
 }
 
 #bar
@@ -1126,6 +1127,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	width: 14px;
 	height: 14px;
+	padding-top: 2px;
+	padding-top: 4px\9\0; /* IE8, IE9 */
 	position: absolute;
 }
 
@@ -1164,6 +1167,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	width: 14px;
 	height: 14px;
+	padding-top: 2px;
+	padding-top: 4px\9\0; /* IE8, IE9 */
 	position: absolute;
 }
 
@@ -1394,6 +1399,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	margin: 0;
 	padding-top: 5px;
+	float: left;
 }
 
 .footer-social img
@@ -2186,6 +2192,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
+	margin-top: 30px;
 	margin-bottom: 18px;
 }
 
@@ -2200,6 +2207,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	line-height: 23px;
 	font-family: 'Roboto', Arial;
 	font-weight: 400;
+	font-size: 11pt;
 	margin-bottom: 20px;
 }
 
@@ -2373,7 +2381,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	font-family: 'Roboto', Arial;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 11pt;
 	line-height: 21px;
 }
 
@@ -2599,7 +2607,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 #pinterest-pinboard-container
 {
-	width: 289px;
+	width: 289px !important;
 	margin: 0 auto;
 }
 
@@ -3232,7 +3240,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .mob-drop-cont
 {
-	margin-top: 103px;
+	margin-top: 101px;
 	position: absolute;
 	left: 0;
 	width: inherit;
@@ -3241,7 +3249,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 ul.sub_navigation
 {
 	margin-top: 0;
-	width: inherit;
+	width: 320px;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -3252,11 +3260,14 @@ ul.sub_navigation
 ul.sub_navigation li
 {
 	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
 }
 
 ul.sub_navigation li a
 {
 	height: 50px;
+	width: 100%;
 }
 
 ul.sub_navigation li a p
@@ -3267,22 +3278,26 @@ ul.sub_navigation li a p
 .whi
 {
 	width: inherit;
-	height: 50px;
+	height: 60px;
+	margin-left: 0; 
 }
 
 .whi p
 {
 	margin: 0;
+	padding-top: 18px;
 }
 
 .bl
 {
 	width: inherit;
+	margin-left: 0;
 }
 
 .bl p
 {
 	margin: 0;
+	padding-top: 18px;
 }
 
 
@@ -3569,7 +3584,7 @@ ul.sub_navigation li a p
 #footer
 {
 	display: block;
-	height: 350px;
+	height: 400px;
 	width: 100%;
 }
 
@@ -3734,6 +3749,11 @@ ul.sub_navigation li a p
 .post-details p
 {
 	font-size: 14pt;
+}
+
+.post-date
+{
+	display: none;
 }
 
 .post-sharing-cont
@@ -4766,6 +4786,11 @@ ul.sub_navigation li a p
 	font-size: 14pt;
 }
 
+.post-date
+{
+	display: none;
+}
+
 .post-sharing-cont
 {
 	width: 460px;
@@ -5266,22 +5291,27 @@ li.share-email a.sd-button > span {
 ul.sub_navigation
 {
 	margin-top: 0;
-	width: inherit;
+	margin-left: 0px;
+	width: 100%;
 	border-top: none;
 	border-left: none;
 	border-right: none;
 	border-bottom: 2px #008acc solid;
 	text-align: center;
+	overflow: hidden;
+	height: 302px;
 }
 
 ul.sub_navigation li
 {
 	list-style: none;
+	width: inherit;
 }
 
 ul.sub_navigation li a
 {
 	height: 50px;
+	width: 100%;
 }
 
 ul.sub_navigation li a p
@@ -5292,12 +5322,13 @@ ul.sub_navigation li a p
 .whi
 {
 	width: inherit;
-	height: 50px;
+	height: 60px;
 }
 
 .whi p
 {
 	margin: 0;
+	padding-top: 18px;
 }
 
 .bl
@@ -5308,6 +5339,7 @@ ul.sub_navigation li a p
 .bl p
 {
 	margin: 0;
+	padding-top: 18px;
 }
 
 /* ----- Featured Post Tablet portrait ----- */
@@ -5395,7 +5427,7 @@ ul.sub_navigation li a p
 	position: relative;
 	width: 244px;
 	height: 244px;
-	bottom: 190px;
+	bottom: 210px;
 	margin: 0 auto;
 }
 
@@ -5574,7 +5606,7 @@ ul.sub_navigation li a p
 #footer
 {
 	display: block;
-	height: 350px;
+	height: 400px;
 }
 
 .footer-align
@@ -5727,7 +5759,7 @@ ul.sub_navigation li a p
 {
 	display: block;
 	height: 355px;
-	padding-top: 15px;
+	padding-top: 0;
 	overflow: hidden;
 }
 
@@ -5741,6 +5773,11 @@ ul.sub_navigation li a p
 .post-details p
 {
 	font-size: 14pt;
+}
+
+.post-date
+{
+	display: none;
 }
 
 .post-sharing-cont
@@ -6060,6 +6097,7 @@ li.share-email a.sd-button > span {
 .listing
 {
 	text-align: center;
+	margin-bottom: 30px;
 }
 
 .cat-item
@@ -6088,7 +6126,7 @@ li.share-email a.sd-button > span {
 .error-content
 {
 	width: 768px;
-	padding-top: 15px;
+	padding-top: 0px;
 }
 
 .error-image-main

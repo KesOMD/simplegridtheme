@@ -22,7 +22,7 @@ Template Name: Social Page
             
             <div class="blank-text">
                 <div class="gallery-cont" id="gal-page">
-                    <?php echo do_shortcode('[pinterest_pinboard username="jamesvillasuk" rows=3 cols=4 new_window=1]') ?>
+                    <?php echo do_shortcode('[pinterest_pinboard username="jamesvillasuk" rows=6 cols=4 new_window=1]') ?>
                 </div>
             </div>
 
