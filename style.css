@@ -302,7 +302,8 @@ ul.sub_navigation li a
 {
 	text-decoration: none;
 	color: #1c1c1c;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 ul.sub_navigation li a:hover
@@ -353,7 +354,8 @@ a, a:active, a:visited
 	color: #fff;
 	opacity: 1;
 	filter: alpha(opacity=1);
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 12pt;
 }
 
@@ -384,7 +386,8 @@ a, a:active, a:visited
 	color: #fff;
 	opacity: 1;
 	filter: alpha(opacity=1);
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 12pt;
 	background-color: #008acc;
 }
@@ -605,7 +608,8 @@ a, a:active, a:visited
 	color: #000;
 	text-decoration: none;
 	font-size: 15px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .menu-item-container ul li a:hover
@@ -811,7 +815,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-weight: normal;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 .home_post_title_cont h2 a
@@ -856,14 +861,17 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #000;
 	font-size: 12px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	margin: 8px auto;
 }
 
 .home_post_desc p a
 {
 	color: #1c70b8;
-	font-family: RobotoMediumItalic, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 500;
+	font-style: italic;
 	text-decoration: none;
 	display: inline-block;
 }
@@ -946,7 +954,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	color: #fff;
 	text-decoration: none;
 	font-size: 13px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .grid a:hover
@@ -1280,7 +1289,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .footer_copyright p
 {
 	color: #fff;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 9pt;
 	margin: 0 auto;
 	float: right;
@@ -1345,8 +1355,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .footer-main-site ul li a
 {
-	font-family: RobotoRegular, Arial;
-	font-weight: normal;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 9pt;
 }
@@ -1423,7 +1433,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	float: left;
 	color: #fff;
 	font-size: 10pt;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .footer-booking h3
@@ -1533,7 +1544,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 13pt;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .post-image-main h1
@@ -1562,7 +1574,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 11pt;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .post-image-phone h1
@@ -1722,7 +1735,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .post-text p
 {
 	line-height: 20px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 11pt;
 	padding: 10px 0;
 }
@@ -1750,12 +1764,14 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .ac-cont h4
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 .ac-cont p
 {
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 10pt;
 	color: #707070;
 	margin: 0;
@@ -1792,7 +1808,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .post-details-author p
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 10pt;
 }
 
@@ -1827,7 +1844,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 #post-author-text
 {
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 }
 
 .post-details-author a:hover
@@ -1843,7 +1861,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .post-tags-cont p
 {
 	font-size: 8pt;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 .post-tags a
@@ -1994,7 +2013,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .related-text h4
 {
 	
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	text-transform: uppercase;
 }
 
@@ -2024,7 +2044,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .related-text p.rel-auth
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 8pt;
 	color: #000;
 }
@@ -2133,7 +2154,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .error-text p
 {
 	line-height: 23px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	margin-bottom: 20px;
 	font-size: 11pt;
 }
@@ -2175,14 +2197,16 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .cat-desc p
 {
 	line-height: 23px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	margin-bottom: 20px;
 }
 
 .no-posts-here
 {
 	text-align: center;
-	font-family: RobotoRegular;
+	font-family: 'Roboto';
+	font-weight: 400;
 	font-size: 14pt;
 	margin-bottom: 30px;
 }
@@ -2206,7 +2230,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	color: #707070;
 	letter-spacing: 1px;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 .search-query
@@ -2256,7 +2281,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .blank-text p
 {
 	line-height: 23px;
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	margin-bottom: 20px;
 	font-size: 11pt;
 }
@@ -2335,7 +2361,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .author-info h2
 {
-	font-family:RobotoBold, "Arial Black";
+	font-family:'Roboto', "Arial Black";
+	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: #707070;
@@ -2343,7 +2370,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .author-info p
 {
-	font-family: RobotoRegular, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-size: 13px;
 	line-height: 21px;
 }
@@ -2433,7 +2461,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	display:block;
 	width:100%;
 	color:#fff;
-	font-family:RobotoBold, "Arial Black";
+	font-family:'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 10pt;
 	letter-spacing: 2px;
 }
@@ -2452,7 +2481,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	top:0;
 	cursor:pointer;
 	font-size:7px;
-	font-family:RobotoBold, "Arial Black";
+	font-family:'Roboto', "Arial Black";
+	font-weight: 700;
 }
 
 .calendar-archives .cal-nav .year-nav .arrow-down:hover
@@ -2517,7 +2547,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	background: #33b8f0;
 	position:relative;
 	text-align: center;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	-webkit-box-sizing:border-box;
 	-moz-box-sizing:border-box;
 	box-sizing:border-box;
@@ -2659,7 +2690,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .aiwidgetscss .tweet_author_name a, .widget .tweet_author_name a
 {
 	text-decoration: none !important;
-	font-family: RobotoBold;
+	font-family: 'Roboto';
+	font-weight: 700;
 	font-weight: normal !important;
 	font-size: 10pt !important;
 }
@@ -2679,7 +2711,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .aiwidgetscss .tweet_author a, .widget .tweet_author a
 {
 	text-decoration: none !important;
-	font-family: RobotoRegular;
+	font-family: 'Roboto';
+	font-weight: 400;
 	color: #707070 !important;
 	font-size: 8pt !important;
 }
@@ -2693,7 +2726,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .aiwidgetscss .tweet_date a, .widget .tweet_date a
 {
 	text-decoration: none !important;
-	font-family: RobotoRegular;
+	font-family: 'Roboto';
+	font-weight: 400;
 	color: #707070 !important;
 	font-size: 8pt !important;
 }
@@ -3179,7 +3213,8 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 
 .mob-menu-button p
 {
-	font-family: RobotoBold, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 700;
 	font-size: 18pt;
 	float: left;
 	width: 75px;
@@ -3296,8 +3331,8 @@ ul.sub_navigation li a p
 
 .blog-intro-cont h1 span
 {
-	font-family: RobotoRegular, Arial;
-	font-weight: normal;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 14pt;
 }
@@ -3836,7 +3871,8 @@ li.share-email a.sd-button > span {
 
 .mob-post-details-author p
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 14pt;
 }
 
@@ -4076,7 +4112,8 @@ li.share-email a.sd-button > span {
 .cat-item a
 {
 	color: #000;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 16pt;
 	text-decoration: none;
 	height: inherit;
@@ -4206,7 +4243,8 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button p
 {
-	font-family: RobotoBold, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 700;
 	font-size: 18pt;
 	float: left;
 	width: 75px;
@@ -4346,8 +4384,8 @@ ul.sub_navigation li a p
 
 .blog-intro-cont h1 span
 {
-	font-family: RobotoRegular, Arial;
-	font-weight: normal;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 14pt;
 }
@@ -4857,7 +4895,8 @@ li.share-email a.sd-button > span {
 
 .mob-post-details-author p
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 14pt;
 }
 
@@ -5057,7 +5096,8 @@ li.share-email a.sd-button > span {
 .cat-item a
 {
 	color: #000;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 16pt;
 	text-decoration: none;
 	height: inherit;
@@ -5201,7 +5241,8 @@ li.share-email a.sd-button > span {
 
 .mob-menu-button p
 {
-	font-family: RobotoBold, Arial;
+	font-family: 'Roboto', Arial;
+	font-weight: 700;
 	font-size: 18pt;
 	float: left;
 	padding-top: 17px;
@@ -5314,8 +5355,8 @@ ul.sub_navigation li a p
 
 .blog-intro-cont h1 span
 {
-	font-family: RobotoRegular, Arial;
-	font-weight: normal;
+	font-family: 'Roboto', Arial;
+	font-weight: 400;
 	font-style: normal;
 	font-size: 14pt;
 }
@@ -5836,7 +5877,8 @@ li.share-email a.sd-button > span {
 
 .mob-post-details-author p
 {
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 14pt;
 }
 
@@ -6032,7 +6074,8 @@ li.share-email a.sd-button > span {
 .cat-item a
 {
 	color: #000;
-	font-family: RobotoBold, "Arial Black";
+	font-family: 'Roboto', "Arial Black";
+	font-weight: 700;
 	font-size: 16pt;
 	text-decoration: none;
 	height: inherit;

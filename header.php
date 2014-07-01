@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
 
 <head> 
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500italic,900' rel='stylesheet' type='text/css'>
 
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>          
 
