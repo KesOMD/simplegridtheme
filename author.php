@@ -43,6 +43,7 @@
 		<!– The Loop –>
 		<?php
 		$args = array(
+                     'author' => get_the_author_meta('ID'),
 
                      'post_type' => 'post',
 
