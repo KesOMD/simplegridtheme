@@ -12,6 +12,7 @@ body
 	height: 100%;
 	font-size: 12px;
 	font-family: arial, verdana, georgia;
+	overflow-x: hidden;
 	/*color: #666; background: url('images/cont-shadow.png') repeat-y; background-position: top center;*/
 }
 
@@ -89,6 +90,11 @@ body
 ::-webkit-resizer
 {
 	/* 7 */
+}
+
+img#wpstats
+{
+	display: none;
 }
 
 h1,h2,h3,h4,h5,p { margin: 10px 0; }
@@ -270,6 +276,22 @@ ul.sub_navigation li
 	margin-left: 33px;
 }
 
+ul.sub_navigation li:nth-child(odd)
+{
+	background-color: #fff;
+	list-style: none;
+	margin-left: 0;
+	width: 177px;
+	padding: 5px 0 0 12px;
+}
+
+.dd-arrow
+{
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 18px;
+}
+
 .whi
 {
 	background-color: #fff;
@@ -309,6 +331,11 @@ ul.sub_navigation li a
 ul.sub_navigation li a:hover
 {
 	text-decoration: underline;
+}
+
+ul.sub_navigation li a p
+{
+	display: inline-block;
 }
 
 a, a:active, a:visited
@@ -364,9 +391,9 @@ a, a:active, a:visited
 	background-color: #008acc;
 }
 
-.main-nav-button a:active
+.main-nav-button-active
 {
-	background-color: #008acc;
+	background-color: #008acc !important;
 }
 
 .main-nav-button a p
@@ -628,6 +655,7 @@ a, a:active, a:visited
 #social-menu
 {
 	text-align: center;
+	width: 1162px;
 }
 
 .view-more-cont
@@ -1550,7 +1578,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 {
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 13pt;
+	font-size: 13px;
 	font-family: 'Roboto', Arial;
 	font-weight: 400;
 }
@@ -1558,7 +1586,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .post-image-main h1
 {
 	color: #fff;
-	font-size: 14pt;
+	font-size: 16pt;
 	font-family: Georgia;
 	font-weight: bold;
 	font-style: italic;
@@ -2603,6 +2631,36 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 .calendar-archives .day.weekday.last{border-right:0}
 .arcw.preview.zone{background-color:#fff;padding:30px 0 0;height:230px}
 
+/* FACEBOOK WIDGET */
+
+.cff-author a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.cff-author a:hover
+{
+	text-decoration: underline !important;
+}
+
+.cff-text
+{
+	text-align: left;
+	font-family: 'Roboto', Arial;
+	font-weight: 500;
+}
+
+.cff-post-text-link
+{
+	color: #000 !important;
+}
+
+.cff-viewpost-facebook
+{
+	color: #008acc !important;
+}
+
 /* PINTEREST WIDGET */
 
 #pinterest-pinboard-container
@@ -2885,6 +2943,52 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	.cat-listing
 	{
 		margin-left: 0px; 
+	}
+
+	#social-menu
+	{
+		width: 1024px;
+	}
+
+	/* small window!!! Facebook widget */
+
+	.cff-wrapper
+	{
+		width: 289px;
+		margin: 0 auto;
+	}
+
+	#cff
+	{
+		width: inherit !important;
+	}
+
+	.cff-author a
+	{
+		color: #000;
+		text-decoration: none;
+	}
+
+	.cff-author a:hover
+	{
+		text-decoration: underline !important;
+	}
+
+	.cff-text
+	{
+		text-align: left;
+		font-family: 'Roboto', Arial;
+		font-weight: 500;
+	}
+
+	.cff-post-text-link
+	{
+		color: #000;
+	}
+
+	.cff-viewpost-facebook
+	{
+		color: #008acc !important;
 	}
 
 	/* small window!!! Pinterest widget */
@@ -3262,6 +3366,13 @@ ul.sub_navigation li
 	list-style: none;
 	margin-left: 0;
 	padding-left: 0;
+}
+
+ul.sub_navigation li:nth-child(odd)
+{
+	margin-left: 0;
+	padding-left: 0;
+	width: inherit;
 }
 
 ul.sub_navigation li a
@@ -3735,7 +3846,7 @@ ul.sub_navigation li a p
 {
 	display: block;
 	height: 222px;
-	padding-top: 15px;
+	padding-top: 0;
 	overflow: hidden;
 }
 
@@ -4018,6 +4129,15 @@ li.share-email a.sd-button > span {
 	font-size: 14pt;
 }
 
+.blank-text h1
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+	text-align: center;
+}
+
 /* ----- Gallery Page iPhone Portrait ----- */
 
 #gal-page>#pinterest-pinboard-container
@@ -4044,6 +4164,31 @@ li.share-email a.sd-button > span {
 	width: 278px;
 	padding: 0;
 }
+
+/* FACEBOOK WIDGET iPhone5 Portrait */
+
+.cff-wrapper
+{
+	width: inherit;
+}
+
+#cff
+{
+	width: inherit !important;
+	background-color: transparent !important;
+}
+
+.cff-author a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.cff-author a:hover
+{
+	text-decoration: underline !important;
+}
+
 
 /* ----- Author Page iPhone5 Portrait ----- */
 
@@ -5043,6 +5188,47 @@ li.share-email a.sd-button > span {
 	font-size: 14pt;
 }
 
+.blank-text h1
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+	text-align: center;
+}
+
+/* FACEBOOK WIDGET Mobile Portrait */
+
+.cff-wrapper
+{
+	width: inherit;
+}
+
+#cff
+{
+	width: inherit !important;
+	height: 326px !important;
+	background-color: transparent !important;
+}
+
+.cff-author a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.cff-author a:hover
+{
+	text-decoration: underline !important;
+}
+
+/* ----- TWITTER WIDGET Tablet Portrait */
+
+.aiwidgetscss
+{
+	height: 284px;
+}
+
 
 /* ----- Author Page Mobile Portrait ----- */
 
@@ -5298,12 +5484,21 @@ ul.sub_navigation
 	border-bottom: 2px #008acc solid;
 	text-align: center;
 	overflow: hidden;
-	height: 302px;
+	height: 251px;
 }
 
 ul.sub_navigation li
 {
 	list-style: none;
+	padding: 0;
+	margin-left: 0;
+	width: inherit;
+}
+
+ul.sub_navigation li:nth-child(odd)
+{
+	padding: 0;
+	margin-left: 0;
 	width: inherit;
 }
 
@@ -5322,6 +5517,7 @@ ul.sub_navigation li a p
 {
 	width: inherit;
 	height: 60px;
+	margin: 0;
 }
 
 .whi p
@@ -5333,6 +5529,8 @@ ul.sub_navigation li a p
 .bl
 {
 	width: inherit;
+	height: 60px;
+	margin: 0;
 }
 
 .bl p
@@ -6033,6 +6231,47 @@ li.share-email a.sd-button > span {
 	font-size: 14pt;
 }
 
+.blank-text h1
+{
+	font-family: Georgia;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 18pt;
+	text-align: center;
+}
+
+/* FACEBOOK WIDGET Tablet Portrait */
+
+.cff-wrapper
+{
+	width: inherit;
+}
+
+#cff
+{
+	width: inherit !important;
+	height: 300px !important;
+	background-color: transparent !important;
+}
+
+.cff-author a
+{
+	color: #000;
+	text-decoration: none;
+}
+
+.cff-author a:hover
+{
+	text-decoration: underline !important;
+}
+
+/* ----- TWITTER WIDGET Tablet Portrait */
+
+.aiwidgetscss
+{
+	height: 284px;
+}
+
 /* ----- Author Page Tablet Portrait ----- */
 
 .author-social
@@ -6080,7 +6319,7 @@ li.share-email a.sd-button > span {
 	line-height: 25px;
 }
 
-/* ----- Categories Listing Page Mobile Portrait ----- */
+/* ----- Categories Listing Page Tablet Portrait ----- */
 .listing-cont
 {
 	width: 100%;

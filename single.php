@@ -153,7 +153,7 @@
                 $image = wp_get_attachment_image_src($id, 'full-size');
                 if ( $vil_name != "" || $vil_desc != "" || $vil_link != "" || $image != "" ) { ?>
                     <div class="assoc-villa-cont">
-                        <a href="<?php echo $vil_link; ?>">
+                        <a href="<?php echo $vil_link; ?>" target="_blank">
                             <h2>Associated villa</h2>
                             <div class="villa-details">
                                 <div class="villa-image">

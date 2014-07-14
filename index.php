@@ -10,7 +10,7 @@ if ( is_home() )
             <h1>
               Welcome to the James Villas blog
               <hr>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing.</span>
+              <span>On the James Villas Blog, you will find everything about our villas and destinations, plus some inspiring ideas for great holiday reads, family activities, days out and local delicacies to sample!</span>
               <hr>
             </h1>
           </div>
@@ -85,13 +85,13 @@ if ( is_home() )
                           $post_title = get_the_title();
                           $char_count = mb_strlen($post_title);
                           //Count the amount of characters in the title and trim if too long
-                          if ($char_count < 40)
+                          if ($char_count < 30)
                           {
                             echo get_the_title();
                           }
                           else
                           {
-                            $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                            $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,20)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                           }
                           ?>
                         </a>
@@ -111,13 +111,13 @@ if ( is_home() )
                       $post_title = get_the_title();
                       $char_count = mb_strlen($post_title);
                        //Count the amount of characters in the title and trim if too long
-                      if ($char_count < 40)
+                      if ($char_count < 30)
                       {
                         echo get_the_title();
                       }
                       else
                       {
-                        $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                        $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,20)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                       }
                       ?>
                     </a></h1>

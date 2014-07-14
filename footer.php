@@ -27,11 +27,11 @@
                     </div>
                 </div>
                 <ul class="sub_navigation" id="foot-drop">
-                    <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
-                    <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
-                    <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
-                    <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
-                    <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><p>Main Site</p></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><p>About Us</p></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><p>Contact Us</p></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><p>Privacy Policy</p></a></li>
+                    <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><p>Cookie Policy</p></a></li>
                 </ul>
             </div>
 

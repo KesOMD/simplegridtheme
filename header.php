@@ -99,11 +99,11 @@
           $soclistpageURL = get_page_link( $soclistpageID );
           ?>
         
-          <li><a href="<?php bloginfo('url'); ?>" target="_self" alt="Return Home"><div class="whi"><p>Home</p></div></a></li>
-          <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><div class="bl"><p>Destinations</p></div></a></li>
-          <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><div class="whi"><p>Categories</p></div></a></li>
-          <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><div class="bl"><p>Gallery</p></div></a></li>
-          <li><a href="<?php echo $soclistpageURL; ?>" target="_self" alt="Social Page"><div class="whi"><p>Social</p></div></a></li>
+          <li><a href="<?php bloginfo('url'); ?>" target="_self" alt="Return Home"><p>Home</p></a></li>
+          <li><a href="<?php echo $destlistpageURL; ?>" target="_self" alt="Destination Listing Page"><p>Destinations</p></a></li>
+          <li><a href="<?php echo $catlistpageURL; ?>" target="_self" alt="Category Listing Page"><p>Categories</p></a></li>
+          <li><a href="<?php echo $gallistpageURL; ?>" target="_self" alt="Gallery Page"><p>Gallery</p></a></li>
+          <li><a href="<?php echo $soclistpageURL; ?>" target="_self" alt="Social Page"><p>Social</p></a></li>
         </ul>
       </div>
       
@@ -118,11 +118,11 @@
         <ul id="logo-nav">
           <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
             <ul class="sub_navigation">
-              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><div class="whi"><p>Main Site</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><div class="bl"><p>About Us</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><div class="whi"><p>Contact Us</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><div class="bl"><p>Privacy Policy</p></div></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><div class="whi"><p>Cookie Policy</p></div></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Main Site</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><p>About Us</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Contact Us</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><p>Privacy Policy</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Cookie Policy</p></a></li>
             </ul>
           </li>
         </ul>
@@ -131,8 +131,13 @@
           <li>
             <div class="main-nav-button" id="home-nav">
               <div class="blue-divide front"></div>
-              <a href="<?php bloginfo('url'); ?>"><p>Home</p></a>
-              <div class="blue-divide"></div>
+              <?php if ( is_home() ) { ?>
+                <a href="<?php bloginfo('url'); ?>" class="main-nav-button-active">
+              <?php } else { ?>
+                <a href="<?php bloginfo('url'); ?>">
+              <?php } ?>
+              <p>Home</p></a>
+              <div class="blue-divide" id="home-blue-divide"></div>
             </div>
           </li>
         </ul>
@@ -140,9 +145,8 @@
         <ul id="dest-button">
           <li class="big-dropdown">
             <div class="main-nav-button" id="dest-nav">
-              
-              <a><p>Destinations</p></a>
-              <div class="blue-divide"></div>
+              <a id="hidecontrol"><p>Destinations</p></a>
+              <div class="blue-divide" id="dest-blue-divide"></div>
             </div>
           </li>
         </ul>
@@ -151,7 +155,7 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="pop-nav">
               <a><p>Popular</p></a>
-              <div class="blue-divide"></div>
+              <div class="blue-divide" id="pop-blue-divide"></div>
             </div>
           </li>
         </ul>
@@ -160,7 +164,7 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="soc-nav">
               <a><p>Social</p></a>
-              <div class="blue-divide"></div>
+              <div class="blue-divide" id="soc-blue-divide"></div>
             </div>
           </li>
         </ul>
@@ -258,7 +262,7 @@
         <div class="bd-container2">
             <?php
             if (function_exists('wpp_get_mostpopular'))
-              wpp_get_mostpopular("limit=3&range='all'&stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end=''&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a><div class=\"home_post_title_cont\"><h4>{category}</h4><hr><h3>{text_title}</h3></div><div class=\"home_post_desc\"><p>{summary} <a href={url}>Read more >></a></p></div><div class=\"home_post_author\"><p>{author}</p></div></div>'");
+              wpp_get_mostpopular("limit=3&range='all'&stats_author=1&excerpt_length=100&stats_category=1&thumbnail_width=358&thumbnail_height=206&wpp_start='<div class=\"menu-item-container\" id=\"pop-container\">'&wpp_end=''&post_html='<div class=\"home_post_box_top\"><a href={url}>{thumb}</a><div class=\"home_post_title_cont\"><h4>{category}</h4><hr><h3>{text_title}</h3></div><div class=\"home_post_desc\"><p>{summary} <a href={url}>Read more >></a></p></div><div class=\"home_post_author\"><p>By {author}</p></div></div>'");
             ?>
             </div>
         </div>
@@ -266,8 +270,10 @@
         <div class="bd-container3">
           <div class="menu-item-container" id="social-menu">
             <div class="menu-item-left">
-              <h2>Youtube</h2>
-              <iframe class="social-youtube" width="289" height="213" src="//www.youtube.com/embed/OmRr1CDR0zA?version=3&enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>
+              <!--<h2>Youtube</h2>
+              <iframe class="social-youtube" width="289" height="213" src="//www.youtube.com/embed/OmRr1CDR0zA?version=3&enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>-->
+              <h2>Facebook</h2>
+              <?php echo do_shortcode('[custom-facebook-feed]') ?>
             </div>
             <div class="social-divider"></div>
             <div class="menu-item-center">
