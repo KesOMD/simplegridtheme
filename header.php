@@ -273,7 +273,7 @@
               <!--<h2>Youtube</h2>
               <iframe class="social-youtube" width="289" height="213" src="//www.youtube.com/embed/OmRr1CDR0zA?version=3&enablejsapi=1" frameborder="0" allowfullscreen="true" allowscriptaccess="always"></iframe>-->
               <h2>Facebook</h2>
-              <?php echo do_shortcode('[custom-facebook-feed]') ?>
+              <?php echo do_shortcode('[custom-facebook-feed id=JamesVillaHolidays]') ?>
             </div>
             <div class="social-divider"></div>
             <div class="menu-item-center">

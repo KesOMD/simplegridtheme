@@ -478,6 +478,11 @@ a, a:active, a:visited
 	z-index: 99;
 }
 
+.ie10 .bd-container1
+{
+	top: 91px;
+}
+
 .bd-container2
 {
 	display: none;
@@ -4470,6 +4475,7 @@ ul.sub_navigation
 ul.sub_navigation li
 {
 	list-style: none;
+	margin-left: 9px;
 }
 
 ul.sub_navigation li a
@@ -4480,6 +4486,15 @@ ul.sub_navigation li a
 ul.sub_navigation li a p
 {
 	font-size: 14pt;
+}
+
+ul.sub_navigation li:nth-child(odd)
+{
+	background-color: #fff;
+	list-style: none;
+	margin-left: 0;
+	width: inherit;
+	padding: 5px 0 0 9px;
 }
 
 .whi
@@ -4769,7 +4784,7 @@ ul.sub_navigation li a p
 #footer
 {
 	display: block;
-	height: 350px;
+	height: 375px;
 }
 
 .footer-align
@@ -4885,6 +4900,20 @@ ul.sub_navigation li a p
 {
 	width: 290px;
 	border: 1px #008acc solid;
+}
+
+#foot-drop li
+{
+	margin-left: 0;
+}
+
+#foot-drop li:nth-child(odd)
+{
+	background-color: #fff;
+	list-style: none;
+	margin-left: 0;
+	width: 281px;
+	padding: 5px 0 0 9px;
 }
 
 /* ----- Article Page Body Mobile Portrait ----- */
