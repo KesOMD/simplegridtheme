@@ -104,7 +104,7 @@
                           $post_title = get_the_title();
                           $char_count = mb_strlen($post_title);
                           //Count the amount of characters in the title and trim if too long
-                          if ($char_count < 40)
+                          if ($char_count < 28)
                           {
                             echo get_the_title();
                           }

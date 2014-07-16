@@ -6,9 +6,10 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500italic,900' rel='stylesheet' type='text/css'>
 
   <title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>          
-
-  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
-
+  <!--
+  <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?><?php echo '?' . time(); ?>" type="text/css" media="screen" title="no title" charset="utf-8"/>
+  -->
+  <link rel=stylesheet href="<?php echo get_stylesheet_uri() . '?t=' . filemtime( get_stylesheet_directory() . '/style.css' ); ?>">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 
   <meta property="fb:admins" content="100008386361789,192753802856"/>
