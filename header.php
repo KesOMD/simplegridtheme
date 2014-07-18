@@ -131,14 +131,14 @@
         <ul id="home-button">
           <li>
             <div class="main-nav-button" id="home-nav">
-              <div class="blue-divide front"></div>
+              
               <?php if ( is_home() ) { ?>
                 <a href="<?php bloginfo('url'); ?>" class="main-nav-button-active">
               <?php } else { ?>
                 <a href="<?php bloginfo('url'); ?>">
               <?php } ?>
               <p>Home</p></a>
-              <div class="blue-divide" id="home-blue-divide"></div>
+              
             </div>
           </li>
         </ul>
@@ -147,7 +147,7 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="dest-nav">
               <a id="hidecontrol"><p>Destinations</p></a>
-              <div class="blue-divide" id="dest-blue-divide"></div>
+              
             </div>
           </li>
         </ul>
@@ -156,7 +156,7 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="pop-nav">
               <a><p>Popular</p></a>
-              <div class="blue-divide" id="pop-blue-divide"></div>
+              
             </div>
           </li>
         </ul>
@@ -165,7 +165,7 @@
           <li class="big-dropdown">
             <div class="main-nav-button" id="soc-nav">
               <a><p>Social</p></a>
-              <div class="blue-divide" id="soc-blue-divide"></div>
+              
             </div>
           </li>
         </ul>

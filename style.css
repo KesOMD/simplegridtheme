@@ -127,7 +127,7 @@ a:hover { text-decoration:underline; color:#333; }
 	background-color: #33b8f0;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
-	border-bottom-width: 3px; 
+	border-bottom-width: 1px; 
 }
 
 .logo-mobile
@@ -264,7 +264,7 @@ ul.sub_navigation
 	display: none;
 	background-color: #f3fcff;
 	border: 1px #008acc solid;
-	margin-top: 2px;
+	margin-top: 0px;
 	width: 189px;
 }
 
@@ -374,6 +374,7 @@ a, a:active, a:visited
 	position: absolute;
 	width: inherit;
 	height: 94px;
+	height: 91px\9; /* IE6, IE7, IE8, IE9 */
 	top: 0;
 	left: 0;
 	text-decoration: none;
@@ -474,7 +475,7 @@ a, a:active, a:visited
 	background-color: #f3fcff;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
-	border-bottom-width: 3px;
+	border-bottom-width: 1px;
 	z-index: 99;
 }
 
@@ -494,7 +495,7 @@ a, a:active, a:visited
 	background-color: #f3fcff;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
-	border-bottom-width: 3px;
+	border-bottom-width: 1px;
 	z-index: 98;
 }
 
@@ -509,7 +510,7 @@ a, a:active, a:visited
 	background-color: #f3fcff;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
-	border-bottom-width: 3px;
+	border-bottom-width: 1px;
 	z-index: 98;
 }
 
@@ -524,7 +525,7 @@ a, a:active, a:visited
 	background-color: #f3fcff;
 	border-bottom-style: solid;
 	border-bottom-color: #008acc;
-	border-bottom-width: 3px;
+	border-bottom-width: 1px;
 	z-index: 98;
 }
 
@@ -1271,7 +1272,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	background-color: #33b8f0;
 	border-top-style: solid;
 	border-top-color: #008acc;
-	border-top-width: 3px;
+	border-top-width: 1px;
 	height: 230px;
 }
 
