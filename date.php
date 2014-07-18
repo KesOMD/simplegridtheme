@@ -114,13 +114,13 @@ query_posts( $args );
                         $post_title = get_the_title();
                         $char_count = mb_strlen($post_title);
                         //Count the amount of characters in the title and trim if too long
-                        if ($char_count < 40)
+                        if ($char_count < 25)
                         {
                             echo get_the_title();
                         }
                         else
                         {
-                            $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,30)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
+                            $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,26)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                         }
                         ?>
                     </a></h1>
