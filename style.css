@@ -4151,6 +4151,12 @@ li.share-email a.sd-button > span {
 	width: 284px;
 }
 
+/* ----- Search Results iPhone5 Portrait ----- */
+.search-header
+{
+	width: inherit;
+}
+
 /* ----- Social Page iPhone Portrait ----- */
 
 .social-tw-cont
@@ -5343,6 +5349,12 @@ li.share-email a.sd-button > span {
 	text-decoration: none;
 	height: inherit;
 	padding-top: 19px;
+}
+
+/* ----- Search Results Mobile Portrait ----- */
+.search-header
+{
+	width: inherit;
 }
 
 /* ----- 404 Page Mobile Portrait ----- */
