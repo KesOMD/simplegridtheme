@@ -226,7 +226,7 @@
                 </div>
                 <br />
                 <div class="com-header">
-                    <h1>Comments</h1>
+                    <h2>Comments</h2>
                 </div>
                 <div id="fb-com-box" class="fb-comments" data-href="<?php echo get_permalink(); ?>" data-width="480" data-numposts="5" data-colorscheme="light"></div>
                 <br /><br />

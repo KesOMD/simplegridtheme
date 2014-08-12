@@ -815,7 +815,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	margin: auto;
 }
 
-.home_post_title_cont h1
+.home_post_title_cont h2
 {
 	width: 320px;
 	color: #000;
@@ -830,18 +830,18 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-overflow: ellipsis;
 }
 
-.home_post_title_cont h1 a
+.home_post_title_cont h2 a
 {
 	text-decoration: none;
 	color: #000;
 }
 
-.home_post_title_cont h1 a:hover
+.home_post_title_cont h2 a:hover
 {
 	text-decoration: underline;
 }
 
-.home_post_title_cont h2
+.home_post_title_cont h3
 {
 	margin-top: 4px;
 	margin-bottom: 8px;
@@ -853,7 +853,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	font-weight: 700;
 }
 
-.home_post_title_cont h2 a
+.home_post_title_cont h3 a
 {
 	color: #008acc;
 	text-decoration: none;
@@ -2119,7 +2119,7 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	text-align: left;
 }
 
-.com-header h1
+.com-header h2
 {
 	color: #000;
 	font-family: Georgia;
@@ -3907,7 +3907,8 @@ div.sharedaddy div.sd-block
 
 div.sharedaddy .sd-content
 {
-	width: inherit !important;
+	width: 304px !important;
+	margin-left: 20px;
 }
 
 div.sharedaddy .sd-content li .share-facebook

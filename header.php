@@ -36,6 +36,7 @@
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/parallax.js"></script>
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/dropdown.js"></script>
+  <script src="<?php bloginfo('stylesheet_directory'); ?>/js/response.min.js"></script>
 
   <script type="text/javascript">
 

@@ -102,11 +102,11 @@ if ( is_home() )
 
                 <div class="home_post_title_cont">
 
-                    <h2><?php the_category(', '); ?></h2>
+                    <h3><?php the_category(', '); ?></h3>
 
                     <hr>
 
-                    <h1><a href="<?php the_permalink(); ?>">
+                    <h2><a href="<?php the_permalink(); ?>">
                       <?php
                       $post_title = get_the_title();
                       $char_count = mb_strlen($post_title);
@@ -120,7 +120,7 @@ if ( is_home() )
                         $temp_arr_content = explode(" ",substr(strip_tags(get_the_title()),0,20)); $temp_arr_content[count($temp_arr_content)-1] = ""; $display_arr_content = implode(" ",$temp_arr_content); echo substr($display_arr_content, 0, -1) . '...';
                       }
                       ?>
-                    </a></h1>
+                    </a></h2>
 
                 </div><!--//home_post_title_cont-->
 
