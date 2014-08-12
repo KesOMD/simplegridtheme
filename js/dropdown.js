@@ -32,7 +32,7 @@ $('body').ready(function()
 				$('.bd-container3').slideUp( "fast" );
 				$('.bd-container4').slideUp( "fast" );
 
-				$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				/*$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');*/
 
 				if (isOpen)
 				{
@@ -60,7 +60,7 @@ $('body').ready(function()
 				$('.bd-container3').slideUp( "fast" );
 				$('.bd-container4').slideUp( "fast" );
 
-				$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				/*$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');*/
 
 				if (isOpen)
 				{
@@ -87,7 +87,7 @@ $('body').ready(function()
 				$('.sub_navigation').slideUp( "fast" );
 				$('.bd-container4').slideUp( "fast" );
 
-				$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				/*$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');*/
 
 				if (isOpen)
 				{
@@ -114,7 +114,7 @@ $('body').ready(function()
 				$('.bd-container3').slideUp( "fast" );
 				$('.sub_navigation').slideUp( "fast" );
 
-				$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+				/*$('.social-youtube')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');*/
 
 				if (isOpen)
 				{

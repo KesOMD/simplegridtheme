@@ -1,8 +1,67 @@
 <?php get_header(); ?>
 
 <?php
-if ( is_home() )
-  get_template_part( 'grid' );
+/* this is to find the window width via jQuery and pass it to php */
+if(isset($_GET['code']))
+{
+  header('content-type: text/plain; charset=utf-8');
+  echo file_get_contents(__FILE__);
+  exit;
+}
+
+if(!isset($_POST['width']) || !isset($_POST['height'])) {
+echo '
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    var height = $(window).height();
+    var width = $(window).width();
+    $.ajax({
+        type: \'POST\',
+        url: \'index.php\',
+        data: {
+            "height": height,
+            "width": width
+        },
+        success: function (data) {
+            $("body").html(data);
+        },
+    });
+});
+$(window).resize(function () {
+    var height = $(window).height();
+    var width = $(window).width();
+    $.ajax({
+        type: \'POST\',
+        url: \'index.php\',
+        data: {
+            "height": height,
+            "width": width
+        },
+        success: function (data) {
+            $("body").html(data);
+        },
+    });
+});
+</script>
+';
+}
+/*
+echo "<h1>Screen Resolution:</h1>";
+
+echo "Width  : ".$_POST['width']."<br>";
+echo "Height : ".$_POST['height']."<br>";
+*/
+$currentScreenWidth = $_POST['width'];
+
+if (isset($_POST['width']))
+{
+  if ( is_home() && $currentScreenWidth > 1006 )
+  {
+    get_template_part( 'grid' );
+  }
+}
+
 ?>
         
         <div id="load_posts_container">
@@ -66,7 +125,17 @@ if ( is_home() )
 
                 <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
 
-                <a class="home-post-img-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
+                <a class="home-post-img-link" href="<?php the_permalink(); ?>">
+                  <?php
+                  /*if ($currentScreenWidth)
+                  {
+                    if ($currentScreenWidth > 1006 )
+                    {*/
+                      the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/));
+                    /*}
+                  }*/
+                  ?>
+                </a>
                 <div class="home-post-mobile-image">
                   <div class="mob-im-cont">
                     <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
