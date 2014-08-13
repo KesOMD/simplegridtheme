@@ -58,7 +58,13 @@
 
 </head>
 
-<body>
+<body data-responsejs='{
+  "create":[{
+    "prop": "width",
+    "prefix": "src",
+    "breakpoints": [0, 481, 768, 1024]
+  }]
+}'>
 
 
 

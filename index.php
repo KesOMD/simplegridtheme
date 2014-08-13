@@ -1,65 +1,10 @@
 <?php get_header(); ?>
 
 <?php
-/* this is to find the window width via jQuery and pass it to php */
-if(isset($_GET['code']))
+
+if ( is_home() )
 {
-  header('content-type: text/plain; charset=utf-8');
-  echo file_get_contents(__FILE__);
-  exit;
-}
-
-if(!isset($_POST['width']) || !isset($_POST['height'])) {
-echo '
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function () {
-    var height = $(window).height();
-    var width = $(window).width();
-    $.ajax({
-        type: \'POST\',
-        url: \'index.php\',
-        data: {
-            "height": height,
-            "width": width
-        },
-        success: function (data) {
-            $("body").html(data);
-        },
-    });
-});
-$(window).resize(function () {
-    var height = $(window).height();
-    var width = $(window).width();
-    $.ajax({
-        type: \'POST\',
-        url: \'index.php\',
-        data: {
-            "height": height,
-            "width": width
-        },
-        success: function (data) {
-            $("body").html(data);
-        },
-    });
-});
-</script>
-';
-}
-/*
-echo "<h1>Screen Resolution:</h1>";
-
-echo "Width  : ".$_POST['width']."<br>";
-echo "Height : ".$_POST['height']."<br>";
-*/
-$currentScreenWidth = $_POST['width'];
-
-if (isset($_POST['width']))
-{
-  if ( is_home() && $currentScreenWidth > 1006 )
-  {
-    get_template_part( 'grid' );
-  }
+  get_template_part( 'grid' );
 }
 
 ?>
@@ -121,27 +66,32 @@ if (isset($_POST['width']))
 
             <?php } ?>
 
-            
-
-                <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
-
-                <a class="home-post-img-link" href="<?php the_permalink(); ?>">
-                  <?php
-                  /*if ($currentScreenWidth)
-                  {
-                    if ($currentScreenWidth > 1006 )
-                    {*/
-                      the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/));
-                    /*}
-                  }*/
-                  ?>
+            <?php
+            /* the_post_thumbnail('home-post',array('alt' => 'post image')); */
+            $thumbDesk = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post' ); 
+            $urlDesk = $thumbDesk['0'];
+            $thumbTab = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post-tablet' ); 
+            $urlTab = $thumbTab['0'];
+            $thumbMob = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post-phone' ); 
+            $urlMob = $thumbMob['0'];
+            /*
+            debug_to_console("homepage thumbnail = ");
+            debug_to_console($urlDesk);
+            <img src="<?php echo $urlDesk; ?>" data-src0="<?php echo $urlMob; ?>" data-src768="<?php echo $urlTab; ?>" data-src1024="<?php echo $urlDesk; ?>" alt="thumbnail for this post">
+            */
+            ?>
+                <a class="home-post-img-link" href="<?php the_permalink(); ?>"
+                  data-src1024='<img src="<?php echo $urlDesk; ?>">'
+                  data-src768='<img src="<?php echo $urlTab; ?>">'
+                  data-src0='<img src="<?php echo $urlMob; ?>">'
+                  >
                 </a>
                 <div class="home-post-mobile-image">
                   <div class="mob-im-cont">
-                    <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
+                    <?php /* the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); */?>
                   </div>
                   <div class="tab-im-cont">
-                    <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
+                    <?php /* the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); */ ?>
                   </div>
                   <div class="home-post-roundel">
                     <div class="mob-roundel-text">
@@ -293,16 +243,6 @@ $('.load_more_cont a').live('click', function(e) {
         }
       )
 
-      
-
-			//$('.fetch a').removeClass('loading').text('Load more posts');
-
-                        //$('.load_more_text a').html('Load More');
-
-                        
-
-                        
-
 			if (nextlink != undefined) {
 
 				$('.load_more_cont a').attr('href', nextlink);
@@ -311,33 +251,21 @@ $('.load_more_cont a').live('click', function(e) {
 
 				$('.load_more_cont').remove();
 
-                                $('#load_posts_container').append('<div class="clear"></div>');
-
-                              //  $('.load_more_cont').css('visibilty','hidden');
+        $('#load_posts_container').append('<div class="clear"></div>');
+        //  $('.load_more_cont').css('visibilty','hidden');
 
 			}
 
-
-
-                    if (nextlink != undefined) {
-
-                        $.get(nextlink, function(data) {
-
-                          //alert(nextlink);
-
-                          if($(data + ":contains('home_post_box')") != '') {
-
-                            //alert('not found');
-
-                              //                      $('.load_more_cont').remove();
-
-                                                    $('#load_posts_container').append('<div class="clear"></div>');        
-
-                          }
-
-                        });                        
-
-                    }
+      if (nextlink != undefined) {
+        $.get(nextlink, function(data) {
+        //alert(nextlink);
+        if($(data + ":contains('home_post_box')") != '') {
+        //alert('not found');
+        //                      $('.load_more_cont').remove();
+        $('#load_posts_container').append('<div class="clear"></div>');        
+      }
+    });                        
+    }
 
                         
 
@@ -345,7 +273,7 @@ $('.load_more_cont a').live('click', function(e) {
 
 	});
 
-  
+  /*console.log($(window).width());*/
 
 
 });
