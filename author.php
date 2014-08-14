@@ -85,10 +85,10 @@
 
                 <!--<img src="<?php bloginfo('stylesheet_directory'); ?>/images/blog-image.jpg" />-->
 
-                <a class="home-post-img-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
+                <a class="home-post-img-link" href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post-tablet',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
                 <div class="home-post-mobile-image">
                   <div class="mob-im-cont">
-                    <?php the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); ?>
+                    <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
                   </div>
                   <div class="tab-im-cont">
                     <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>

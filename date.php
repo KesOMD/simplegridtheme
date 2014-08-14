@@ -101,7 +101,7 @@ query_posts( $args );
 
 
 
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
+                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('home-post-tablet',array('alt' => 'post image'/*, 'class' => 'rounded'*/)); ?></a>
 
                 <div class="home_post_title_cont">
 

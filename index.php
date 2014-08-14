@@ -65,7 +65,14 @@ if ( is_home() )
             <div class="home_post_box">
 
             <?php } ?>
-
+            <script type="text/javascript">
+            Response.create({
+              prop: "width",
+              prefix: "src",
+              breakpoints: [0, 481, 768, 1024]
+            });
+            /*console.log("response")*/
+            </script>
             <?php
             /* the_post_thumbnail('home-post',array('alt' => 'post image')); */
             $thumbDesk = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post' ); 
@@ -78,20 +85,21 @@ if ( is_home() )
             debug_to_console("homepage thumbnail = ");
             debug_to_console($urlDesk);
             <img src="<?php echo $urlDesk; ?>" data-src0="<?php echo $urlMob; ?>" data-src768="<?php echo $urlTab; ?>" data-src1024="<?php echo $urlDesk; ?>" alt="thumbnail for this post">
-            */
-            ?>
-                <a class="home-post-img-link" href="<?php the_permalink(); ?>"
-                  data-src1024='<img src="<?php echo $urlDesk; ?>">'
+
+            data-src1024='<img src="<?php echo $urlDesk; ?>">'
                   data-src768='<img src="<?php echo $urlTab; ?>">'
                   data-src0='<img src="<?php echo $urlMob; ?>">'
-                  >
+            */
+            ?>
+                <a class="home-post-img-link" href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
                 </a>
                 <div class="home-post-mobile-image">
                   <div class="mob-im-cont">
-                    <?php /* the_post_thumbnail( 'home-post-phone',array( 'alt' => 'post image' ) ); */?>
+                    <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
                   </div>
                   <div class="tab-im-cont">
-                    <?php /* the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); */ ?>
+                    <?php the_post_thumbnail( 'home-post-tablet',array( 'alt' => 'post image' ) ); ?>
                   </div>
                   <div class="home-post-roundel">
                     <div class="mob-roundel-text">

@@ -19,11 +19,30 @@
 
                 <!-- <h1><?php the_title(); ?></h1> -->
 
-                
+                <?php
+                /*
+                the_post_thumbnail('home-post',array('alt' => 'post image'));
+                wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) );
+                */
+                $thumbDesk =  simplexml_load_string(get_the_post_thumbnail());
+                $urlDesk = $thumbDesk->attributes()->src;
+                $thumbTab = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post-tablet' );
+                $urlTab = $thumbTab['0'];
+                $thumbMob = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'home-post-phone' );
+                $urlMob = $thumbMob['0'];
+
+                debug_to_console($urlDesk);
+                /*
+
+                */
+                ?>
 
                 <div class="post-image-main">
-
-                    <?php the_post_thumbnail(); ?>
+                    <div class="post-im-container"
+                    data-src1024='<img src="<?php echo $urlDesk; ?>">'
+                    data-src768='<img src="<?php echo $urlTab; ?>">'
+                    data-src0='<img src="<?php echo $urlMob; ?>">'></div>
+                    <?php /* the_post_thumbnail(); */ ?>
 
                     <div class="roundel1" id="rou-post">
                         <div class="roundel-text" id="rou-post-text">
@@ -36,6 +55,8 @@
                 
                 </div><!--//post-image-main-->
 
+
+                <!--
                 <div class="post-image-phone">
                     <div class="mob-im-cont">
                         <?php the_post_thumbnail( 'home-post-phone' ); ?>
@@ -51,7 +72,7 @@
                         </div>
                     </div>
                 
-                </div><!--//post-image-phone-->
+                </div>//post-image-phone-->
 
                 <div class="post-details">
                     <div class="post-author">
@@ -94,7 +115,6 @@
                             <p class="com-text">Print</p>
                         </div>
                     </div>
-                    <!--<?php echo preg_replace("/\< *[img][^\>]*[.]*\>/i","",get_the_content(),1); ?>-->
                     <?php the_content(); ?>
                 </div>
                 <?php
