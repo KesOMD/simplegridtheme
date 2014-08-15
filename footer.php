@@ -83,7 +83,7 @@
 
             <div class="footer-booking">
                 <h3>Book a villa</h3>
-                <p>Nulla mattis ultrices urna ac faucibus. Pellentesque bibendum augue in sagittis tristique. Etiam at faucibus est. In non rhoncus felis.</p>
+                <p>To find out more about availability and prices, click here to book a villa.</p>
                 <a href="http://www.jamesvillas.co.uk/" alt="View villas" target="_blank">
                     <div class="booking-link-cont">
                         <div class="booking-spacer">
