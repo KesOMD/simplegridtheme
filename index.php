@@ -25,6 +25,8 @@ if ( is_home() )
 
         $category_ID = get_category_id('blog');
 
+        $featuredtag = get_tag_id_by_name('featured');
+
         $args = array(
 
                      'post_type' => 'post',
@@ -32,6 +34,8 @@ if ( is_home() )
                      'posts_per_page' => 6,
 
                      'cat' => '-' . $category_ID,
+
+                     'tag__not_in' => array($featuredtag),
 
                      'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1)
 
