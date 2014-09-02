@@ -1039,6 +1039,11 @@ box-shadow: 2px 2px 5px 0px #ccc,0px 1px 0px rgba(204,204,204,.3) inset;*/
 	width: 440px;
 }
 
+.link-container a p
+{
+	margin: 0;
+}
+
 #bar
 {
 	width: 14px;
@@ -3422,9 +3427,127 @@ ul.sub_navigation li a p
 
 .grid
 {
-	display: none;
+	display: block;
+	width: inherit;
 }
 
+.grid-thumb
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+}
+
+#pos1
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos1.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+#pos2
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos2.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+.grid a
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.grid-thumb h1 a
+{
+	font-size: 25px;
+}
+
+.grid-thumb h2
+{
+	font-size: 11pt;
+}
+
+.roundel1
+{
+	bottom: 190px;
+}
+
+.roundel2
+{
+	bottom: 190px;
+}
+
+.roundel3
+{
+	bottom: 190px;
+}
+
+.roundel-line
+{
+	height: 2px;
+}
+
+.bottom-bar1
+{
+	width: inherit;
+}
+
+.bottom-bar2
+{
+	width: inherit;
+}
+
+.bottom-bar3
+{
+	width: inherit;
+}
+
+.bottom-bar2 .link-container
+{
+	margin-top: 10px;
+}
+
+.bottom-bar3 .link-container
+{
+	margin-top: 10px;
+}
+
+.link-container a
+{
+	width: 300px;
+	font-size: 14pt;
+}
+
+.link-container a p
+{
+	margin: 0;
+}
+
+.featured_post_author
+{
+	display: none;
+}
 /* ----- Body iPhone5 portrait ----- */
 
 #content_container
@@ -4539,6 +4662,125 @@ ul.sub_navigation li:nth-child(odd)
 
 .grid
 {
+	display: block;
+	width: 480px;
+}
+
+.grid-thumb
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+}
+
+#pos1
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos1.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+#pos2
+{
+	width: inherit;
+	height: 288px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos2.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+.grid-thumb img
+{
+	width: 480px;
+	height: 223px;
+}
+
+.grid a
+{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.grid-thumb h1 a
+{
+	font-size: 25px;
+}
+
+.grid-thumb h2
+{
+	font-size: 11pt;
+}
+
+.roundel1
+{
+	bottom: 190px;
+}
+
+.roundel2
+{
+	bottom: 190px;
+}
+
+.roundel3
+{
+	bottom: 190px;
+}
+
+.roundel-line
+{
+	height: 2px;
+}
+
+.bottom-bar1
+{
+	width: inherit;
+}
+
+.bottom-bar2
+{
+	width: inherit;
+}
+
+.bottom-bar3
+{
+	width: inherit;
+}
+
+.bottom-bar2 .link-container
+{
+	margin-top: 10px;
+}
+
+.bottom-bar3 .link-container
+{
+	margin-top: 10px;
+}
+
+.link-container a
+{
+	width: 440px;
+	font-size: 14pt;
+}
+
+.link-container a p
+{
+	margin: 0;
+}
+
+.featured_post_author
+{
 	display: none;
 }
 
@@ -5601,6 +5843,130 @@ ul.sub_navigation li a p
 /* ----- Featured Post Tablet portrait ----- */
 
 .grid
+{
+	display: block;
+	width: inherit;
+}
+
+.grid-thumb
+{
+	width: inherit;
+	height: 420px;
+	overflow: hidden;
+}
+
+#pos1
+{
+	width: inherit;
+	height: 420px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos1.grid-thumb img
+{
+	width: 768px;
+	height: 355px;
+}
+
+#pos2
+{
+	width: inherit;
+	height: 420px;
+	overflow: hidden;
+	margin-bottom: 0px;
+}
+
+#pos2.grid-thumb img
+{
+	width: 768px;
+	height: 355px;
+}
+
+.grid-thumb img
+{
+	width: 768px;
+	height: 355px;
+}
+
+.grid a
+{
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.grid-thumb h1 a
+{
+	font-size: 25px;
+}
+
+.grid-thumb h2
+{
+	font-size: 11pt;
+}
+
+.roundel1
+{
+	bottom: 190px;
+}
+
+.roundel2
+{
+	bottom: 190px;
+}
+
+.roundel3
+{
+	bottom: 190px;
+}
+
+.roundel-line
+{
+	height: 2px;
+}
+
+.bottom-bar1
+{
+	width: inherit;
+}
+
+.bottom-bar2
+{
+	width: inherit;
+}
+
+.bottom-bar3
+{
+	width: inherit;
+}
+
+.bottom-bar2 .link-container
+{
+	margin-top: 21px;
+}
+
+.bottom-bar3 .link-container
+{
+	margin-top: 21px;
+}
+
+.link-container
+{
+	margin-top: 21px;
+}
+
+.link-container a
+{
+	width: 728px;
+	font-size: 14pt;
+}
+
+.link-container a p
+{
+	margin: 0;
+}
+
+.featured_post_author
 {
 	display: none;
 }

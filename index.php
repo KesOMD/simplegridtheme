@@ -1,5 +1,14 @@
 <?php get_header(); ?>
 
+<div class="blog-intro-cont">
+  <h1>
+    Welcome to the James Villas blog
+    <hr>
+    <span>On the James Villas Blog, you will find everything about our villas and destinations, plus some inspiring ideas for great holiday reads, family activities, days out and local delicacies to sample!</span>
+    <hr>
+  </h1>
+</div>
+
 <?php
 
 if ( is_home() )
@@ -10,14 +19,7 @@ if ( is_home() )
 ?>
         
         <div id="load_posts_container">
-          <div class="blog-intro-cont">
-            <h1>
-              Welcome to the James Villas blog
-              <hr>
-              <span>On the James Villas Blog, you will find everything about our villas and destinations, plus some inspiring ideas for great holiday reads, family activities, days out and local delicacies to sample!</span>
-              <hr>
-            </h1>
-          </div>
+          
 
 
 

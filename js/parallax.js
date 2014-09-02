@@ -42,9 +42,16 @@ function parallaxScroll()
 {
 	var scrolled = $(window).scrollTop();
 
-	$('#rou1').css( 'bottom', ( 225 + ( scrolled * .1 ) ) + 'px');
-	$('#rou2').css( 'bottom', ( 161 + ( scrolled * .1 ) ) + 'px');
-	$('#rou3').css( 'bottom', ( 161 + ( scrolled * .1 ) ) + 'px');
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	{
+				
+	}
+	else
+	{
+		$('#rou1').css( 'bottom', ( 225 + ( scrolled * .1 ) ) + 'px');
+		$('#rou2').css( 'bottom', ( 161 + ( scrolled * .1 ) ) + 'px');
+		$('#rou3').css( 'bottom', ( 161 + ( scrolled * .1 ) ) + 'px');
 
-	$('#rou-post').css( 'bottom', ( 169 + ( scrolled * .1) ) + 'px' );
+		$('#rou-post').css( 'bottom', ( 169 + ( scrolled * .1) ) + 'px' );
+	}
 }
