@@ -74,7 +74,6 @@ ga('create', 'UA-31140-11', {
 
 ga('send', 'pageview');
 ga('agg.send', 'pageview');
-window.onerror =function(message, file, line) {if (typeof ga != "undefined") {trackEvent('JS Error', file, line + '\n\n' + message);}};
 //]]>
 </script>
 
