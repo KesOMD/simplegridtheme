@@ -30,7 +30,7 @@
   -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 
-    
+  
 
   <script src="<?php bloginfo('stylesheet_directory'); ?>/js/main.js" type="text/javascript" charset="utf-8"></script>
 
@@ -76,6 +76,11 @@ ga('send', 'pageview');
 ga('agg.send', 'pageview');
 //]]>
 </script>
+
+<link rel="alternate" type="application/rss+xml" title="James Villas Blog » Feed RDF-RSS 1" href="<?php bloginfo('rdf_url'); ?>">
+<link rel="alternate" type="application/rss+xml" title="James Villas Blog » Feed RSS 0.92" href="<?php bloginfo('rss_url'); ?>">
+<link rel="alternate" type="application/rss+xml" title="James Villas Blog » Feed RSS 2" href="<?php bloginfo('rss2_url'); ?>">
+<link rel="alternate" type="application/rss+xml" title="James Villas Blog » Feed Atom" href="<?php bloginfo('atom_url'); ?>">
 
 </head>
 
@@ -147,11 +152,11 @@ ga('agg.send', 'pageview');
         <ul id="logo-nav">
           <li class="dropdown"><a id="header-logo"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/jv-logo-mob.png" class="logo" /><div class="menu-arrow"><div class="arrow-cont"><img class="arr" src="<?php bloginfo('stylesheet_directory'); ?>/images/arrow1.png"></div></div></a>
             <ul class="sub_navigation">
-              <li><a href="http://www.jamesvillas.co.uk/" target="_blank" alt="James Villas main site"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Main Site</p></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_blank" alt="About Us"><p>About Us</p></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/contact" target="_blank" alt="Contact Us"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Contact Us</p></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_blank" alt="Privacy Police"><p>Privacy Policy</p></a></li>
-              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_blank" alt="Cookie Policy"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Cookie Policy</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/" target="_self" alt="James Villas main site"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Main Site</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/information/about" target="_self" alt="About Us"><p>About Us</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/contact" target="_self" alt="Contact Us"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Contact Us</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/privacypolicy.cfm" target="_self" alt="Privacy Police"><p>Privacy Policy</p></a></li>
+              <li><a href="http://www.jamesvillas.co.uk/cookie-policy" target="_self" alt="Cookie Policy"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/bullet-point-arrow.png" class="dd-arrow" /><p>Cookie Policy</p></a></li>
             </ul>
           </li>
         </ul>

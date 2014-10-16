@@ -103,6 +103,8 @@ if ( function_exists( 'add_theme_support' ) ) { // Added in 2.9
 
   add_theme_support( 'post-thumbnails' );
 
+  /* add_theme_support( 'automatic-feed-links' );*/
+
   add_image_size('featured-slideshow',309,514,true);
 
   add_image_size('featured-big',369,408,true);
